@@ -19,7 +19,7 @@ class WFP_Front
 							$this->wfp_version,
 							FALSE );
 		
-							if( ! wp_script_is( 'jquery' ) ) {
+		if( ! wp_script_is( 'jquery' ) ) {
 			wp_enqueue_script('jquery');
 		}
 

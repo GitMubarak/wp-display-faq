@@ -4,7 +4,6 @@
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 16px;
@@ -16,6 +15,7 @@
 .wfp-collapsible:hover {
     background-color: #FFF;
     color: #666;
+    border: 1px solid #EAEAEA;
 }
 
 .wfp-collapsible:after {
@@ -25,10 +25,18 @@
     font-size: 16px;
     float: right;
     margin-left: 5px;
+    background: #FFF;
 }
 
 .active:after {
     content: "\2212";
+    background: #FFF;
+}
+
+.wfp-collapsible:focus {
+    background: #FFF;
+    color: #242424;
+    border: 1px solid #EAEAEA;
 }
 
 .wfp-content {

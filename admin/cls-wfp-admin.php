@@ -132,8 +132,8 @@ class WFP_Admin
 				</th>
 				<td>
 					<select name="wfp_status" class="small-text">
-						<option value="active" <?php if ('inactive' != esc_attr($wfp_status)) echo 'selected'; ?>>Active</option>
-						<option value="inactive" <?php if ('inactive' == esc_attr($wfp_status)) echo 'selected'; ?>>Inactive</option>
+						<option value="active" <?php if ( 'inactive' != esc_attr( $wfp_status ) ) echo 'selected'; ?> ><?php esc_html_e('Active', WFP_TXT_DOMAIN); ?></option>
+						<option value="inactive" <?php if ( 'inactive' == esc_attr( $wfp_status ) ) echo 'selected'; ?> ><?php esc_html_e('Inactive', WFP_TXT_DOMAIN); ?></option>
 					</select>
 				</td>
 			</tr>

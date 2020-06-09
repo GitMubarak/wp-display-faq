@@ -22,6 +22,8 @@ This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in 
 * Fully responsive for any device
 * Shortcoded
 * Simple but effective
+* Custom Post Type
+* Unlimited FAQs
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -67,7 +69,7 @@ Install WP Display FAQ as a regular WordPress plugin. Here are different ways to
 2. Search WP Display FAQ
 3. Click to install
 4. Activate the plugin
-5. Setup the proper settings in WP FAQ menu
+5. Setup the proper settings in WP FAQs menu
 
 **Install by upload plugin:**
 

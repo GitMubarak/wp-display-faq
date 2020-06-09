@@ -3,11 +3,11 @@
     // USE STRICT
     "use strict";
 
-    var coll = document.getElementsByClassName("wfp-collapsible");
+    var wfpColl = document.getElementsByClassName("wfp-collapsible");
     var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+    for (i = 0; i < wfpColl.length; i++) {
+        wfpColl[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
