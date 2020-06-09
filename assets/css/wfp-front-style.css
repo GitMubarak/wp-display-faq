@@ -1,0 +1,40 @@
+.wfp-collapsible {
+    background-color: #FFF;
+    color: #242424;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #EAEAEA;
+}
+
+.active,
+.wfp-collapsible:hover {
+    background-color: #FFF;
+    color: #666;
+}
+
+.wfp-collapsible:after {
+    content: '\002B';
+    color: #242424;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.wfp-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
