@@ -35,28 +35,29 @@ This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in 
 
 
 **Demo/ Support/ Live Chat**
-[WP Display FAQ: See Demo](http://plugin.hossnimubarak.com/wp-faq-plugin/)
+[WP Display FAQ: See Demo](http://plugin.hossnimubarak.com/wp-display-faq/)
 
 
-**📋 Review / Feedback**
-
-If you find this Breaking News Headlines plugin helpful, plese review/rate us. Share this plugin with your friends. This will help us to grow and work on more features. For any kind of issues or improvement please write us, and we are always ready to help you.
+**📋 Feedback/Rating:**
+If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends and others. This will motivate us and help us to grow.
 
 
 **🔥 Other Plugins from [HM Plugins](http://www.hossnimubarak.com)**
 
-👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines plugin
-👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Plugin
-👉 [Tiny Bar](https://wordpress.org/plugins/tiny-bar/) Display a bar at Top or Bottom
-👉 [WordPress Stripe Donation](https://wordpress.org/plugins/wp-stripe-donation/) This plugin allows you to collect donations via Stripe
+👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin
+👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin
+👉 [Tiny Bar](https://wordpress.org/plugins/tiny-bar/) Display a bar with a message and button at the Top or Bottom of your page
 👉 [WP Books Gallery](https://wordpress.org/plugins/wp-books-gallery/) Display Books Gallery with shortcoded
-👉 [HM Product Catalog](https://wordpress.org/plugins/hm-product-catalog/) A product catalog plugin
+👉 [WordPress Stripe Donation](https://wordpress.org/plugins/wp-stripe-donation/) This plugin allows you to collect donations via Stripe
+👉 [HM – Cool Author Box](https://wordpress.org/plugins/hm-cool-author-box-widget/) Author Box plugin widget to display author info
 👉 [HM Resume Manager](https://wordpress.org/plugins/hm-resume-manager/) A resume manager plugin
+👉 [HM Product Catalog](https://wordpress.org/plugins/hm-product-catalog/) A product catalog plugin
 👉 [HM Wc Product Advertiser](https://wordpress.org/plugins/hm-wc-product-advertiser/) Wocommerce Product Advertiser
-👉 [HM – Cool Author Box](https://wordpress.org/plugins/hm-cool-author-box-widget/) Author Box plugin
 👉 [WP Scroll To Post](https://wordpress.org/plugins/wp-scroll-to-post/) Display random post(Single) at the bottom right corner
 👉 [HM Recent Posts Widget](https://wordpress.org/plugins/hm-recent-posts-widget/) Ticker Post plugin
 👉 [WP Alert Bars](https://wordpress.org/plugins/wp-alert-bars/) Notification/Alert box Plugin in Post/Page
+👉 [FaceBook LikeBox](https://wordpress.org/plugins/hm-simple-facebook-page/) A FaceBook LikeBox Widget
+👉 [WP Display FAQ](https://wordpress.org/plugins/wp-display-faq/) Display FAQs in your page
 
 
 == Installation ==
@@ -77,7 +78,7 @@ Install WP Display FAQ as a regular WordPress plugin. Here are different ways to
 2. In your Admin, go to menu Plugins > Add New
 3. Select "Upload Plugin"
 4. Click on "Choose File"
-5. Select downloaded wp-faq-plugin.zip and click on "Install Now" button
+5. Select downloaded wp-display-faq.zip and click on "Install Now" button
 6. Activate the plugin
 
 == Frequently Asked Questions ==
