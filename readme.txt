@@ -9,11 +9,11 @@ Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This WP Display FAQ plugin will display FAQs in your page by using the shortcode: [wp_faq_plugin].
+This WP Display FAQ plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
 
 == Description ==
 
-This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in your page by using the shortcode: [wp_faq_plugin].
+This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
 
 **🌟 Plugin Features:**
 
@@ -30,7 +30,7 @@ This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in 
 
 <strong> Use the below Shortcode to display FAQs </strong>
 
-<pre> [wp_faq_plugin] </pre>
+<pre> [wp_display_faq] </pre>
 
 
 
@@ -84,7 +84,7 @@ Install WP Display FAQ as a regular WordPress plugin. Here are different ways to
 
 = I have installed the plugin. What next? =
 
-Please go to Admin -> WP FAQs menu and Add your FAQ. Copy the Shorcode [wp_faq_plugin] and use it in any page.
+Please go to Admin -> WP FAQs menu and Add your FAQ. Copy the Shorcode [wp_display_faq] and use it in any page.
 
 
 == Screenshots ==

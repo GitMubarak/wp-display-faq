@@ -2,7 +2,7 @@
 /**
  * Plugin Name: 	WP Display FAQ
  * Plugin URI:		http://wordpress.org/plugins/wp-display-faq/
- * Description: 	This Plugin will display FAQs in your page by using the shortcode: [wp_faq_plugin]
+ * Description: 	This Plugin will display FAQs in your page by using the shortcode: [wp_display_faq]
  * Version: 		1.0
  * Author: 			Hossni Mubarak
  * Author URI: 		http://www.hossnimubarak.com

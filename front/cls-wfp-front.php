@@ -31,7 +31,7 @@ class WFP_Front
 	}
 
 	function wfp_load_shortcode() {
-		add_shortcode( 'wp_faq_plugin', array( $this, 'wfp_load_shortcode_view' ) );
+		add_shortcode( 'wp_display_faq', array( $this, 'wfp_load_shortcode_view' ) );
 	}
 
 	function wfp_load_shortcode_view() {
