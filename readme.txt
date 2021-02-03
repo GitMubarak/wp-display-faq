@@ -1,9 +1,9 @@
 === WP Display FAQ ===
 Contributors: mhmrajib
-Donate link: https://www.paypal.me/mhmrajib/2
-Tags: faq, accordion, woocommerce faq, faq plugin, toggle
+Donate link: https://www.paypal.me/mhmrajib
+Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
 Requires at least: 4.6
-Tested up to: 5.4.1
+Tested up to: 5.6
 Stable tag: 1.0
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -42,7 +42,7 @@ This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in 
 If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends and others. This will motivate us and help us to grow.
 
 
-**🔥 Other Plugins from [HM Plugins](http://www.hossnimubarak.com)**
+**🔥 Other Plugins from [HM Plugin](http://www.hossnimubarak.com)**
 
 👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin
 👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin
@@ -89,6 +89,8 @@ Please go to Admin -> WP FAQs menu and Add your FAQ. Copy the Shorcode [wp_displ
 
 
 == Screenshots ==
+
+1. Showing FAQs in a demo page
 
 
 == Changelog ==
