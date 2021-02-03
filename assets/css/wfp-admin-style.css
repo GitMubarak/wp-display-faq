@@ -1,38 +1,38 @@
-table.wbg-details-settings-table tr th,
-table.wbg-details-settings-table tr td {
+table.wpf-details-settings-table tr th,
+table.wpf-details-settings-table tr td {
     border: 0px solid #000;
     padding: 10px;
 }
 
-table.wbg-details-settings-table tr th {
+table.wpf-details-settings-table tr th {
     font-weight: 600;
 }
 
 
 /* Alert Bar Started */
 
-.wbg-alert {
+.wpf-alert {
     padding: 20px !important;
     color: white;
 }
 
-.wbg-alert.success {
+.wpf-alert.success {
     background-color: #6ABD6E;
 }
 
-.wbg-alert.error {
+.wpf-alert.error {
     background-color: #F66358;
 }
 
-.wbg-alert.warning {
+.wpf-alert.warning {
     background-color: #FFAA2B;
 }
 
-.wbg-alert.info {
+.wpf-alert.info {
     background-color: #47A8F5;
 }
 
-.wbg-closebtn {
+.wpf-closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -43,7 +43,7 @@ table.wbg-details-settings-table tr th {
     transition: 0.3s;
 }
 
-.wbg-closebtn:hover {
+.wpf-closebtn:hover {
     color: black;
 }
 
