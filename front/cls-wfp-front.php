@@ -1,17 +1,16 @@
 <?php
-/**
-*	Front Parent Class
-*/
-class WFP_Front 
-{	
+if ( ! defined('ABSPATH') ) exit;
+
+class WFP_Front {
+
 	private $wfp_version;
 
-	function __construct( $version ){
+	function __construct( $version ) {
 		$this->wfp_version = $version;
 		$this->wfp_assets_prefix = substr(WFP_PRFX, 0, -1) . '-';
 	}
 	
-	function wfp_front_assets(){
+	function wfp_front_assets() {
 		
 		wp_enqueue_style(	'wfp-front-style',
 							WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'front-style.css',
@@ -19,7 +18,7 @@ class WFP_Front
 							$this->wfp_version,
 							FALSE );
 		
-		if( ! wp_script_is( 'jquery' ) ) {
+		if ( ! wp_script_is( 'jquery' ) ) {
 			wp_enqueue_script('jquery');
 		}
 
@@ -34,7 +33,7 @@ class WFP_Front
 		add_shortcode( 'wp_display_faq', array( $this, 'wfp_load_shortcode_view' ) );
 	}
 
-	function wfp_load_shortcode_view() {
+	function wfp_load_shortcode_view( $wfpAttr ) {
 
 		$output = '';
 		ob_start();

@@ -1,19 +1,19 @@
-=== WP Display FAQ ===
+=== Display FAQs ===
 Contributors: mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
 Requires at least: 4.6
 Tested up to: 5.6
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This WP Display FAQ plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
+This Display FAQs plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
 
 == Description ==
 
-This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
+This [Display FAQs](http://www.hossnimubarak.com) plugin will display FAQs in your page by using the shortcode: [wp_display_faq].
 
 **🌟 Plugin Features:**
 
@@ -35,7 +35,7 @@ This [WP Display FAQ](http://www.hossnimubarak.com) plugin will display FAQs in 
 
 
 **Demo/ Support/ Live Chat**
-[WP Display FAQ: See Demo](http://plugin.hossnimubarak.com/wp-display-faq/)
+[Display FAQs: See Demo](http://plugin.hossnimubarak.com/wp-display-faq/)
 
 
 **📋 Feedback/Rating:**
@@ -57,24 +57,24 @@ If you find this plugin helpful, feel free to give us your valuable review. Rate
 👉 [HM Recent Posts Widget](https://wordpress.org/plugins/hm-recent-posts-widget/) Ticker Post plugin
 👉 [WP Alert Bars](https://wordpress.org/plugins/wp-alert-bars/) Notification/Alert box Plugin in Post/Page
 👉 [FaceBook LikeBox](https://wordpress.org/plugins/hm-simple-facebook-page/) A FaceBook LikeBox Widget
-👉 [WP Display FAQ](https://wordpress.org/plugins/wp-display-faq/) Display FAQs in your page
+👉 [Display FAQs](https://wordpress.org/plugins/wp-display-faq/) Display FAQs in your page
 
 
 == Installation ==
 
-Install WP Display FAQ as a regular WordPress plugin. Here are different ways to install plugin:
+Install Display FAQs as a regular WordPress plugin. Here are different ways to install plugin:
 
 **Install by search plugin:**
 
 1. In your Admin, go to menu Plugins > Add New
-2. Search WP Display FAQ
+2. Search Display FAQs
 3. Click to install
 4. Activate the plugin
 5. Setup the proper settings in WP FAQs menu
 
 **Install by upload plugin:**
 
-1. Download the latest version of WP Display FAQ (.zip file)
+1. Download the latest version of Display FAQs (.zip file)
 2. In your Admin, go to menu Plugins > Add New
 3. Select "Upload Plugin"
 4. Click on "Choose File"
@@ -85,7 +85,7 @@ Install WP Display FAQ as a regular WordPress plugin. Here are different ways to
 
 = I have installed the plugin. What next? =
 
-Please go to Admin -> WP FAQs menu and Add your FAQ. Copy the Shorcode [wp_display_faq] and use it in any page.
+Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_display_faq] and use it in any page.
 
 
 == Screenshots ==
@@ -94,6 +94,19 @@ Please go to Admin -> WP FAQs menu and Add your FAQ. Copy the Shorcode [wp_displ
 
 
 == Changelog ==
+
+= 1.1 =
+* Category wise FAQs display added (Shortcoded)
+* Display limit option added to Shortcode
+* Change Post status from dropdown to radio
+* Page-attributes metabox added
+* FAQs sort by post order
+* FAQs title font color option added
+* FAQs title font size option added
+* FAQs title Background color
+* FAQs title Border color
+* Code optimized
+* CSS issue fixed
 
 = 1.0 =
 * Initial release

@@ -1,14 +1,14 @@
 <?php
+if ( ! defined('ABSPATH') ) exit;
 
-/**
- *	Admin Parent Class
- */
-class WFP_Admin
-{
+
+class WFP_Admin {
+
 	private $wfp_version;
 	private $wfp_assets_prefix;
 
-	function __construct($version) {
+	function __construct( $version ) {
+
 		$this->wfp_version = $version;
 		$this->wfp_assets_prefix = substr( WFP_PRFX, 0, -1 ) . '-';
 	}
@@ -17,7 +17,8 @@ class WFP_Admin
 	 *	Flush Rewrite on Plugin initialization
 	 */
 	function wfp_flush_rewrite() {
-		if( get_option('wfp_plugin_settings_have_changed') == true ) {
+
+		if ( get_option('wfp_plugin_settings_have_changed') == true ) {
 			flush_rewrite_rules();
 			update_option('wfp_plugin_settings_have_changed', false);
 		}
@@ -26,13 +27,15 @@ class WFP_Admin
 	/**
 	 *	Loading admin menu
 	 */
-	function wfp_admin_menu()
-	{
+	function wfp_admin_menu() {
+
 		$wfp_cpt_menu = 'edit.php?post_type=wfp_faq';
+
 		add_submenu_page(
+
 			$wfp_cpt_menu,
-			esc_html__('General Settings', WFP_TXT_DOMAIN),
-			esc_html__('General Settings', WFP_TXT_DOMAIN),
+			__('General Settings', WFP_TXT_DOMAIN),
+			__('General Settings', WFP_TXT_DOMAIN),
 			'manage_options',
 			'wfp-general-settings',
 			array($this, WFP_PRFX . 'general_settings')
@@ -54,7 +57,7 @@ class WFP_Admin
 			FALSE
 		);
 
-		if( ! wp_script_is('jquery') ) {
+		if ( ! wp_script_is('jquery') ) {
 			wp_enqueue_script('jquery');
 		}
 		
@@ -70,6 +73,7 @@ class WFP_Admin
 	}
 
 	function wfp_custom_post_type() {
+
 		$labels = array(
 							'name'                => __('WP FAQs'),
 							'singular_name'       => __('WP FAQs'),
@@ -89,7 +93,7 @@ class WFP_Admin
 						'label'               => __('wfp_faq'),
 						'description'         => __('Description For FAQ'),
 						'labels'              => $labels,
-						'supports'            => array('title', 'editor', 'thumbnail'),
+						'supports'            => array('title', 'editor', 'thumbnail', 'page-attributes'),
 						'public'              => true,
 						'hierarchical'        => false,
 						'show_ui'             => true,
@@ -105,13 +109,41 @@ class WFP_Admin
 						'capability_type'     => 'page',
 						'menu_icon'           => 'dashicons-feedback'
 					);
+
 		register_post_type('wfp_faq', $args);
 	}
 
+	function wfp_taxonomy_for_faqs() {
+
+		$labels = array(
+			'name' 				=> __('FAQ Categories', WFP_TXT_DOMAIN),
+			'singular_name' 	=> __('FAQ Category', WFP_TXT_DOMAIN),
+			'search_items' 		=> __('Search FAQ Categories', WFP_TXT_DOMAIN),
+			'all_items' 		=> __('All FAQ Categories', WFP_TXT_DOMAIN),
+			'parent_item' 		=> __('Parent FAQ Category', WFP_TXT_DOMAIN),
+			'parent_item_colon'	=> __('Parent FAQ Category:', WFP_TXT_DOMAIN),
+			'edit_item' 		=> __('Edit FAQ Category', WFP_TXT_DOMAIN),
+			'update_item' 		=> __('Update FAQ Category', WFP_TXT_DOMAIN),
+			'add_new_item' 		=> __('Add New FAQ Category', WFP_TXT_DOMAIN),
+			'new_item_name' 	=> __('New FAQ Category Name', WFP_TXT_DOMAIN),
+			'menu_name' 		=> __('FAQ Categories', WFP_TXT_DOMAIN),
+		);
+
+		register_taxonomy('wfp_faq_category', array('wfp_faq'), array(
+			'hierarchical' 		=> true,
+			'labels' 			=> $labels,
+			'show_ui' 			=> true,
+			'show_admin_column' => true,
+			'query_var' 		=> true,
+			'rewrite' 			=> array('slug' => 'faq-category'),
+		));
+	}
+
 	function wfp_metaboxes() {
+
 		add_meta_box(
 			'wfp_metaboxes',
-			'WP FAQ Details',
+			__('FAQs Information:', WFP_TXT_DOMAIN),
 			array( $this, WFP_PRFX . 'metabox_content' ),
 			'wfp_faq',
 			'normal',
@@ -122,19 +154,22 @@ class WFP_Admin
 	function wfp_metabox_content() {
 		
 		global $post;
+
 		wp_nonce_field( basename(__FILE__), 'wfp_fields' );
+
 		$wfp_status	= get_post_meta( $post->ID, 'wfp_status', true );
 		?>
 		<table class="form-table">
 			<tr class="wfp_status">
 				<th scope="row">
-					<label for="wfp_status"><?php esc_html_e('Status:', WFP_TXT_DOMAIN); ?></label>
+					<label for="wfp_status"><?php _e('Status:', WFP_TXT_DOMAIN); ?></label>
 				</th>
 				<td>
-					<select name="wfp_status" class="small-text">
-						<option value="active" <?php if ( 'inactive' != esc_attr( $wfp_status ) ) echo 'selected'; ?> ><?php esc_html_e('Active', WFP_TXT_DOMAIN); ?></option>
-						<option value="inactive" <?php if ( 'inactive' == esc_attr( $wfp_status ) ) echo 'selected'; ?> ><?php esc_html_e('Inactive', WFP_TXT_DOMAIN); ?></option>
-					</select>
+					<input type="radio" name="wfp_status" class="wfp_status" id="wfp_status_active" value="active" <?php echo ( 'inactive' !== esc_attr( $wfp_status ) ) ? 'checked' : ''; ?> >
+					<label for="wfp_status_active"><span></span><?php _e( 'Active', WFP_TXT_DOMAIN ); ?></label>
+					&nbsp;&nbsp;
+					<input type="radio" name="wfp_status" class="wfp_status" id="wfp_status_inactive" value="inactive" <?php echo ( 'inactive' === esc_attr( $wfp_status ) ) ? 'checked' : ''; ?> >
+					<label for="wfp_status_inactive"><span></span><?php _e( 'Inactive', WFP_TXT_DOMAIN ); ?></label>
 				</td>
 			</tr>
 		</table>
@@ -174,15 +209,22 @@ class WFP_Admin
 	}
 
 	function wfp_general_settings() {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+	
+		$wfpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
+
 		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'general-settings.php';
 	}
 
-	function wfp_display_notification($type, $msg) { 
+	function wfp_display_notification( $type, $msg ) { 
 		?>
 		<div class="wfp-alert <?php printf('%s', $type); ?>">
 			<span class="wfp-closebtn">&times;</span>
-			<strong><?php esc_html_e(ucfirst($type), WFP_TXT_DOMAIN); ?>!</strong>
-			<?php esc_html_e($msg, WFP_TXT_DOMAIN); ?>
+			<strong><?php esc_html_e (ucfirst( $type ), WFP_TXT_DOMAIN); ?>!</strong>
+			<?php esc_html_e( $msg, WFP_TXT_DOMAIN ); ?>
 		</div>
 		<?php 
 	}

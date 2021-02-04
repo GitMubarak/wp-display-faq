@@ -1,10 +1,8 @@
 <?php
+if ( ! defined('ABSPATH') ) exit;
 
-/**
- * Our main plugin class
- */
-class WFP_Master
-{
+
+class WFP_Master {
 
 	protected $wfp_loader;
 	protected $wfp_version;
@@ -37,6 +35,7 @@ class WFP_Master
 		$this->wfp_loader->add_action('save_post', $wfp_admin, WFP_PRFX . 'save_meta_value', 1, 1);
 		$this->wfp_loader->add_action('admin_menu', $wfp_admin, WFP_PRFX . 'admin_menu', 0);
 		$this->wfp_loader->add_action('admin_init', $wfp_admin, WFP_PRFX . 'flush_rewrite');
+		$this->wfp_loader->add_action('init', $wfp_admin, WFP_PRFX . 'taxonomy_for_faqs', 0);
 	}
 
 	function wfp_trigger_front_hooks()

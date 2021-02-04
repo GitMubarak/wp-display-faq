@@ -4,10 +4,12 @@
     "use strict";
 
     var wfpColl = document.getElementsByClassName("wfp-collapsible");
-    var i;
+    var wfpCount;
 
-    for (i = 0; i < wfpColl.length; i++) {
-        wfpColl[i].addEventListener("click", function() {
+    for (wfpCount = 0; wfpCount < wfpColl.length; wfpCount++) {
+
+        wfpColl[wfpCount].addEventListener("click", function() {
+
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
