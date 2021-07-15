@@ -1,7 +1,9 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
-
+/**
+ * Master Class: Admin
+*/
 class WFP_Admin {
 
 	private $wfp_version;
@@ -19,8 +21,11 @@ class WFP_Admin {
 	function wfp_flush_rewrite() {
 
 		if ( get_option('wfp_plugin_settings_have_changed') == true ) {
+
 			flush_rewrite_rules();
+
 			update_option('wfp_plugin_settings_have_changed', false);
+
 		}
 	}
 
@@ -217,6 +222,22 @@ class WFP_Admin {
 		$wfpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
 
 		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'general-settings.php';
+	}
+
+	// Add Columns To Custom Post Types
+	function wfp_add_faqs_columns( $columns ) {
+		
+		unset( $columns['title'] );
+		unset( $columns['taxonomy-wfp_faq_category'] );
+		unset( $columns['date'] );
+
+		return array_merge ( $columns, array ( 
+			'title' => __ ('Title'),
+			'taxonomy-wfp_faq_category' => __ ( 'FAQ Category' ),
+			'status'   => __ ( 'Status' ),
+			'date' => __('Date')
+		  ) );
+
 	}
 
 	function wfp_display_notification( $type, $msg ) { 

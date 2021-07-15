@@ -1,5 +1,5 @@
 === Display FAQs ===
-Contributors: mhmrajib, hmplugin
+Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
 Requires at least: 5.0
@@ -118,6 +118,10 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 
 
 == Changelog ==
+
+= 1.2 =
+* Donation link added
+* Display FAQ Status in admin table columns with sorting
 
 = 1.1 =
 * Category wise FAQs display added (Shortcoded)
