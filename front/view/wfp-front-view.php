@@ -6,7 +6,7 @@ global $post;
 // Getting General Styling Data
 $wfpGeneralStyles       = stripslashes_deep( unserialize( get_option('wfp_search_styles') ) );
 $wfp_title_font_color   = isset( $wfpGeneralStyles['wfp_title_font_color'] ) ? $wfpGeneralStyles['wfp_title_font_color'] : '#212121';
-$wfp_title_font_size        = isset( $wfpGeneralStyles['wfp_title_font_size'] ) ? $wfpGeneralStyles['wfp_title_font_size'] : 12;
+$wfp_title_font_size    = isset( $wfpGeneralStyles['wfp_title_font_size'] ) ? $wfpGeneralStyles['wfp_title_font_size'] : 12;
 $wfp_title_bg_color     = isset( $wfpGeneralStyles['wfp_title_bg_color'] ) ? $wfpGeneralStyles['wfp_title_bg_color'] : '#FFFFFF';
 $wfp_title_border_color = isset( $wfpGeneralStyles['wfp_title_border_color'] ) ? $wfpGeneralStyles['wfp_title_border_color'] : '#EAEAEA';
 ?>
@@ -45,12 +45,13 @@ $wfp_arr = array(
 if ( $wfpCategory ) {
 
   $wfp_arr['tax_query'] = array(
-                                    array(
-                                      'taxonomy'  => 'wfp_faq_category',
-                                      'field'     => 'name',
-                                      'terms'     => $wfpCategory
-                                    )
-                                  );
+    array(
+      'taxonomy'  => 'wfp_faq_category',
+      'field'     => 'name',
+      'terms'     => $wfpCategory
+    )
+  );
+  
 }
 
 // If display params found in shortcode
@@ -61,23 +62,25 @@ if ( $wfpDisplay ) {
 $WfpData = new WP_Query( $wfp_arr );
 
 if ( $WfpData->have_posts() ) {
-
+  $dfC = 1;
   while ( $WfpData->have_posts() ) {
+
     $WfpData->the_post();
     ?>
     <button class="wfp-collapsible"><?php the_title(); ?></button>
-    <div class="wfp-content">
-      <p>
-        <?php the_content(); ?>
-      </p>
+    <div class="wfp-content <?php echo ( 1 === $dfC ) ? 'active-first' : null; ?>">
+      <?php the_content(); ?>
     </div>
     <?php
+    $dfC++;
   }
 
   /* Restore original Post Data */
   wp_reset_postdata();
 
 } else {
-  ?><p class="wfp-no-afaqs-found"><?php _e('No FAQs Found.', WFP_TXT_DOMAIN); ?></p><?php
+  ?>
+  <p class="wfp-no-afaqs-found"><?php _e('No FAQs Found.', WFP_TXT_DOMAIN); ?></p>
+  <?php
 }
 ?>

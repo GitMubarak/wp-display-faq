@@ -6,14 +6,16 @@ class WFP_Front {
 	private $wfp_version;
 
 	function __construct( $version ) {
+
 		$this->wfp_version = $version;
 		$this->wfp_assets_prefix = substr(WFP_PRFX, 0, -1) . '-';
+		
 	}
 	
 	function wfp_front_assets() {
 		
 		wp_enqueue_style(	'wfp-front-style',
-							WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'front-style.css',
+							WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'front.css',
 							array(),
 							$this->wfp_version,
 							FALSE );
@@ -23,7 +25,7 @@ class WFP_Front {
 		}
 
 		wp_enqueue_script(  'wfp-front-script',
-							WFP_ASSETS . 'js/' . $this->wfp_assets_prefix . 'front-script.js',
+							WFP_ASSETS . 'js/' . $this->wfp_assets_prefix . 'front.js',
 							array('jquery'),
 							$this->wfp_version,
 							TRUE );

@@ -10,6 +10,7 @@
 
         wfpColl[wfpCount].addEventListener("click", function() {
 
+            $(this).next().removeClass('active-first');
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {

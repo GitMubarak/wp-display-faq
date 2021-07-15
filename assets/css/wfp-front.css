@@ -41,7 +41,7 @@
 }
 
 .wfp-content {
-    padding: 0 18px;
+    padding: 0px 18px 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -49,4 +49,14 @@
     border-style: solid;
     border-color: #EAEAEA;
     border-width: 0px 1px;
+}
+
+.wfp-content.active-first {
+    min-height: 100px;
+    max-height: max-content!important;
+}
+
+.wfp-content p {
+    padding: 10px;
+    margin: 0;
 }
