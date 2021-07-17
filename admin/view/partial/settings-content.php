@@ -1,6 +1,6 @@
 <?php 
 if ( ! defined('ABSPATH') ) exit;
-print_r( $wfpContentSettings );
+//print_r( $wfpContentSettings );
 foreach ( $wfpContentSettings as $option_name => $option_value ) {
     
     if ( isset( $wfpContentSettings[$option_name] ) ) {
