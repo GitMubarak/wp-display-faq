@@ -1,10 +1,14 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
+include_once WFP_PATH . 'common/wfp-settigns.php';
+
 /**
  * Master Class: Admin
 */
-class WFP_Admin {
+class WFP_Admin 
+{
+	use Wfp_Settings;
 
 	private $wfp_version;
 	private $wfp_assets_prefix;
@@ -39,8 +43,8 @@ class WFP_Admin {
 		add_submenu_page(
 
 			$wfp_cpt_menu,
-			__('General Settings', WFP_TXT_DOMAIN),
-			__('General Settings', WFP_TXT_DOMAIN),
+			__('Settings', WFP_TXT_DOMAIN),
+			__('Settings', WFP_TXT_DOMAIN),
 			'manage_options',
 			'wfp-general-settings',
 			array($this, WFP_PRFX . 'general_settings')
@@ -55,8 +59,13 @@ class WFP_Admin {
 		wp_enqueue_style( 'wp-color-picker');
 
 		wp_enqueue_style(
-			$this->wfp_assets_prefix . 'admin-style',
-			WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'admin-style.css',
+			$this->wfp_assets_prefix . 'font-awesome', 
+			WFP_ASSETS .'css/font-awesome/css/font-awesome.min.css'
+		);
+
+		wp_enqueue_style(
+			$this->wfp_assets_prefix . 'admin',
+			WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'admin.css',
 			array(),
 			$this->wfp_version,
 			FALSE
@@ -69,8 +78,8 @@ class WFP_Admin {
 		wp_enqueue_script( 'wp-color-picker');
 		
 		wp_enqueue_script(
-			$this->wfp_assets_prefix . 'admin-script',
-			WFP_ASSETS . 'js/' . $this->wfp_assets_prefix . 'admin-script.js',
+			$this->wfp_assets_prefix . 'admin',
+			WFP_ASSETS . 'js/' . $this->wfp_assets_prefix . 'admin.js',
 			array('jquery'),
 			$this->wfp_version,
 			TRUE
@@ -221,7 +230,16 @@ class WFP_Admin {
 	
 		$wfpTab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : null;
 
-		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'general-settings.php';
+		$wfpGeneralMessage = false;
+
+		if ( isset( $_POST['updateGeneralContent'] ) ) {
+
+			$wfpGeneralMessage = $this->set_content_settings( $_POST );
+		}
+
+		$wfpContentSettings	= $this->get_content_settings();
+
+		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'settings.php';
 	}
 
 	// Add Columns To Custom Post Types

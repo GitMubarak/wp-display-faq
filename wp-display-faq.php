@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: 	Display FAQs
- * Plugin URI:		http://wordpress.org/plugins/wp-display-faq/
- * Description: 	This Plugin will display FAQs in your page by using the shortcode: [wp_display_faq]
- * Version: 		  1.2
- * Author:		    HM Plugin
- * Author URI:	  https://hmplugin.com
- * License:       GPL-2.0+
- * License URI:   http://www.gnu.org/licenses/gpl-2.0.txt
+ * Plugin Name: Display FAQs
+ * Plugin URI:  http://wordpress.org/plugins/wp-display-faq/
+ * Description: This Plugin will display FAQs in your page by using the shortcode: [wp_display_faq]
+ * Version: 	1.2
+ * Author:      HM Plugin
+ * Author URI:  https://hmplugin.com
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 if ( ! defined('ABSPATH') ) exit;

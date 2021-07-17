@@ -1,3 +1,5 @@
+table.wfp-general-content-settings-table tr th,
+table.wfp-general-content-settings-table tr td,
 table.wfp-general-style-settings-table tr th,
 table.wfp-general-style-settings-table tr td {
     border: 0px solid #000;
@@ -6,6 +8,7 @@ table.wfp-general-style-settings-table tr td {
     vertical-align: top;
 }
 
+table.wfp-general-content-settings-table tr th,
 table.wfp-general-style-settings-table tr th {
     font-weight: 600;
 }

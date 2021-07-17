@@ -1,7 +1,14 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
-class WFP_Front {
+include_once WFP_PATH . 'common/wfp-settigns.php';
+
+/**
+ * Master Class: Front
+*/
+class WFP_Front 
+{
+	use Wfp_Settings;
 
 	private $wfp_version;
 
@@ -36,6 +43,8 @@ class WFP_Front {
 	}
 
 	function wfp_load_shortcode_view( $wfpAttr ) {
+
+		$wfpContentSettings	= $this->get_content_settings();
 
 		$output = '';
 		ob_start();

@@ -1,16 +1,29 @@
 .wfp-collapsible {
-    background-color: #FFF;
-    color: #242424;
-    cursor: pointer;
-    padding: 18px;
+    background-color: #e8e8e8;
+    padding: 0;
     width: 100%;
     text-align: left;
     outline: none;
-    font-size: 20px;
-    font-weight: 400;
     border: 1px solid #EAEAEA;
     border-bottom: 0px;
-    line-height: 30px;
+}
+
+.wfp-collapsible .wfp_title_class {
+    display: block;
+    padding: 12px 15px;
+    cursor: pointer;
+    text-transform: none;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.wfp-collapsible .wfp_open_cl_icon {
+    color: #000000;
+    float: right;
+    padding: 12px 15px;
+    line-height: 1;
+    font-size: 12px;
 }
 
 .active,
@@ -19,19 +32,6 @@
     color: #666;
     border: 1px solid #EAEAEA;
     border-bottom: 0px;
-}
-
-.wfp-collapsible:after {
-    content: '\002B';
-    /* f347 f343 */
-    font-weight: bold;
-    font-size: 22px;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
 }
 
 .wfp-collapsible:focus {
@@ -56,7 +56,8 @@
     max-height: max-content!important;
 }
 
-.wfp-content p {
+.wfp-content p,
+.wfp-content ul {
     padding: 10px;
     margin: 0;
 }

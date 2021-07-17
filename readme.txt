@@ -122,7 +122,8 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 = 1.2 =
 * Donation link added
 * Display FAQ Status in admin table columns with sorting
-* Make the first item open by default
+* Expand/Collapse Items: First / All / None
+* Open/Close Icon Alignment: left / right
 
 = 1.1 =
 * Category wise FAQs display added (Shortcoded)
