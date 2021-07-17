@@ -56,6 +56,18 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <label for="wfp_op_cl_item_alignment_right"><span></span><?php _e( 'Right', WFP_TXT_DOMAIN ); ?></label>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Enable Item Margin/Space', WFP_TXT_DOMAIN); ?> :</label>
+            </th>
+            <td>
+                <input type="radio" name="wfp_item_margin" id="wfp_item_margin_y" value="yes" <?php echo ( 'yes' === $wfp_item_margin ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_margin_y"><span></span><?php _e( 'Yes', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_item_margin" id="wfp_item_margin_n" value="no" <?php echo ( 'no' === $wfp_item_margin ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_margin_n"><span></span><?php _e( 'No', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
     </table>
     <p class="submit"><button id="updateGeneralContent" name="updateGeneralContent" class="button button-primary"><?php _e('Save Settings', WFP_TXT_DOMAIN); ?></button></p>
 </form>

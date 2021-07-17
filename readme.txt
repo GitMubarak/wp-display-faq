@@ -124,6 +124,8 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 * Display FAQ Status in admin table columns with sorting
 * Expand/Collapse Items: First / All / None
 * Open/Close Icon Alignment: left / right
+* Display Open/Close Icon: Yes / No
+* Enable Item Margin/Space: Yes / No
 
 = 1.1 =
 * Category wise FAQs display added (Shortcoded)

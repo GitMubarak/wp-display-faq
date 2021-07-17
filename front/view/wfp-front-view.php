@@ -25,6 +25,8 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
 .wfp-collapsible {
   background-color: <?php esc_html_e( $wfp_title_bg_color ); ?> !important;
   border-color: <?php esc_html_e( $wfp_title_border_color ); ?> !important;
+  margin-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px !important;
+  border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?> !important;
 }
 .wfp-collapsible .wfp_title_class,
 .wfp-collapsible .wfp_open_cl_icon {

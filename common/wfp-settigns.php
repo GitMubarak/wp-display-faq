@@ -62,6 +62,11 @@ trait Wfp_Settings
                 'type'      => 'string',
                 'default'   => 'yes',
             ],
+            [
+                'name'      => 'wfp_item_margin',
+                'type'      => 'string',
+                'default'   => 'yes',
+            ],
         ];
 
     }
