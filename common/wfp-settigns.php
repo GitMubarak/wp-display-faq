@@ -50,7 +50,7 @@ trait Wfp_Settings
             [
                 'name'      => 'wfp_expand_collapse_item',
                 'type'      => 'string',
-                'default'   => null,
+                'default'   => 'first',
             ],
             [
                 'name'      => 'wfp_op_cl_item_alignment',
