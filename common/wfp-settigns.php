@@ -57,6 +57,11 @@ trait Wfp_Settings
                 'type'      => 'string',
                 'default'   => 'right',
             ],
+            [
+                'name'      => 'wfp_display_open_close_icon',
+                'type'      => 'string',
+                'default'   => 'yes',
+            ],
         ];
 
     }

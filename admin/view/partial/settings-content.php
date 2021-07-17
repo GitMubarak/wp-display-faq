@@ -34,6 +34,18 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Display Open/Close Icon', WFP_TXT_DOMAIN); ?> :</label>
+            </th>
+            <td>
+                <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_y" value="yes" <?php echo ( 'yes' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
+                <label for="wfp_display_open_close_icon_y"><span></span><?php _e( 'Yes', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_n" value="no" <?php echo ( 'no' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
+                <label for="wfp_display_open_close_icon_n"><span></span><?php _e( 'No', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Open/Close Icon Alignment', WFP_TXT_DOMAIN); ?> :</label>
             </th>
             <td>

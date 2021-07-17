@@ -82,7 +82,13 @@ if ( $WfpData->have_posts() ) {
     $WfpData->the_post();
     ?>
     <button class="wfp-collapsible <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'active' : null; ?>">
-      <span class="wfp_open_cl_icon fa fa-plus"></span>
+      <?php
+      if ( 'yes' === $wfp_display_open_close_icon ) {
+        ?>
+        <span class="wfp_open_cl_icon fa fa-plus"></span>
+        <?php
+      }
+      ?>
       <span class="wfp_title_class"><?php the_title(); ?></span>
     </button>
     <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?>>
