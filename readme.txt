@@ -1,19 +1,19 @@
-=== Display FAQs ===
+=== DisplayFaq - Accordion FAQs Plugin for WordPress ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
 Requires at least: 5.0
 Tested up to: 5.7.2
-Stable tag: 1.2
+Stable tag: 1.3
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will display FAQs in your website page or post by using the shortcode: [wp_display_faq].
+DisplayFaq is an accordion FAQs Plugin for WordPress that will display FAQs with Category in your website.
 
 == Description ==
 
-This [Display FAQs](https://hmplugin.com) is an accordion FAQs plugin which will display FAQs in your page by using the shortcode: [wp_display_faq].
+[DisplayFaq](https://hmplugin.com) is an accordion FAQs plugin for WordPress which will display FAQs in your page by using the shortcode: [wp_display_faq].
 You can display multiple FAQs from various category and control the display number via shortcode.
 
 This is a simple, effective and powerful plugin to display FAQs.
@@ -44,7 +44,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 
 <pre> [wp_display_faq] </pre>
 
-<strong> Display FAQs from a category </strong>
+<strong> DisplayFaq from a category </strong>
 
 <pre> [wp_display_faq category="Category Name"] </pre>
 
@@ -55,7 +55,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 
 
 **👨‍💻 Demo / Support/ Live Chat**
-[Display FAQs: See Demo](https://demo.hmplugin.com/wp-display-faq/)
+[DisplayFaq: See Demo](https://demo.hmplugin.com/wp-display-faq/)
 
 
 **👍 Feedback/Rating:**
@@ -84,19 +84,19 @@ If you find this plugin helpful, feel free to give us your valuable review. Rate
 
 == Installation ==
 
-Install Display FAQs as a regular WordPress plugin. Here are different ways to install plugin:
+Install DisplayFaq as a regular WordPress plugin. Here are different ways to install plugin:
 
 **Install by search plugin:**
 
 1. In your Admin, go to menu Plugins > Add New
-2. Search Display FAQs
+2. Search DisplayFaq
 3. Click to install
 4. Activate the plugin
 5. Setup the proper settings in WP FAQs menu
 
 **Install by upload plugin:**
 
-1. Download the latest version of Display FAQs (.zip file)
+1. Download the latest version of DisplayFaq (.zip file)
 2. In your Admin, go to menu Plugins > Add New
 3. Select "Upload Plugin"
 4. Click on "Choose File"
@@ -118,6 +118,11 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 
 
 == Changelog ==
+
+
+= 1.3 =
+* Code optimized
+* Minor bug fixes
 
 = 1.2 =
 * Donation link added
