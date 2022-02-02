@@ -3,7 +3,7 @@
  * Plugin Name: DisplayFaq - Accordion FAQs Plugin for WordPress
  * Plugin URI:  http://wordpress.org/plugins/wp-display-faq/
  * Description: This will display FAQs with Category in your website by using the shortcode: [wp_display_faq]
- * Version: 	1.3
+ * Version: 	1.4
  * Author:      HM Plugin
  * Author URI:  https://hmplugin.com
  * License:     GPL-2.0+

@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
 Requires at least: 5.0
-Tested up to: 5.7.2
-Stable tag: 1.3
+Tested up to: 5.9
+Stable tag: 1.4
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -119,6 +119,9 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 
 == Changelog ==
 
+= 1.4 =
+* Minor bug fixes
+* Support for WordPress 5.9
 
 = 1.3 =
 * Code optimized
