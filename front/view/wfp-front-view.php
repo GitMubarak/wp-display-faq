@@ -49,8 +49,8 @@ $wfpDisplay  = isset( $wfpAttr['display'] ) ? $wfpAttr['display'] : '';
 $wfp_arr = array(
   'post_type'   => 'wfp_faq',
   'post_status' => 'publish',
-  'orderby'     => 'menu_order',
-  'order'       => 'ASC',
+  'orderby'     => $wfp_title_order_by,
+  'order'       => $wfp_title_order,
   'meta_query'  => array(
     'relation' => 'and',
     array(

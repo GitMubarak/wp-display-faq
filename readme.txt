@@ -41,6 +41,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 * FAQ title icon alignment - Left / Right
 * Show - Hide space between FAQs
 * Show - hide title icon
+* Title order by option - Title / Date / Menu Order
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -127,6 +128,7 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated
 * Show - hide title icon option added
+* Title order by option added
 * Admin panel styles improved
 * Admin sidebar added
 * Support for WordPress 6.0

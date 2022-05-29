@@ -46,6 +46,16 @@ trait Wfp_Settings
                 'default'   => 'first',
             ],
             [
+                'name'      => 'wfp_title_order_by',
+                'type'      => 'string',
+                'default'   => 'title',
+            ],
+            [
+                'name'      => 'wfp_title_order',
+                'type'      => 'string',
+                'default'   => 'DESC',
+            ],
+            [
                 'name'      => 'wfp_op_cl_item_alignment',
                 'type'      => 'string',
                 'default'   => 'right',
