@@ -1,5 +1,7 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 $wfpGeneralMessage = false;
 
@@ -24,7 +26,7 @@ $wfp_title_border_color     = isset( $wfpGeneralStyles['wfp_title_border_color']
 <div id="wph-wrap-all" class="wrap wfp-general-settings-page">
 
     <div class="settings-banner">
-        <h2><?php _e('Settings', WFP_TXT_DOMAIN); ?></h2>
+        <h2><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;<?php _e('Settings', WFP_TXT_DOMAIN); ?></h2>
     </div>
 
     <?php 
@@ -33,28 +35,36 @@ $wfp_title_border_color     = isset( $wfpGeneralStyles['wfp_title_border_color']
         }
     ?>
 
-    <div class="hmacs-wrap">
+    <div class="wfp-wrap">
 
-    <nav class="nav-tab-wrapper">
-        <a href="?post_type=wfp_faq&page=wfp-general-settings&tab=settings" class="nav-tab <?php if ( $wfpTab !== 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Content Settings', WFP_TXT_DOMAIN); ?></a>
-        <a href="?post_type=wfp_faq&page=wfp-general-settings&tab=styles" class="nav-tab <?php if ( $wfpTab === 'styles' ) { ?>nav-tab-active<?php } ?>"><?php _e('Styles Settings', WFP_TXT_DOMAIN); ?></a>
-    </nav>
+        <nav class="nav-tab-wrapper">
+            <a href="?post_type=wfp_faq&page=wfp-general-settings&tab=settings" class="nav-tab wfp-tab <?php if ( $wfpTab !== 'styles' ) { ?>wfp-tab-active<?php } ?>">
+                <i class="fa fa-cog" aria-hidden="true">&nbsp;</i><?php _e('Content', WFP_TXT_DOMAIN); ?>
+            </a>
+            <a href="?post_type=wfp_faq&page=wfp-general-settings&tab=styles" class="nav-tab wfp-tab <?php if ( $wfpTab === 'styles' ) { ?>wfp-tab-active<?php } ?>">
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>&nbsp;<?php _e('Styles', WFP_TXT_DOMAIN); ?>
+            </a>
+        </nav>
 
-    <div class="hmacs_personal_wrap hmacs_personal_help" style="width: 895px; float: left; margin-top: 5px;">
+        <div class="wfp_personal_wrap wfp_personal_help" style="width: 75%; float: left;">
+            
+            <div class="tab-content">
+                <?php 
+                switch ( $wfpTab ) {
+                    case 'styles':
+                        include WFP_PATH . 'admin/view/partial/settings-styles.php';
+                        break;
+                    default:
+                        include WFP_PATH . 'admin/view/partial/settings-content.php';
+                        break;
+                } 
+                ?>
+            </div>
         
-        <div class="tab-content">
-            <?php 
-            switch ( $wfpTab ) {
-                case 'styles':
-                    include WFP_PATH . 'admin/view/partial/settings-styles.php';
-                    break;
-                default:
-                    include WFP_PATH . 'admin/view/partial/settings-content.php';
-                    break;
-            } 
-            ?>
         </div>
-    
+        
+        <?php include_once('partial/admin-sidebar.php'); ?>
+
     </div>
 
 </div>

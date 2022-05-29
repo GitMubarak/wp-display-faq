@@ -35,7 +35,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 * FAQs title Background color option available
 * FAQs title Border color option available
 * Display multiple FAQs from various category in a single page/post
-* Many more to come...
+* Font Awesome Free 6.1.1 integrated
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -120,6 +120,7 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 == Changelog ==
 
 = 1.4.1 =
+* Font Awesome Free 6.1.1 integrated
 * Support for WordPress 6.0
 
 = 1.4 =
