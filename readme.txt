@@ -1,7 +1,7 @@
 === DisplayFaq - Accordion FAQs Plugin for WordPress ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
-Tags: faqs, accordion, woocommerce faq, faq plugin, toggle
+Tags: faqs, accordion, accordions, faq plugin, accordion plugin
 Requires at least: 5.2
 Tested up to: 6.0
 Stable tag: 1.4.1
@@ -26,16 +26,20 @@ This is a simple, effective and powerful plugin to display FAQs.
 * Shortcoded and lots of shortcode option
 * Simple but effective
 * Custom Post Type
-* FAQ Status Active/Inactive Option
-* Category wise FAQs display option
+* FAQ Status Active/Inactive
+* Category wise FAQs display
 * Control number of FAQs to be displayed via shortcode
 * FAQs sort by post order (Post Order Meta Box Inegrated)
-* FAQs title font color option available
-* FAQs title font size option available
-* FAQs title Background color option available
-* FAQs title Border color option available
+* FAQs title font color option
+* FAQs title font size option
+* FAQs title background color option
+* FAQs title border color option
 * Display multiple FAQs from various category in a single page/post
 * Font Awesome Free 6.1.1 integrated
+* Initial expand-collapse option : Open first, Open all, Close all
+* Show - hide FAQ title icon
+* FAQ title icon alignment - Left / Right
+* Show - Hide space between FAQs
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -121,6 +125,8 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated
+* Admin panel styles improved
+* Admin sidebar added
 * Support for WordPress 6.0
 
 = 1.4 =

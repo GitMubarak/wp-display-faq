@@ -1,4 +1,8 @@
-<?php if ( ! defined('ABSPATH') ) exit; ?>
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
 <form name="wfp_general_style_form" role="form" class="form-horizontal" method="post" action="" id="wfp-general-style-form">
     <table class="wfp-general-style-settings-table">
         <tr class="wfp_btn_color">
@@ -44,5 +48,10 @@
             </td>
         </tr>
     </table>
-    <p class="submit"><button id="updateGeneralStyles" name="updateGeneralStyles" class="button button-primary"><?php esc_attr_e('Save Settings', WFP_TXT_DOMAIN); ?></button></p>
+    <hr>
+    <p class="submit">
+        <button id="updateGeneralStyles" name="updateGeneralStyles" class="button button-primary wfp-button">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<?php esc_html_e('Save Settings', WFP_TXT_DOMAIN); ?>
+        </button>
+    </p>
 </form>

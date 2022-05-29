@@ -1,40 +1,35 @@
 <?php 
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 //print_r( $wfpContentSettings );
 foreach ( $wfpContentSettings as $option_name => $option_value ) {
-    
     if ( isset( $wfpContentSettings[$option_name] ) ) {
-
         ${"" . $option_name}  = $option_value;
-    
     }
 }
 ?>
 <form name="wfp_general_content_form" role="form" class="form-horizontal" method="post" action="" id="wfp-general-content-form">
     <table class="wfp-general-content-settings-table">
         <tr>
-            <th scope="row" colspan="2">
-                <hr>
-            </th>
-        </tr>
-        <tr>
             <th scope="row">
-                <label><?php _e('Expand/Collapse Items', WFP_TXT_DOMAIN); ?> :</label>
+                <label><?php _e('Expand - Collapse Items', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_expand_collapse_item" id="wfp_expand_collapse_item_first" value="first" <?php echo ( 'first' === $wfp_expand_collapse_item ) ? 'checked' : ''; ?> >
-                <label for="wfp_expand_collapse_item_first"><span></span><?php _e( 'Open First Item', WFP_TXT_DOMAIN ); ?></label>
+                <label for="wfp_expand_collapse_item_first"><span></span><?php _e( 'Open First', WFP_TXT_DOMAIN ); ?></label>
                 &nbsp;&nbsp;
                 <input type="radio" name="wfp_expand_collapse_item" id="wfp_expand_collapse_item_all" value="all" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'checked' : ''; ?> >
-                <label for="wfp_expand_collapse_item_all"><span></span><?php _e( 'Open All Items', WFP_TXT_DOMAIN ); ?></label>
+                <label for="wfp_expand_collapse_item_all"><span></span><?php _e( 'Open All', WFP_TXT_DOMAIN ); ?></label>
                 &nbsp;&nbsp;
                 <input type="radio" name="wfp_expand_collapse_item" id="wfp_expand_collapse_item_none" value="none" <?php echo ( 'none' === $wfp_expand_collapse_item ) ? 'checked' : ''; ?> >
-                <label for="wfp_expand_collapse_item_none"><span></span><?php _e( 'Close All Items', WFP_TXT_DOMAIN ); ?></label>
+                <label for="wfp_expand_collapse_item_none"><span></span><?php _e( 'Close All', WFP_TXT_DOMAIN ); ?></label>
             </td>
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Display Open/Close Icon', WFP_TXT_DOMAIN); ?> :</label>
+                <label><?php _e('Show - Hide Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_y" value="yes" <?php echo ( 'yes' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
@@ -46,7 +41,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Open/Close Icon Alignment', WFP_TXT_DOMAIN); ?> :</label>
+                <label><?php _e('Icon Alignment', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_op_cl_item_alignment" id="wfp_op_cl_item_alignment_left" value="left" <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'checked' : ''; ?> >
@@ -58,7 +53,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Enable Item Margin/Space', WFP_TXT_DOMAIN); ?> :</label>
+                <label><?php _e('Display Item Space', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_item_margin" id="wfp_item_margin_y" value="yes" <?php echo ( 'yes' === $wfp_item_margin ) ? 'checked' : ''; ?> >
@@ -69,5 +64,10 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
             </td>
         </tr>
     </table>
-    <p class="submit"><button id="updateGeneralContent" name="updateGeneralContent" class="button button-primary"><?php _e('Save Settings', WFP_TXT_DOMAIN); ?></button></p>
+    <hr>
+    <p class="submit">
+        <button id="updateGeneralContent" name="updateGeneralContent" class="button button-primary wfp-button">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<?php _e('Save Settings', WFP_TXT_DOMAIN); ?>
+        </button>
+    </p>
 </form>
