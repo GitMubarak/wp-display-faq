@@ -2,49 +2,86 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+print_r( $wfpStylesSettings );
+foreach ( $wfpStylesSettings as $option_name => $option_value ) {
+    if ( isset( $wfpStylesSettings[$option_name] ) ) {
+        ${"" . $option_name}  = $option_value;
+    }
+}
 ?>
 <form name="wfp_general_style_form" role="form" class="form-horizontal" method="post" action="" id="wfp-general-style-form">
     <table class="wfp-general-style-settings-table">
-        <tr class="wfp_btn_color">
-            <th scope="row" colspan="2">
-                <label><?php _e('FAQ Title', WFP_TXT_DOMAIN); ?></label>
-                <hr>
+        <!-- Item -->
+        <tr>
+            <th scope="row" colspan="2" style="background-color: #EAEAEA;">
+                <label><?php _e('Item', WFP_TXT_DOMAIN); ?></label>
             </th>
         </tr>
-        <tr class="wfp_title_font_color">
+        <tr>
             <th scope="row">
-                <label for="wfp_title_font_color"><?php esc_html_e('Font Color:', WFP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input class="wfp-wp-color" type="text" name="wfp_title_font_color" id="wfp_title_font_color" value="<?php esc_attr_e( $wfp_title_font_color ); ?>">
-                <div id="colorpicker"></div>
-            </td>
-        </tr>
-        <tr class="wfp_title_font_size">
-            <th scope="row">
-                <label for="wfp_title_font_size"><?php esc_html_e('Font Size:', WFP_TXT_DOMAIN); ?></label>
-            </th>
-            <td>
-                <input class="medium-textr" type="number" min="12" max="46" step="1" name="wfp_title_font_size" id="wfp_title_font_size" value="<?php esc_attr_e( $wfp_title_font_size ); ?>">
-                <code>px</code>
-            </td>
-        </tr>
-        <tr class="wfp_title_bg_color">
-            <th scope="row">
-                <label for="wfp_title_bg_color"><?php esc_html_e('Background Color:', WFP_TXT_DOMAIN); ?></label>
+                <label for="wfp_title_bg_color"><?php esc_html_e('Background Color', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input class="wfp-wp-color" type="text" name="wfp_title_bg_color" id="wfp_title_bg_color" value="<?php esc_attr_e( $wfp_title_bg_color ); ?>">
                 <div id="colorpicker"></div>
             </td>
         </tr>
-        <tr class="wfp_title_border_color">
+        <tr>
             <th scope="row">
-                <label for="wfp_title_border_color"><?php esc_html_e('Border Color:', WFP_TXT_DOMAIN); ?></label>
+                <label for="wfp_title_border_color"><?php esc_html_e('Border Color', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input class="wfp-wp-color" type="text" name="wfp_title_border_color" id="wfp_title_border_color" value="<?php esc_attr_e( $wfp_title_border_color ); ?>">
                 <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <!-- Item: Hover -->
+        <tr>
+            <th scope="row" colspan="2" style="background-color: #EAEAEA;">
+                <label><?php _e('Item - Hover', WFP_TXT_DOMAIN); ?></label>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Background Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="wfp-wp-color" type="text" name="wfp_title_bg_color_hover" id="wfp_title_bg_color_hover" value="<?php esc_attr_e( $wfp_title_bg_color_hover ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Border Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="wfp-wp-color" type="text" name="wfp_title_border_color_hover" id="wfp_title_border_color_hover" value="<?php esc_attr_e( $wfp_title_border_color_hover ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <!-- Title -->
+        <tr>
+            <th scope="row" colspan="2" style="background-color: #EAEAEA;">
+                <label><?php _e('Title', WFP_TXT_DOMAIN); ?></label>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="wfp_title_font_color"><?php esc_html_e('Font Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="wfp-wp-color" type="text" name="wfp_title_font_color" id="wfp_title_font_color" value="<?php esc_attr_e( $wfp_title_font_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="wfp_title_font_size"><?php esc_html_e('Font Size', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="medium-textr" type="number" min="12" max="46" step="1" name="wfp_title_font_size" id="wfp_title_font_size" value="<?php esc_attr_e( $wfp_title_font_size ); ?>">
+                <code>px</code>
             </td>
         </tr>
     </table>

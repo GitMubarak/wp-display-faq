@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
 * Trait For General Settings
 */
-trait Wfp_Settings 
+trait Wfp_Settings_Content
 {
     protected $fields, $settings, $options;
     

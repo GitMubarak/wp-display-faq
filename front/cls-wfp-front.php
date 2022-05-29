@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class WFP_Front 
 {
-	use Wfp_Core, Wfp_Settings;
+	use Wfp_Core, Wfp_Settings_Content, Wfp_Settings_Styles;
 
 	private $wfp_version;
 
@@ -57,6 +57,7 @@ class WFP_Front
 	function wfp_load_shortcode_view( $wfpAttr ) {
 
 		$wfpContentSettings	= $this->wfp_get_content_settings();
+		$wfpStylesSettings	= $this->wfp_get_styles_settings();
 
 		$output = '';
 		ob_start();

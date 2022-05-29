@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 */
 class WFP_Admin 
 {
-	use Wfp_Core, Wfp_Settings;
+	use Wfp_Core, Wfp_Settings_Content, Wfp_Settings_Styles;
 
 	private $wfp_version;
 	private $wfp_assets_prefix;
@@ -239,7 +239,14 @@ class WFP_Admin
 
 		$wfpContentSettings	= $this->wfp_get_content_settings();
 
-		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'settings.php';
+		if ( isset( $_POST['updateGeneralStyles'] ) ) {
+
+			$wfpGeneralMessage = $this->wfp_set_styles_settings( $_POST );
+		}
+
+		$wfpStylesSettings	= $this->wfp_get_styles_settings();
+
+		require_once WFP_PATH . 'admin/view/general-settings.php';
 	}
 
 	// Add Columns To Custom Post Types

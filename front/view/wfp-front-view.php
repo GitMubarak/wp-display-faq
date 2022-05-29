@@ -6,20 +6,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post;
 $wfpActiveClass= '';
 
-// Getting General Styling Data
-$wfpGeneralStyles       = stripslashes_deep( unserialize( get_option('wfp_styles_settings') ) );
-$wfp_title_font_color   = isset( $wfpGeneralStyles['wfp_title_font_color'] ) ? $wfpGeneralStyles['wfp_title_font_color'] : '#212121';
-$wfp_title_font_size    = isset( $wfpGeneralStyles['wfp_title_font_size'] ) ? $wfpGeneralStyles['wfp_title_font_size'] : 12;
-$wfp_title_bg_color     = isset( $wfpGeneralStyles['wfp_title_bg_color'] ) ? $wfpGeneralStyles['wfp_title_bg_color'] : '#FFFFFF';
-$wfp_title_border_color = isset( $wfpGeneralStyles['wfp_title_border_color'] ) ? $wfpGeneralStyles['wfp_title_border_color'] : '#EAEAEA';
-
 // Content Settings
 foreach ( $wfpContentSettings as $option_name => $option_value ) {
-    
   if ( isset( $wfpContentSettings[$option_name] ) ) {
-
     ${"" . $option_name}  = $option_value;
-  
+  }
+}
+
+// Styles Settings
+foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
+  if ( isset( $wfpStylesSettings[$ss_name] ) ) {
+    ${"" . $ss_name}  = $ss_value;
   }
 }
 ?>
@@ -29,6 +26,11 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
   border-color: <?php esc_html_e( $wfp_title_border_color ); ?>;
   margin-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px;
   border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?>;
+  transition: all 0.5s linear;
+}
+.wfp-main-wrapper .wfp-collapsible:hover {
+  background-color: <?php esc_html_e( $wfp_title_bg_color_hover ); ?>;
+  border-color: <?php esc_html_e( $wfp_title_border_color_hover ); ?>;
 }
 .wfp-main-wrapper .wfp-collapsible .wfp_title_class,
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {

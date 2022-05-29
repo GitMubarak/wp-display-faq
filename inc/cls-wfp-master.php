@@ -4,7 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 include_once WFP_PATH . 'common/core.php';
-include_once WFP_PATH . 'common/settigns.php';
+include_once WFP_PATH . 'common/settigns-content.php';
+include_once WFP_PATH . 'common/settigns-styles.php';
 
 /**
  * Master Class: Plugin
