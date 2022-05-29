@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-//print_r( $wfpContentSettings );
+print_r( $wfpContentSettings );
 foreach ( $wfpContentSettings as $option_name => $option_value ) {
     if ( isset( $wfpContentSettings[$option_name] ) ) {
         ${"" . $option_name}  = $option_value;
@@ -12,6 +12,22 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
 ?>
 <form name="wfp_general_content_form" role="form" class="form-horizontal" method="post" action="" id="wfp-general-content-form">
     <table class="wfp-general-content-settings-table">
+        <tr>
+            <th scope="row">
+                <label><?php _e('Title Font Family', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="text" name="wfp_item_font_family" class="regular-text" value="<?php esc_attr_e( $wfp_item_font_family ); ?>">
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label for="wfp_hide_title_icon"><?php _e('Hide Title Icon', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input type="checkbox" name="wfp_hide_title_icon" id="wfp_hide_title_icon" value="1" <?php echo $wfp_hide_title_icon ? 'checked' : null; ?>>
+            </td>
+        </tr>
         <tr>
             <th scope="row">
                 <label><?php _e('Expand - Collapse Items', WFP_TXT_DOMAIN); ?></label>
@@ -29,7 +45,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Show - Hide Icon', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Display Open/Close Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_y" value="yes" <?php echo ( 'yes' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
@@ -41,7 +57,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Icon Alignment', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Open/Close Icon Alignment', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <input type="radio" name="wfp_op_cl_item_alignment" id="wfp_op_cl_item_alignment_left" value="left" <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'checked' : ''; ?> >

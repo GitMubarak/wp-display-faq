@@ -1,14 +1,14 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
-
-include_once WFP_PATH . 'common/wfp-settigns.php';
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 /**
  * Master Class: Admin
 */
 class WFP_Admin 
 {
-	use Wfp_Settings;
+	use Wfp_Core, Wfp_Settings;
 
 	private $wfp_version;
 	private $wfp_assets_prefix;
@@ -234,10 +234,10 @@ class WFP_Admin
 
 		if ( isset( $_POST['updateGeneralContent'] ) ) {
 
-			$wfpGeneralMessage = $this->set_content_settings( $_POST );
+			$wfpGeneralMessage = $this->wfp_set_content_settings( $_POST );
 		}
 
-		$wfpContentSettings	= $this->get_content_settings();
+		$wfpContentSettings	= $this->wfp_get_content_settings();
 
 		require_once WFP_PATH . 'admin/view/' . $this->wfp_assets_prefix . 'settings.php';
 	}

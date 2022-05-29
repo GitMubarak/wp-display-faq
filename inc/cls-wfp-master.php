@@ -1,5 +1,10 @@
 <?php
-if ( ! defined('ABSPATH') ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+include_once WFP_PATH . 'common/core.php';
+include_once WFP_PATH . 'common/settigns.php';
 
 /**
  * Master Class: Plugin

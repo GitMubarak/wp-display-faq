@@ -1,11 +1,22 @@
+table.wfp-general-content-settings-table,
+table.wfp-general-style-settings-table {
+    width: 100%;
+}
+
+table.wfp-general-content-settings-table tr th,
+table.wfp-general-style-settings-table tr th {
+    width: 160px;
+}
+
 table.wfp-general-content-settings-table tr th,
 table.wfp-general-content-settings-table tr td,
 table.wfp-general-style-settings-table tr th,
 table.wfp-general-style-settings-table tr td {
     border: 0px solid #000;
-    padding: 10px;
+    padding: 20px;
     text-align: left;
     vertical-align: top;
+    background-color: #F2F2F2;
 }
 
 table.wfp-general-content-settings-table tr th,
