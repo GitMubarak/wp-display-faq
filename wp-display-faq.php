@@ -1,13 +1,18 @@
 <?php
 /**
- * Plugin Name: DisplayFaq - Accordion FAQs Plugin for WordPress
- * Plugin URI:  http://wordpress.org/plugins/wp-display-faq/
- * Description: This will display FAQs with Category in your website by using the shortcode: [wp_display_faq]
- * Version: 	1.4
- * Author:      HM Plugin
- * Author URI:  https://hmplugin.com
- * License:     GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Plugin Name:     DisplayFaq
+ * Plugin URI:      http://wordpress.org/plugins/wp-display-faq/
+ * Description:     Accordion FAQs Plugin for WordPress to display FAQs with Category in your website.
+ * Version: 	    1.4.1
+ * Author:          HM Plugin
+ * Author URI:      https://hmplugin.com
+ * Requires at least:   5.2
+ * Requires PHP:    7.2
+ * Tested up to:    6.0
+ * Text Domain:     wp-display-faq
+ * Domain Path:     /languages/
+ * License:		    GPL-2.0+
+ * License URI:	    http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 if ( ! defined('ABSPATH') ) exit;
@@ -18,7 +23,7 @@ define('WFP_SLUG', plugin_basename(__FILE__));
 define('WFP_PRFX', 'wfp_');
 define('WFP_CLS_PRFX', 'cls-wfp-');
 define('WFP_TXT_DOMAIN', 'wp-display-faq');
-define('WFP_VERSION', '1.4');
+define('WFP_VERSION', '1.4.1');
 
 require_once WFP_PATH . 'inc/' . WFP_CLS_PRFX . 'master.php';
 $wfp = new WFP_Master();
