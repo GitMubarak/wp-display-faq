@@ -102,6 +102,15 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <label for="wfp_item_margin_n"><span></span><?php _e( 'No', WFP_TXT_DOMAIN ); ?></label>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Shortcode', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <input type="text" name="wfp_shortcode" id="wfp_shortcode" class="medium-text" value="[wp_display_faq]" readonly />
+                <code><?php _e('Copy this shortcode and apply it to any page to display FAQs.', WFP_TXT_DOMAIN); ?></code>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

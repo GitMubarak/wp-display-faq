@@ -3,7 +3,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-print_r( $wfpStylesSettings );
 foreach ( $wfpStylesSettings as $option_name => $option_value ) {
     if ( isset( $wfpStylesSettings[$option_name] ) ) {
         ${"" . $option_name}  = $option_value;
@@ -82,6 +81,39 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
             <td>
                 <input class="medium-textr" type="number" min="12" max="46" step="1" name="wfp_title_font_size" id="wfp_title_font_size" value="<?php esc_attr_e( $wfp_title_font_size ); ?>">
                 <code>px</code>
+            </td>
+        </tr>
+        <!-- Description -->
+        <tr>
+            <th scope="row" colspan="2" style="background-color: #EAEAEA;">
+                <label><?php _e('Description', WFP_TXT_DOMAIN); ?></label>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Font Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="wfp-wp-color" type="text" name="wfp_desc_font_color" id="wfp_desc_font_color" value="<?php esc_attr_e( $wfp_desc_font_color ); ?>">
+                <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Font Size', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="medium-textr" type="number" min="12" max="46" step="1" name="wfp_desc_font_size" value="<?php esc_attr_e( $wfp_desc_font_size ); ?>">
+                <code>px</code>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Background Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <input class="wfp-wp-color" type="text" name="wfp_desc_bg_color" id="wfp_desc_bg_color" value="<?php esc_attr_e( $wfp_desc_bg_color ); ?>">
+                <div id="colorpicker"></div>
             </td>
         </tr>
     </table>

@@ -24,7 +24,7 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
 .wfp-main-wrapper .wfp-collapsible {
   background-color: <?php esc_html_e( $wfp_title_bg_color ); ?>;
   border-color: <?php esc_html_e( $wfp_title_border_color ); ?>;
-  margin-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px;
+  margin-top: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px;
   border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?>;
   transition: all 0.5s linear;
 }
@@ -41,6 +41,13 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
 }
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {
   float: <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'left' : 'right'; ?>;
+}
+.wfp-main-wrapper .wfp-content,
+.wfp-main-wrapper .wfp-content p {
+  color: <?php esc_html_e( $wfp_desc_font_color ); ?>;
+  font-size: <?php esc_html_e( $wfp_desc_font_size ); ?>px;
+  line-height: <?php esc_html_e( $wfp_desc_font_size + 10 ); ?>px;
+  background-color: <?php esc_html_e( $wfp_desc_bg_color ); ?>;
 }
 </style>
 <?php

@@ -44,6 +44,9 @@ This is a simple, effective and powerful plugin to display FAQs.
 * Title order by option - Title / Date / Menu Order
 * Item hover background color
 * Item hover border color
+* Description font color option
+* Description font size option
+* Description background color option
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -132,6 +135,7 @@ Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_disp
 * Show - hide title icon option added
 * Title order by option added
 * Item hover background, border color option added
+* Description bg color, font color and font size option added
 * Admin panel styles improved
 * Admin sidebar added
 * Support for WordPress 6.0

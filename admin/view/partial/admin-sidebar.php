@@ -24,11 +24,16 @@ if ( ! defined( 'ABSPATH' ) ) {
         <p style="margin-bottom: 1px! important;"><a href='https://www.facebook.com/hmplugin' class="button button-info" target="_blank">Join HM Plugin<span class="dashicons dashicons-facebook" style="position: relative; top: 3px; margin-left: 3px; color: #0fb9da;"></span></a></p>
         </div>
     </div>
-
     <div class="postbox">
         <h3 class="hndle"><span>Follow us on twitter</span></h3>
         <div class="inside centered">
             <a href="https://twitter.com/hmplugin" target="_blank" class="button button-secondary">Follow @hmplugin<span class="dashicons dashicons-twitter" style="position: relative; top: 3px; margin-left: 3px; color: #0fb9da;"></span></a>
+        </div>
+    </div>
+    <div class="postbox">
+        <h3 class="hndle"><span>Subscribe us on YouTube</span></h3>
+        <div class="inside centered">
+            <a href="http://www.youtube.com/channel/UC9UVmN-KZ6iuZypToFp_YTQ?sub_confirmation=1" target="_blank" class="button button-secondary">Subscribe HM Plugin<span class="dashicons dashicons-youtube" style="position: relative; top: 3px; margin-left: 3px; color: #CC0000;"></span></a>
         </div>
     </div>
 </div>

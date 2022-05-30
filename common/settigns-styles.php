@@ -60,6 +60,21 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => 12,
             ],
+            [
+                'name'      => 'wfp_desc_font_color',
+                'type'      => 'text',
+                'default'   => '#212121',
+            ],
+            [
+                'name'      => 'wfp_desc_font_size',
+                'type'      => 'text',
+                'default'   => 12,
+            ],
+            [
+                'name'      => 'wfp_desc_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
 
     }
