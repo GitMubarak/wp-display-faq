@@ -41,7 +41,6 @@ class WFP_Admin
 		$wfp_cpt_menu = 'edit.php?post_type=wfp_faq';
 
 		add_submenu_page(
-
 			$wfp_cpt_menu,
 			__('Settings', WFP_TXT_DOMAIN),
 			__('Settings', WFP_TXT_DOMAIN),
@@ -49,6 +48,19 @@ class WFP_Admin
 			'wfp-general-settings',
 			array($this, WFP_PRFX . 'general_settings')
 		);
+
+		add_submenu_page(
+			$wfp_cpt_menu,
+			__('How it works', WFP_TXT_DOMAIN),
+			__('How it works', WFP_TXT_DOMAIN),
+			'manage_options',
+			'wfp-help-usage',
+			array($this, 'wfp_help_usage_settings')
+		);
+	}
+
+	function wfp_help_usage_settings() {
+		require_once WFP_PATH . 'admin/view/help.php';
 	}
 
 	/**

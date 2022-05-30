@@ -114,11 +114,24 @@ Install DisplayFaq as a regular WordPress plugin. Here are different ways to ins
 5. Select downloaded wp-display-faq.zip and click on "Install Now" button
 6. Activate the plugin
 
+
 == Frequently Asked Questions ==
 
 = I have installed the plugin. What next? =
 
 Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_display_faq] and use it in any page.
+
+= How Can I Display FAQs From a Category? =
+
+Go to “FAQ Categories” and add your Category first.
+
+Now create a FAQ item and assign that item to a FAQ Categories available at right side panel.
+
+Now you need to insert the shortcode <b>[wp_display_faq category="Category Name"]</b> at any page through TinyMCE editor.
+
+= How Can I Display FAQs With Certain Numbers? =
+
+You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display only 5 FAQs.
 
 
 == Screenshots ==
