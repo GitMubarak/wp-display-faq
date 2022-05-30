@@ -22,6 +22,21 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Content Alignment', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_l" value="left" <?php echo ( 'left' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_l"><span></span><?php _e( 'Left', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_c" value="center" <?php echo ( 'center' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_c"><span></span><?php _e( 'Center', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_r" value="right" <?php echo ( 'right' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_r"><span></span><?php _e( 'Right', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label for="wfp_hide_title_icon"><?php _e('Hide Title Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">

@@ -47,6 +47,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 * Description font color option
 * Description font size option
 * Description background color option
+* Content Alignment Option - Left / Center / Right
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -152,6 +153,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Admin panel styles improved
 * Admin sidebar added
 * Support for WordPress 6.0
+* Content Alignment Option added
 
 = 1.4 =
 * Minor bug fixes

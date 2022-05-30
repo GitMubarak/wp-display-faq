@@ -70,6 +70,11 @@ trait Wfp_Settings_Content
                 'type'      => 'string',
                 'default'   => 'yes',
             ],
+            [
+                'name'      => 'wfp_item_alignment',
+                'type'      => 'string',
+                'default'   => 'left',
+            ],
         ];
 
     }

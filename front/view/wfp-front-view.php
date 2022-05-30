@@ -27,6 +27,7 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
   margin-top: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px;
   border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?>;
   transition: all 0.5s linear;
+  text-align: <?php esc_html_e( $wfp_item_alignment ); ?>;
 }
 .wfp-main-wrapper .wfp-collapsible:hover {
   background-color: <?php esc_html_e( $wfp_title_bg_color_hover ); ?>;
@@ -48,6 +49,7 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
   font-size: <?php esc_html_e( $wfp_desc_font_size ); ?>px;
   line-height: <?php esc_html_e( $wfp_desc_font_size + 10 ); ?>px;
   background-color: <?php esc_html_e( $wfp_desc_bg_color ); ?>;
+  text-align: <?php esc_html_e( $wfp_item_alignment ); ?>;
 }
 </style>
 <?php
@@ -110,9 +112,22 @@ if ( $WfpData->have_posts() ) {
         <span class="wfp_title_class">
           <?php
           if ( ! $wfp_hide_title_icon ) {
-            ?><i class="fa-solid fa-laptop"></i>&nbsp;<?php
+            if ( 'right' !== $wfp_item_alignment ) {
+              ?>
+              <i class="fa-solid fa-laptop"></i>&nbsp;
+              <?php
+            }
           }
-          the_title(); 
+
+          the_title();
+
+          if ( ! $wfp_hide_title_icon ) {
+            if ( 'right' === $wfp_item_alignment ) {
+              ?>
+              &nbsp;<i class="fa-solid fa-laptop"></i>
+              <?php
+            }
+          }
           ?>
         </span>
       </button>
