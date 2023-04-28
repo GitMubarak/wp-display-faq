@@ -61,7 +61,7 @@ class WFP_Front
 
 		$output = '';
 		ob_start();
-		include WFP_PATH . 'front/view/' . $this->wfp_assets_prefix . 'front-view.php';
+		include WFP_PATH . 'front/view/faqs.php';
 		$output .= ob_get_clean();
 		return $output;
 	}

@@ -143,7 +143,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 == Changelog ==
 
 = 1.4.2 =
-* Font
+* Code optimized
 
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated
