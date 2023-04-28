@@ -1,33 +1,32 @@
-=== DisplayFaq - Accordion FAQs Plugin for WordPress ===
+=== Display FAQ - WordPress FAQ and Accordion Plugin ===
 Contributors: hmplugin, mhmrajib
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, accordions, faq plugin, accordion plugin
 Requires at least: 5.2
-Tested up to: 6.0
-Stable tag: 1.4.1
+Tested up to: 6.2
+Stable tag: 1.4.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-DisplayFaq is an accordion FAQs Plugin for WordPress that will display FAQs with Category in your website.
+FAQ and accordion plugin to display FAQs to any page on your website.
 
 == Description ==
 
-[DisplayFaq](https://hmplugin.com) is an accordion FAQs plugin for WordPress which will display FAQs in your page by using the shortcode: [wp_display_faq].
-You can display multiple FAQs from various category and control the display number via shortcode.
+[Display FAQ](https://hmplugin.com/wordpress-plugins/wordpress-accordion-faq-plugin/) is a **WordPress FAQ and Accordion Plugin** which will display various FAQs in your page by using the shortcode: [wp_display_faq].
 
-This is a simple, effective and powerful plugin to display FAQs.
+You can display multiple responsive accordion from various category and control the display number via shortcode.
+
+[FAQ Demo](https://hmplugin.com/demo/display-faq-demo/)
+
+This is a simple, effective and powerful plugin to display FAQs on any device.
 
 **🌟 Plugin Features:**
 
-* Lightweight and easy to install
+* Create and Display Unlimited FAQs
+* Display FAQs from a Category
 * 100% Responsive and mobile friendly
-* Unlimited FAQs
-* Shortcoded and lots of shortcode option
-* Simple but effective
-* Custom Post Type
 * FAQ Status Active/Inactive
-* Category wise FAQs display
 * Control number of FAQs to be displayed via shortcode
 * FAQs sort by post order (Post Order Meta Box Inegrated)
 * FAQs title font color option
@@ -67,7 +66,7 @@ This is a simple, effective and powerful plugin to display FAQs.
 
 
 **👨‍💻 Demo / Support/ Live Chat**
-[DisplayFaq: See Demo](https://demo.hmplugin.com/wp-display-faq/)
+[DisplayFaq: See Demo](https://hmplugin.com/demo/display-faq-demo/)
 
 
 **👍 Feedback/Rating:**
@@ -77,21 +76,18 @@ If you find this plugin helpful, feel free to give us your valuable review. Rate
 
 **🔥 Other Plugins from [HM Plugin](https://hmplugin.com)**
 
-👉 [WP Books Gallery](https://wordpress.org/plugins/wp-books-gallery/) Books Gallery Plugin for WordPress
-👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin for WordPress
-👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin for WordPress
-👉 [WordPress Stripe Donation](https://wordpress.org/plugins/wp-stripe-donation/) Donations Coolection Plugin for WordPress using Stripe Payement
-👉 [Tiny Bar](https://wordpress.org/plugins/tiny-bar/) Message Bar Plugin for WordPress to display Message at Top/Bottom Bar of a web page
-👉 [HM – Cool Author Box](https://wordpress.org/plugins/hm-cool-author-box-widget/) Author Box plugin for WordPress to display author info
-👉 [HM Resume Manager](https://wordpress.org/plugins/hm-resume-manager/) A Resume/CV Manager Plugin for WordPress
-👉 [HM Product Catalog](https://wordpress.org/plugins/hm-product-catalog/) A Product Catalog Plugin for WordPress
-👉 [HM Wc Product Advertiser](https://wordpress.org/plugins/hm-wc-product-advertiser/) Product Advertiser Plugin for Wocommerce
-👉 [WP Scroll To Post](https://wordpress.org/plugins/wp-scroll-to-post/) Display random post(Single) at the bottom right corner
-👉 [HM Recent Posts Widget](https://wordpress.org/plugins/hm-recent-posts-widget/) Ticker Post plugin for WordPress
-👉 [WP Alert Bars](https://wordpress.org/plugins/wp-alert-bars/) Notification/Alert box Plugin for WordPress
-👉 [FaceBook LikeBox](https://wordpress.org/plugins/hm-simple-facebook-page/) A FaceBook LikeBox Plugin for WordPress
-👉 [WP Display FAQ](https://wordpress.org/plugins/wp-display-faq/) FAQs manager plugin for WordPress
-👉 [HM Logo Showcase](https://wordpress.org/plugins/hm-logo-showcase/) Logo manager plugin for WordPress
+👉 [WordPress Books Showcase Plugin](https://wordpress.org/plugins/wp-books-gallery/) Create an online digital library to sell and affiliate books
+👉 [WordPress Donation Plugin](https://wordpress.org/plugins/wp-stripe-donation/) Create a form to collect donation and payment via Stripe payment gateway
+👉 [WordPress News Plugin](https://wordpress.org/plugins/wp-top-news/) Display internal and external news in various layouts
+👉 [WordPress Notification Bar Plugin](https://wordpress.org/plugins/tiny-bar/) Dsiplay message and a button at the top or bottom of your webpage
+👉 [WordPress Author Bio Box Plugin](https://wordpress.org/plugins/hm-cool-author-box-widget/) Displays an author box / author info / auhor bio to your website
+👉 [WordPress Logo Showcase Plugin](https://wordpress.org/plugins/hm-logo-showcase/) Easiest client, brand logo showcase plugin to display logos on your website
+👉 [WordPress Resume Manager Plugin](https://wordpress.org/plugins/hm-resume-manager/) Display and manage personal resume or CV at your WordPress webpage
+👉 [WordPress Restaurant Menu Plugin](https://wordpress.org/plugins/menukaart/) Simplest plugin that displays food items, menus in your webpage
+👉 [WordPress Job Board and Recruitment Plugin](https://wordpress.org/plugins/jobwp/) Easiest Job Board, Career and Recruitment Plugin to display job listing in a career page
+👉 [WordPress Product Showcase Plugin](https://wordpress.org/plugins/hm-product-catalog/) Display products with various informations on your website
+👉 [WordPress Testimonial Plugin](https://wordpress.org/plugins/hm-testimonial/) Displays client’s testimonial, review or quote in multiple ways
+👉 [WordPress FAQ Plugin](https://wordpress.org/plugins/wp-display-faq/) WordPress FAQ Plugin which will display various FAQs in your website
 
 
 == Installation ==
@@ -137,12 +133,17 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 == Screenshots ==
 
-1. Showing FAQs in a demo page
-2. Showing FAQs styling page
-3. Showing FAQs in a demo page
+1. Showing FAQs left alignment
+2. Showing FAQs center alignment
+3. Showing FAQs right alignment
+4. FAQs General Settings Panel
+5. FAQs Styling Panel
 
 
 == Changelog ==
+
+= 1.4.2 =
+* Font
 
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated
