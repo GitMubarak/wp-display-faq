@@ -58,7 +58,7 @@ trait Wfp_Settings_Styles
             [
                 'name'      => 'wfp_title_font_size',
                 'type'      => 'text',
-                'default'   => 12,
+                'default'   => 22,
             ],
             [
                 'name'      => 'wfp_desc_font_color',
@@ -68,7 +68,7 @@ trait Wfp_Settings_Styles
             [
                 'name'      => 'wfp_desc_font_size',
                 'type'      => 'text',
-                'default'   => 12,
+                'default'   => 14,
             ],
             [
                 'name'      => 'wfp_desc_bg_color',

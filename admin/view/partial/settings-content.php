@@ -37,7 +37,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label for="wfp_hide_title_icon"><?php _e('Hide Title Icon', WFP_TXT_DOMAIN); ?></label>
+                <label for="wfp_hide_title_icon"><?php _e('Hide Accordion Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
                 <input type="checkbox" name="wfp_hide_title_icon" id="wfp_hide_title_icon" value="1" <?php echo $wfp_hide_title_icon ? 'checked' : null; ?>>
@@ -45,10 +45,17 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Select Title Icon', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Accordion Title Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
                 <input type="text" name="wfp_title_icon" data-placement="bottomRight" class="regular-text icp icp-auto" value="<?php esc_attr_e( $wfp_title_icon ); ?>">
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now!', 'wp-top-news') . '</a>'; ?></span>
+                    <?php
+                }
+                ?>
             </td>
         </tr>
         <tr>

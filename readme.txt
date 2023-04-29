@@ -143,7 +143,11 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 == Changelog ==
 
 = 1.4.2 =
+[//]: # fs_premium_only_begin
+* Accordion Title Icon Option added - Pro
+[//]: # fs_premium_only_end
 * Code optimized
+* Freemius integrated
 
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated

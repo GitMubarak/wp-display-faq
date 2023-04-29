@@ -13,6 +13,14 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
   }
 }
 
+if ( wdf_fs()->is_plan__premium_only('pro') ) {
+  $wdf_accordion_icon = $wfp_title_icon;
+}
+
+if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+  $wdf_accordion_icon = 'fa-solid fa-laptop';
+}
+
 // Loading Styles
 include WFP_PATH . 'assets/css/styles.php';
 
@@ -77,7 +85,7 @@ if ( $WfpData->have_posts() ) {
           if ( ! $wfp_hide_title_icon ) {
             if ( 'right' !== $wfp_item_alignment ) {
               ?>
-              <i class="<?php esc_attr_e( $wfp_title_icon ); ?>"></i>&nbsp;
+              <i class="<?php esc_attr_e( $wdf_accordion_icon ); ?>"></i>&nbsp;
               <?php
             }
           }
@@ -87,7 +95,7 @@ if ( $WfpData->have_posts() ) {
           if ( ! $wfp_hide_title_icon ) {
             if ( 'right' === $wfp_item_alignment ) {
               ?>
-              &nbsp;<i class="<?php esc_attr_e( $wfp_title_icon ); ?>"></i>
+              &nbsp;<i class="<?php esc_attr_e( $wdf_accordion_icon ); ?>"></i>
               <?php
             }
           }
