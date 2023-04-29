@@ -52,7 +52,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <?php
                 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
-                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Please Upgrade Now!', 'wp-top-news') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
                     <?php
                 }
                 ?>
