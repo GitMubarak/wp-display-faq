@@ -25,6 +25,30 @@ table.wfp-general-style-settings-table tr th {
 }
 
 
+/* Fontawesome Iconpicker Started */
+
+.iconpicker-popover.popover {
+    width: 264px;
+    border: 1px solid #DDD;
+}
+
+.iconpicker .iconpicker-item {
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    box-shadow: 0 0 0 3px #DDD;
+    color: #444;
+}
+
+.iconpicker .iconpicker-item:hover {
+    color: #47A8F5;
+    box-shadow: 0 0 0 3px #47A8F5;
+}
+
+
+/* Fontawesome Iconpicker Ended */
+
+
 /* Alert Bar Started */
 
 .wfp-alert {

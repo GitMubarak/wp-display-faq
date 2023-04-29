@@ -45,6 +45,14 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php _e('Select Title Icon', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <input type="text" name="wfp_title_icon" data-placement="bottomRight" class="regular-text icp icp-auto" value="<?php esc_attr_e( $wfp_title_icon ); ?>">
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Title Order By', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>

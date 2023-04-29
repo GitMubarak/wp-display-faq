@@ -77,7 +77,7 @@ if ( $WfpData->have_posts() ) {
           if ( ! $wfp_hide_title_icon ) {
             if ( 'right' !== $wfp_item_alignment ) {
               ?>
-              <i class="fa-solid fa-laptop"></i>&nbsp;
+              <i class="<?php esc_attr_e( $wfp_title_icon ); ?>"></i>&nbsp;
               <?php
             }
           }
@@ -87,7 +87,7 @@ if ( $WfpData->have_posts() ) {
           if ( ! $wfp_hide_title_icon ) {
             if ( 'right' === $wfp_item_alignment ) {
               ?>
-              &nbsp;<i class="fa-solid fa-laptop"></i>
+              &nbsp;<i class="<?php esc_attr_e( $wfp_title_icon ); ?>"></i>
               <?php
             }
           }

@@ -76,6 +76,11 @@ class WFP_Admin
 		);
 
 		wp_enqueue_style(
+			$this->wfp_assets_prefix . 'fontawesome-iconpicker', 
+			WFP_ASSETS .'css/fontawesome-iconpicker.min.css',
+		);
+
+		wp_enqueue_style(
 			$this->wfp_assets_prefix . 'admin',
 			WFP_ASSETS . 'css/' . $this->wfp_assets_prefix . 'admin.css',
 			array(),
@@ -89,6 +94,14 @@ class WFP_Admin
 		
 		wp_enqueue_script( 'wp-color-picker');
 		
+		wp_enqueue_script(
+			$this->wfp_assets_prefix . 'fontawesome-iconpicker',
+			WFP_ASSETS . 'js/fontawesome-iconpicker.min.js',
+			array('jquery'),
+			$this->wfp_version,
+			TRUE
+		);
+
 		wp_enqueue_script(
 			$this->wfp_assets_prefix . 'admin',
 			WFP_ASSETS . 'js/' . $this->wfp_assets_prefix . 'admin.js',

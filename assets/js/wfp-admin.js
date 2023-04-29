@@ -18,6 +18,8 @@
         $(value).wpColorPicker();
     });
 
+    $('.icp').iconpicker();
+
     $('.wfp-closebtn').on('click', function() {
         this.parentElement.style.display = 'none';
     });

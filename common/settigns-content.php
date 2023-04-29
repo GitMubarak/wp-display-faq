@@ -75,6 +75,11 @@ trait Wfp_Settings_Content
                 'type'      => 'string',
                 'default'   => 'left',
             ],
+            [
+                'name'      => 'wfp_title_icon',
+                'type'      => 'text',
+                'default'   => 'fas fa-archive',
+            ],
         ];
 
     }
