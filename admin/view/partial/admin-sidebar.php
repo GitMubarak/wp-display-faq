@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Accordion Title Icon Option</li>
                 <li>&#10003; 10 Open Close Icons</li>
                 <li>&#10003; Content Animation</li>
+                <li>&#10003; More Styling Options</li>
             </ul>
             <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/wordpress-plugins/wordpress-accordion-faq-plugin/" target="_blank" class="button button-primary wfp-button">More Info</a></p>
         </div>

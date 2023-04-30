@@ -5,7 +5,7 @@ table.wfp-general-style-settings-table {
 
 table.wfp-general-content-settings-table tr th,
 table.wfp-general-style-settings-table tr th {
-    width: 160px;
+    width: 190px;
 }
 
 table.wfp-general-content-settings-table tr th,
@@ -285,3 +285,21 @@ input#wfp_shortcode {
 
 
 /* Common Admin Styles Ended */
+
+span.wfp-admin-icon {
+    color: #8fa5e0;
+    cursor: pointer;
+}
+
+span.wfp-admin-icon:hover {
+    color: #CC0000;
+}
+
+img.wfp-admin-help-img {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

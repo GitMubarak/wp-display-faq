@@ -20,6 +20,14 @@
 
     $('.icp').iconpicker();
 
+    $("span.wfp-admin-icon")
+        .mouseover(function() {
+            $(this).next().css('display', 'block');
+        })
+        .mouseout(function() {
+            $(this).next().css('display', 'none');
+        });
+
     $('.wfp-closebtn').on('click', function() {
         this.parentElement.style.display = 'none';
     });

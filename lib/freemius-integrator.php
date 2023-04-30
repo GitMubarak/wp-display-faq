@@ -18,7 +18,7 @@ if ( ! function_exists( 'wdf_fs' ) ) {
                 'slug'                => 'wp-display-faq',
                 'type'                => 'plugin',
                 'public_key'          => 'pk_b6308b7e9d0a0183ec0acfe8d2886',
-                'is_premium'          => false,
+                'is_premium'          => true,
                 'premium_suffix'      => 'Professional',
                 // If your plugin is a serviceware, set this option to false.
                 'has_premium_version' => true,

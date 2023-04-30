@@ -22,22 +22,9 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Content Alignment', WFP_TXT_DOMAIN); ?></label>
-            </th>
-            <td colspan="3">
-                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_l" value="left" <?php echo ( 'left' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
-                <label for="wfp_item_alignment_l"><span></span><?php _e( 'Left', WFP_TXT_DOMAIN ); ?></label>
-                &nbsp;&nbsp;
-                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_c" value="center" <?php echo ( 'center' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
-                <label for="wfp_item_alignment_c"><span></span><?php _e( 'Center', WFP_TXT_DOMAIN ); ?></label>
-                &nbsp;&nbsp;
-                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_r" value="right" <?php echo ( 'right' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
-                <label for="wfp_item_alignment_r"><span></span><?php _e( 'Right', WFP_TXT_DOMAIN ); ?></label>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
                 <label for="wfp_hide_title_icon"><?php _e('Hide Accordion Icon', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-hide-accrodion-icon.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="checkbox" name="wfp_hide_title_icon" id="wfp_hide_title_icon" value="1" <?php echo $wfp_hide_title_icon ? 'checked' : null; ?>>
@@ -45,7 +32,9 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Accordion Title Icon', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Select Accordion Title Icon', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-hide-accrodion-icon.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="text" name="wfp_title_icon" data-placement="bottomRight" class="regular-text icp icp-auto" value="<?php esc_attr_e( $wfp_title_icon ); ?>">
@@ -100,6 +89,8 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         <tr>
             <th scope="row">
                 <label><?php _e('Display Open Close Icon', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-open-close-icon.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_y" value="yes" <?php echo ( 'yes' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
@@ -112,6 +103,8 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         <tr>
             <th scope="row">
                 <label><?php _e('Open Close Icon Alignment', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-open-close-icon-alignment.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_op_cl_item_alignment" id="wfp_op_cl_item_alignment_left" value="left" <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'checked' : ''; ?> >
@@ -123,7 +116,9 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Open Close Icon', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Select Open Close Icon', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-open-close-icon.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_one" value="plus" <?php echo ( 'plus' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
@@ -198,6 +193,8 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         <tr>
             <th scope="row">
                 <label><?php _e('Display Item Space', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-accrodion-space.webp' ); ?>" class="wfp-admin-help-img">
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_item_margin" id="wfp_item_margin_y" value="yes" <?php echo ( 'yes' === $wfp_item_margin ) ? 'checked' : ''; ?> >
@@ -205,6 +202,23 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 &nbsp;&nbsp;
                 <input type="radio" name="wfp_item_margin" id="wfp_item_margin_n" value="no" <?php echo ( 'no' === $wfp_item_margin ) ? 'checked' : ''; ?> >
                 <label for="wfp_item_margin_n"><span></span><?php _e( 'No', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Content Alignment', WFP_TXT_DOMAIN); ?></label>
+                <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
+                <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-content-alignment.webp' ); ?>" class="wfp-admin-help-img">
+            </th>
+            <td colspan="3">
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_l" value="left" <?php echo ( 'left' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_l"><span></span><?php _e( 'Left', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_c" value="center" <?php echo ( 'center' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_c"><span></span><?php _e( 'Center', WFP_TXT_DOMAIN ); ?></label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_item_alignment" id="wfp_item_alignment_r" value="right" <?php echo ( 'right' === $wfp_item_alignment ) ? 'checked' : ''; ?> >
+                <label for="wfp_item_alignment_r"><span></span><?php _e( 'Right', WFP_TXT_DOMAIN ); ?></label>
             </td>
         </tr>
         <tr>

@@ -16,11 +16,13 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
 if ( wdf_fs()->is_plan__premium_only('pro') ) {
   $wdf_accordion_icon = $wfp_title_icon;
   $wdf_open_close_icon = $wfp_open_close_icon;
+  $wdf_content_animation = $wfp_content_animation;
 }
 
 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
   $wdf_accordion_icon = 'fa-solid fa-laptop';
   $wdf_open_close_icon = 'plus';
+  $wdf_content_animation = '';
 }
 
 // Loading Styles
@@ -104,7 +106,7 @@ if ( $WfpData->have_posts() ) {
           ?>
         </span>
       </button>
-      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $wfp_content_animation ); ?>">
+      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $wdf_content_animation ); ?>">
         <?php the_content(); ?>
       </div>
       <?php
