@@ -15,10 +15,12 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
 
 if ( wdf_fs()->is_plan__premium_only('pro') ) {
   $wdf_accordion_icon = $wfp_title_icon;
+  $wdf_open_close_icon = $wfp_open_close_icon;
 }
 
 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
   $wdf_accordion_icon = 'fa-solid fa-laptop';
+  $wdf_open_close_icon = 'plus';
 }
 
 // Loading Styles
@@ -76,7 +78,7 @@ if ( $WfpData->have_posts() ) {
         <?php
         if ( 'yes' === $wfp_display_open_close_icon ) {
           ?>
-          <span class="wfp_open_cl_icon fa fa-plus"></span>
+          <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $wdf_open_close_icon ); ?>"></span>
           <?php
         }
         ?>

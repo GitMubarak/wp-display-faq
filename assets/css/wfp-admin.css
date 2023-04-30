@@ -49,6 +49,42 @@ table.wfp-general-style-settings-table tr th {
 /* Fontawesome Iconpicker Ended */
 
 
+/* Open Close Icon Select Started */
+
+.wdf-open-close-icon-select-item {
+    width: 80px;
+    display: inline-block;
+    box-shadow: 0 0 1px #666;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.wdf-open-close-icon-select-item:hover {
+    box-shadow: 0 0 3px #47A8F5;
+}
+
+.wdf-open-close-icon-select-item span {
+    width: 37px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #DDD;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wdf-open-close-icon-select-item:hover span {
+    color: #47A8F5;
+}
+
+
+/* Open Close Icon Select Ended */
+
+
 /* Alert Bar Started */
 
 .wfp-alert {

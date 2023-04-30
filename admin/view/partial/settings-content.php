@@ -98,7 +98,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Display Open/Close Icon', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Display Open Close Icon', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_display_open_close_icon" id="wfp_display_open_close_icon_y" value="yes" <?php echo ( 'yes' === $wfp_display_open_close_icon ) ? 'checked' : ''; ?> >
@@ -110,7 +110,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Open/Close Icon Alignment', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Open Close Icon Alignment', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">
                 <input type="radio" name="wfp_op_cl_item_alignment" id="wfp_op_cl_item_alignment_left" value="left" <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'checked' : ''; ?> >
@@ -118,6 +118,80 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 &nbsp;&nbsp;
                 <input type="radio" name="wfp_op_cl_item_alignment" id="wfp_op_cl_item_alignment_right" value="right" <?php echo ( 'right' === $wfp_op_cl_item_alignment ) ? 'checked' : ''; ?> >
                 <label for="wfp_op_cl_item_alignment_right"><span></span><?php _e( 'Right', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Open Close Icon', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td colspan="3">
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_one" value="plus" <?php echo ( 'plus' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_one" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-plus"></i></span>
+                    <span><i class="fa fa-minus"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_two" value="check" <?php echo ( 'check' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_two" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-check"></i></span>
+                    <span><i class="fa fa-times"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_three" value="caret-square-down" <?php echo ( 'caret-square-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_three" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-caret-square-down"></i></span>
+                    <span><i class="fa fa-caret-square-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_four" value="level-down" <?php echo ( 'level-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_four" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-level-down"></i></span>
+                    <span><i class="fa fa-level-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_five" value="caret-down" <?php echo ( 'caret-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_five" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-caret-down"></i></span>
+                    <span><i class="fa fa-caret-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_six" value="arrow-down" <?php echo ( 'arrow-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_six" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-arrow-down"></i></span>
+                    <span><i class="fa fa-arrow-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_seven" value="angle-double-down" <?php echo ( 'angle-double-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_seven" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-angle-double-down"></i></span>
+                    <span><i class="fa fa-angle-double-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_eight" value="angle-down" <?php echo ( 'angle-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_eight" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-angle-down"></i></span>
+                    <span><i class="fa fa-angle-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_nine" value="chevron-down" <?php echo ( 'chevron-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_nine" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-chevron-down"></i></span>
+                    <span><i class="fa fa-chevron-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <input type="radio" name="wfp_open_close_icon" id="wfp_open_close_icon_ten" value="arrow-circle-down" <?php echo ( 'arrow-circle-down' === $wfp_open_close_icon ) ? 'checked' : ''; ?>>
+                <label for="wfp_open_close_icon_ten" class="wdf-open-close-icon-select-item">
+                    <span><i class="fa fa-arrow-circle-down"></i></span>
+                    <span><i class="fa fa-arrow-circle-up"></i></span>
+                </label>
+                &nbsp;&nbsp;
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
+                    <?php
+                }
+                ?>
             </td>
         </tr>
         <tr>

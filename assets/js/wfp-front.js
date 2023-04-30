@@ -15,10 +15,10 @@
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
-                $(this).find(".wfp_open_cl_icon").removeClass('fa-minus').addClass('fa-plus');
+                $(this).find(".wfp_open_cl_icon").removeClass('fa-' + wdfAdminScriptObj.second).addClass('fa-' + wdfAdminScriptObj.first);
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
-                $(this).find(".wfp_open_cl_icon").removeClass('fa-plus').addClass('fa-minus');
+                $(this).find(".wfp_open_cl_icon").removeClass('fa-' + wdfAdminScriptObj.first).addClass('fa-' + wdfAdminScriptObj.second);
             }
         });
     }

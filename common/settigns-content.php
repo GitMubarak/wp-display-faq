@@ -80,6 +80,11 @@ trait Wfp_Settings_Content
                 'type'      => 'text',
                 'default'   => 'fas fa-archive',
             ],
+            [
+                'name'      => 'wfp_open_close_icon',
+                'type'      => 'string',
+                'default'   => 'one',
+            ],
         ];
 
     }

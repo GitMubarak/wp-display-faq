@@ -145,6 +145,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 = 1.4.2 =
 [//]: # fs_premium_only_begin
 * Accordion Title Icon Option added - Pro
+* 10 Open Close Icons added - Pro
 [//]: # fs_premium_only_end
 * Code optimized
 * Freemius integrated
