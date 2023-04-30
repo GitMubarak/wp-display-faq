@@ -1,66 +1,168 @@
-.wfp-collapsible {
-    background-color: #e8e8e8;
-    padding: 0;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    border: 1px solid #EAEAEA;
-    border-bottom: 0px;
-}
-
-.wfp-collapsible .wfp_title_class {
-    display: block;
-    padding: 12px 15px;
-    cursor: pointer;
-    text-transform: none;
-    line-height: 1;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.wfp-collapsible .wfp_open_cl_icon {
-    color: #000000;
-    float: right;
-    padding: 12px 15px;
-    line-height: 1;
-    font-size: 12px;
-}
-
-
-/*
-.active,
-.wfp-collapsible:hover {
-    background-color: #FFF;
-    color: #666;
-    border: 1px solid #EAEAEA;
-    border-bottom: 0px;
-}
-
-.wfp-collapsible:focus {
-    background: #FFF;
-    color: #242424;
-    border: 1px solid #EAEAEA;
-}
-*/
-
-.wfp-content {
-    padding: 0px 18px 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-color: #EAEAEA;
-    border-width: 0px 1px;
-}
-
-.wfp-content.active-first {
-    min-height: 100px;
-    max-height: max-content!important;
-}
-
-.wfp-content p,
-.wfp-content ul {
-    padding: 10px;
-    margin: 0;
-}
+    .wfp-collapsible {
+        background-color: #e8e8e8;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        border: 1px solid #EAEAEA;
+        border-bottom: 0px;
+    }
+    
+    .wfp-collapsible .wfp_title_class {
+        display: block;
+        padding: 12px 15px;
+        cursor: pointer;
+        text-transform: none;
+        line-height: 1;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .wfp-collapsible .wfp_open_cl_icon {
+        color: #000000;
+        float: right;
+        padding: 12px 15px;
+        line-height: 1;
+        font-size: 12px;
+    }
+    
+    .wfp-content {
+        padding: 0px 18px 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #FFFFFF;
+        border-style: solid;
+        border-color: #EAEAEA;
+        border-width: 0px 1px;
+    }
+    
+    .wfp-content.active-first {
+        min-height: 100px;
+        max-height: max-content!important;
+    }
+    
+    .wfp-content p,
+    .wfp-content ul {
+        padding: 10px;
+        margin: 0;
+    }
+    /* Content Anomation Started */
+    /* FadeIn */
+    
+    .wfp-content.FadeIn {
+        animation: fadeIn 5s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /* Lineup */
+    
+    .wfp-content.LineUp {
+        animation: 2s anim-lineUp ease-out;
+    }
+    
+    @keyframes anim-lineUp {
+        0% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+        20% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    /* flipY*/
+    
+    .wfp-content.FlipY {
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(-360deg);
+        }
+    }
+    /* FlipX */
+    
+    .wfp-content.FlipX {
+        animation: 2s anim-flipX ease;
+    }
+    
+    @keyframes anim-flipX {
+        0% {
+            opacity: 0;
+            transform: rotateX(90def);
+        }
+        50% {
+            opacity: 1;
+            transform: rotateX(720deg);
+        }
+        100% {
+            /* animate nothing to pause animation at the end */
+            opacity: 1;
+            transform: rotateX(720deg);
+        }
+    }
+    /* PopOutIn */
+    
+    .wfp-content.PopOutIn {
+        animation: 2s anim-popoutin ease;
+    }
+    
+    @keyframes anim-popoutin {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        25% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            /* animate nothing to add pause at the end of animation */
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    /* FromTop */
+    
+    .wfp-content.FromTop {
+        animation: 2s anim-fromtop linear;
+    }
+    
+    @keyframes anim-fromtop {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        25% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        50% {}
+        100% {}
+    }
+    /* Content Anomation Ended */

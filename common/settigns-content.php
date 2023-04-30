@@ -85,6 +85,11 @@ trait Wfp_Settings_Content
                 'type'      => 'string',
                 'default'   => 'one',
             ],
+            [
+                'name'      => 'wfp_content_animation',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
 
     }

@@ -45,6 +45,10 @@ table.wfp-general-style-settings-table tr th {
     box-shadow: 0 0 0 3px #47A8F5;
 }
 
+.iconpicker .iconpicker-item.iconpicker-selected {
+    background: #47A8F5;
+}
+
 
 /* Fontawesome Iconpicker Ended */
 

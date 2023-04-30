@@ -10,6 +10,9 @@
 
         wfpColl[wfpCount].addEventListener("click", function() {
 
+            var dataAnimType = $('.wfp-content').attr("data-anim-type");
+            $('.wfp-content').removeClass(dataAnimType);
+
             $(this).next().removeClass('active-first');
             this.classList.toggle("active");
             var content = this.nextElementSibling;
@@ -19,6 +22,7 @@
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
                 $(this).find(".wfp_open_cl_icon").removeClass('fa-' + wdfAdminScriptObj.first).addClass('fa-' + wdfAdminScriptObj.second);
+                $(this).next().addClass(dataAnimType);
             }
         });
     }

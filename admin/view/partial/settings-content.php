@@ -49,6 +49,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
             </th>
             <td colspan="3">
                 <input type="text" name="wfp_title_icon" data-placement="bottomRight" class="regular-text icp icp-auto" value="<?php esc_attr_e( $wfp_title_icon ); ?>">
+                &nbsp;&nbsp;
                 <?php
                 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
@@ -204,6 +205,30 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 &nbsp;&nbsp;
                 <input type="radio" name="wfp_item_margin" id="wfp_item_margin_n" value="no" <?php echo ( 'no' === $wfp_item_margin ) ? 'checked' : ''; ?> >
                 <label for="wfp_item_margin_n"><span></span><?php _e( 'No', WFP_TXT_DOMAIN ); ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php _e('Content Animation', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <select name="wfp_content_animation" class="medium-text">
+                    <option value=""><?php _e('Select One', WFP_TXT_DOMAIN); ?></option>
+                    <option value="FadeIn" <?php echo ( 'FadeIn' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('FadeIn', WFP_TXT_DOMAIN); ?></option>
+                    <option value="LineUp" <?php echo ( 'LineUp' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('LineUp', WFP_TXT_DOMAIN); ?></option>
+                    <option value="FlipX" <?php echo ( 'FlipX' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('FlipX', WFP_TXT_DOMAIN); ?></option>
+                    <option value="FlipY" <?php echo ( 'FlipY' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('FlipY', WFP_TXT_DOMAIN); ?></option>
+                    <option value="PopOutIn" <?php echo ( 'PopOutIn' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('PopOutIn', WFP_TXT_DOMAIN); ?></option>
+                    <option value="FromTop" <?php echo ( 'FromTop' === $wfp_content_animation ) ? 'selected' : ''; ?> ><?php _e('FromTop', WFP_TXT_DOMAIN); ?></option>
+                </select>
+                &nbsp;&nbsp;
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
+                    <?php
+                }
+                ?>
             </td>
         </tr>
         <tr>

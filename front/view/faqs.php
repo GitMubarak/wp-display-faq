@@ -104,7 +104,7 @@ if ( $WfpData->have_posts() ) {
           ?>
         </span>
       </button>
-      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?>>
+      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $wfp_content_animation ); ?>">
         <?php the_content(); ?>
       </div>
       <?php
