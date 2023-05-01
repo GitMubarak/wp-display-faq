@@ -100,7 +100,7 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label for="wfp_title_font_color"><?php esc_html_e('Active Font Color', WFP_TXT_DOMAIN); ?></label>
+                <label><?php esc_html_e('Active Font Color', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
                 <?php
@@ -114,6 +114,36 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                     ?>
                     <input class="wfp-wp-color" type="text" name="wfp_title_font_color_active" id="wfp_title_font_color_active" value="<?php esc_attr_e( $wfp_title_font_color_active ); ?>">
                     <div id="colorpicker"></div>
+                    <?php
+                }
+                ?>
+            </td>
+            <th scope="row">
+                <label><?php esc_html_e('Weight', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <select name="wfp_title_font_weight" class="normal-text">
+                        <option value=""><?php _e('Normal', WFP_TXT_DOMAIN); ?></option>
+                        <option value="100" <?php echo ( '100' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('100 (Thin)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="200" <?php echo ( '200' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('200 (Extra Light)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="300" <?php echo ( '300' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('300 (Light)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="400" <?php echo ( '400' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('400 (Normal)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="500" <?php echo ( '500' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('500 (Medium)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="600" <?php echo ( '600' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('600 (Semi Bold)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="700" <?php echo ( '700' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('700 (Bold)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="800" <?php echo ( '800' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('800 (Extra Bold)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="900" <?php echo ( '900' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('900 (Black)', WFP_TXT_DOMAIN); ?></option>
+                        <option value="bold" <?php echo ( 'bold' === $wfp_title_font_weight ) ? 'selected' : ''; ?>><?php _e('Bold', WFP_TXT_DOMAIN); ?></option>
+                    </select>
                     <?php
                 }
                 ?>

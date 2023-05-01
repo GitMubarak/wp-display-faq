@@ -34,6 +34,9 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
   line-height: <?php esc_html_e( $wfp_title_font_size + 10 ); ?>px;
   <?php echo ( '' !== $wfp_item_font_family ) ? 'font-family:' . esc_attr( $wfp_item_font_family ) : ''; ?>;
 }
+.wfp-main-wrapper .wfp-collapsible .wfp_title_class {
+  font-weight: <?php esc_html_e( $wfp_title_font_weight ); ?>;
+}
 .wfp-main-wrapper .wfp-collapsible.active .wfp_title_class {
   color: <?php esc_html_e( $wfp_title_font_color_active ); ?>;
 }

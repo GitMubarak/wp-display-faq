@@ -90,6 +90,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '#212121',
             ],
+            [
+                'name'      => 'wfp_title_font_weight',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
 
     }
