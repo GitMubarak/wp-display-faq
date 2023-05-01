@@ -75,6 +75,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '#FFFFFF',
             ],
+            [
+                'name'      => 'wfp_title_bg_color_active',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
 
     }

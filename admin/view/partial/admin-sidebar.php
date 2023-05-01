@@ -8,6 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <h3 class="hndle"><span>Pro Features</span></h3>
         <div class="inside centered">
             <ul>
+                <li>&#10003; Priority / Chat Support</li>
                 <li>&#10003; Accordion Title Icon Option</li>
                 <li>&#10003; 10 Open Close Icons</li>
                 <li>&#10003; Content Animation</li>

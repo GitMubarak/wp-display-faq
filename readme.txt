@@ -147,9 +147,12 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Accordion Title Icon Option added - Pro
 * 10 Open Close Icons added - Pro
 * Content Animation added - Pro
+* Accordion active bg color option added - Pro
 [//]: # fs_premium_only_end
 * Code optimized
 * Freemius integrated
+* CSS fixed
+* Admin settings help suggestion added
 
 = 1.4.1 =
 * Font Awesome Free 6.1.1 integrated

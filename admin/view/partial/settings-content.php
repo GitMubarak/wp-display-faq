@@ -42,7 +42,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <?php
                 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
-                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
                     <?php
                 }
                 ?>
@@ -184,7 +184,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <?php
                 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
-                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
                     <?php
                 }
                 ?>
@@ -192,7 +192,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
-                <label><?php _e('Display Item Space', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Display Space Between', WFP_TXT_DOMAIN); ?></label>
                 <span class="dashicons dashicons-info-outline wfp-admin-icon"></span>
                 <img src="<?php echo esc_attr( WFP_ASSETS . 'img/wfp-accrodion-space.webp' ); ?>" class="wfp-admin-help-img">
             </th>
@@ -239,7 +239,7 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
                 <?php
                 if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
-                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-top-news') . '</a>'; ?></span>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
                     <?php
                 }
                 ?>

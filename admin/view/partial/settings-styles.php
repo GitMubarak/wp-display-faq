@@ -14,7 +14,7 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
         <!-- Item -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">
-                <label><?php _e('Item', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Accordion Item', WFP_TXT_DOMAIN); ?> ::</label>
             </th>
         </tr>
         <tr>
@@ -33,10 +33,31 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 <div id="colorpicker"></div>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label for="wfp_title_bg_color"><?php esc_html_e('Active Background Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <input class="wfp-wp-color" type="text" name="wfp_title_bg_color_active" id="wfp_title_bg_color_active" value="<?php esc_attr_e( $wfp_title_bg_color_active ); ?>">
+                    <div id="colorpicker"></div>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <!-- Item: Hover -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">
-                <label><?php _e('Item - Hover', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Accordion Item - Hover', WFP_TXT_DOMAIN); ?></label>
             </th>
         </tr>
         <tr>
@@ -58,7 +79,7 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
         <!-- Title -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">
-                <label><?php _e('Title', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Accordion Title', WFP_TXT_DOMAIN); ?> ::</label>
             </th>
         </tr>
         <tr>
@@ -73,14 +94,14 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 <label for="wfp_title_font_size"><?php esc_html_e('Font Size', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td>
-                <input class="medium-textr" type="number" min="12" max="46" step="1" name="wfp_title_font_size" id="wfp_title_font_size" value="<?php esc_attr_e( $wfp_title_font_size ); ?>">
+                <input class="medium-textr" type="number" min="12" max="100" step="1" name="wfp_title_font_size" id="wfp_title_font_size" value="<?php esc_attr_e( $wfp_title_font_size ); ?>">
                 <code>px</code>
             </td>
         </tr>
         <!-- Description -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">
-                <label><?php _e('Description', WFP_TXT_DOMAIN); ?></label>
+                <label><?php _e('Accordion Content', WFP_TXT_DOMAIN); ?> ::</label>
             </th>
         </tr>
         <tr>

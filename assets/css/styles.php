@@ -19,9 +19,13 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
   transition: all 0.5s linear;
   text-align: <?php esc_html_e( $wfp_item_alignment ); ?>;
 }
-.wfp-main-wrapper .wfp-collapsible:hover {
+.wfp-main-wrapper .wfp-collapsible:hover,
+.wfp-main-wrapper .wfp-collapsible.active:hover {
   background-color: <?php esc_html_e( $wfp_title_bg_color_hover ); ?>;
   border-color: <?php esc_html_e( $wfp_title_border_color_hover ); ?>;
+}
+.wfp-main-wrapper .wfp-collapsible.active {
+  background-color: <?php esc_html_e( $wfp_title_bg_color_active ); ?>;
 }
 .wfp-main-wrapper .wfp-collapsible .wfp_title_class,
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {
