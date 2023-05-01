@@ -12,7 +12,8 @@
         '#wfp_button_text_color',
         '#wfp_desc_font_color',
         '#wfp_desc_bg_color',
-        '#wfp_title_bg_color_active'
+        '#wfp_title_bg_color_active',
+        '#wfp_title_font_color_active'
     ];
 
     $.each(wfpColorPicker, function(index, value) {

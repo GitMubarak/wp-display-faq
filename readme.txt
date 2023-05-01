@@ -148,6 +148,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * 10 Open Close Icons added - Pro
 * Content Animation added - Pro
 * Accordion active bg color option added - Pro
+* Active title font color option added - Pro
 [//]: # fs_premium_only_end
 * Code optimized
 * Freemius integrated
