@@ -37,6 +37,7 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
 .wfp-main-wrapper .wfp-collapsible .wfp_title_class {
   font-weight: <?php esc_html_e( $wfp_title_font_weight ); ?>;
   text-transform: <?php esc_html_e( $wfp_title_font_transform ); ?>;
+  font-style: <?php esc_html_e( $wfp_title_font_style ); ?>;
 }
 .wfp-main-wrapper .wfp-collapsible.active .wfp_title_class {
   color: <?php esc_html_e( $wfp_title_font_color_active ); ?>;

@@ -100,6 +100,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wfp_title_font_style',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
 
     }

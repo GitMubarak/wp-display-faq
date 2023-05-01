@@ -173,6 +173,27 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label><?php esc_html_e('Style', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <select name="wfp_title_font_style" class="normal-text">
+                        <option value=""><?php _e('Normal', WFP_TXT_DOMAIN); ?></option>
+                        <option value="italic" <?php echo ( 'italic' === $wfp_title_font_style ) ? 'selected' : ''; ?>><?php _e('Italic', WFP_TXT_DOMAIN); ?></option>
+                    </select>
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
         <!-- Open Close Icon -->
         <tr>
