@@ -247,6 +247,35 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
         </tr>
         <tr>
             <th scope="row">
+                <label><?php esc_html_e('Title HTML Tag', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <select name="wfp_title_html_tag" class="normal-text">
+                        <option value="h1" <?php echo ( 'h1' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H1', WFP_TXT_DOMAIN); ?></option>
+                        <option value="h2" <?php echo ( 'h2' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H2', WFP_TXT_DOMAIN); ?></option>
+                        <option value="h3" <?php echo ( 'h3' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H3', WFP_TXT_DOMAIN); ?></option>
+                        <option value="h4" <?php echo ( 'h4' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H4', WFP_TXT_DOMAIN); ?></option>
+                        <option value="h5" <?php echo ( 'h5' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H5', WFP_TXT_DOMAIN); ?></option>
+                        <option value="h6" <?php echo ( 'h6' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('H6', WFP_TXT_DOMAIN); ?></option>
+                        <option value="span" <?php echo ( 'span' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('Span', WFP_TXT_DOMAIN); ?></option>
+                        <option value="div" <?php echo ( 'div' === $wfp_title_html_tag ) ? 'selected' : ''; ?>><?php _e('Div', WFP_TXT_DOMAIN); ?></option>
+                    </select>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
                 <label><?php _e('Shortcode', WFP_TXT_DOMAIN); ?></label>
             </th>
             <td colspan="3">

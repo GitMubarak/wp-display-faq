@@ -90,6 +90,11 @@ trait Wfp_Settings_Content
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wfp_title_html_tag',
+                'type'      => 'text',
+                'default'   => 'span',
+            ],
         ];
 
     }

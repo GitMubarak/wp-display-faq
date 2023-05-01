@@ -9,13 +9,15 @@
     }
     
     .wfp-collapsible .wfp_title_class {
-        display: block;
+        display: inline-block;
         padding: 12px 15px;
         cursor: pointer;
         text-transform: none;
         line-height: 1;
         font-size: 12px;
         font-weight: 400;
+        margin: 0;
+        max-width: 90%;
     }
     
     .wfp-collapsible .wfp_open_cl_icon {

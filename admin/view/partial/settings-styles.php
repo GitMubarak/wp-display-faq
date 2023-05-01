@@ -187,7 +187,7 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 if ( wdf_fs()->is_plan__premium_only('pro') ) {
                     ?>
                     <select name="wfp_title_font_style" class="normal-text">
-                        <option value=""><?php _e('Normal', WFP_TXT_DOMAIN); ?></option>
+                        <option value="normal"><?php _e('Normal', WFP_TXT_DOMAIN); ?></option>
                         <option value="italic" <?php echo ( 'italic' === $wfp_title_font_style ) ? 'selected' : ''; ?>><?php _e('Italic', WFP_TXT_DOMAIN); ?></option>
                     </select>
                     <?php

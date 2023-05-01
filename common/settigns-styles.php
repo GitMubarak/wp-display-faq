@@ -103,7 +103,7 @@ trait Wfp_Settings_Styles
             [
                 'name'      => 'wfp_title_font_style',
                 'type'      => 'text',
-                'default'   => '',
+                'default'   => 'normal',
             ],
             [
                 'name'      => 'wfp_open_close_icon_spacing',

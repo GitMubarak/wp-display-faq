@@ -83,9 +83,9 @@ if ( $WfpData->have_posts() ) {
           <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $wdf_open_close_icon ); ?>"></span>
           <?php
         }
-        ?>
-        <span class="wfp_title_class">
-          <?php
+
+        echo '<' . esc_attr( $wfp_title_html_tag ) . ' class="wfp_title_class">';
+        
           if ( ! $wfp_hide_title_icon ) {
             if ( 'right' !== $wfp_item_alignment ) {
               ?>
@@ -103,8 +103,9 @@ if ( $WfpData->have_posts() ) {
               <?php
             }
           }
-          ?>
-        </span>
+
+        echo '</' . esc_attr( $wfp_title_html_tag ) . '>';
+        ?>
       </button>
       <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $wdf_content_animation ); ?>">
         <?php the_content(); ?>
