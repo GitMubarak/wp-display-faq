@@ -85,6 +85,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '#212121',
             ],
+            [
+                'name'      => 'wfp_open_close_icon_active_color',
+                'type'      => 'text',
+                'default'   => '#212121',
+            ],
         ];
 
     }

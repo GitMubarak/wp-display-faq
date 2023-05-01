@@ -37,6 +37,9 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
 .wfp-main-wrapper .wfp-collapsible.active .wfp_title_class {
   color: <?php esc_html_e( $wfp_title_font_color_active ); ?>;
 }
+.wfp-main-wrapper .wfp-collapsible.active .wfp_open_cl_icon {
+  color: <?php esc_html_e( $wfp_open_close_icon_active_color ); ?>;
+}
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {
   float: <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'left' : 'right'; ?>;
 }

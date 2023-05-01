@@ -13,7 +13,8 @@
         '#wfp_desc_font_color',
         '#wfp_desc_bg_color',
         '#wfp_title_bg_color_active',
-        '#wfp_title_font_color_active'
+        '#wfp_title_font_color_active',
+        '#wfp_open_close_icon_active_color'
     ];
 
     $.each(wfpColorPicker, function(index, value) {

@@ -119,6 +119,33 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <!-- Open Close Icon -->
+        <tr>
+            <th scope="row" colspan="4" style="background-color: #EAEAEA;">
+                <label><?php _e('Open Close Icon', WFP_TXT_DOMAIN); ?> ::</label>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Active Color', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <input class="wfp-wp-color" type="text" name="wfp_open_close_icon_active_color" id="wfp_open_close_icon_active_color" value="<?php esc_attr_e( $wfp_open_close_icon_active_color ); ?>">
+                    <div id="colorpicker"></div>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <!-- Description -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">
