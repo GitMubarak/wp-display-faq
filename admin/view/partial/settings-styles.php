@@ -149,6 +149,31 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 ?>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php esc_html_e('Transform', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <select name="wfp_title_font_transform" class="normal-text">
+                        <option value=""><?php _e('Normal', WFP_TXT_DOMAIN); ?></option>
+                        <option value="uppercase" <?php echo ( 'uppercase' === $wfp_title_font_transform ) ? 'selected' : ''; ?>><?php _e('Uppercase', WFP_TXT_DOMAIN); ?></option>
+                        <option value="lowercase" <?php echo ( 'lowercase' === $wfp_title_font_transform ) ? 'selected' : ''; ?>><?php _e('Lowercase', WFP_TXT_DOMAIN); ?></option>
+                        <option value="capitalize" <?php echo ( 'capitalize' === $wfp_title_font_transform ) ? 'selected' : ''; ?>><?php _e('Capitalize', WFP_TXT_DOMAIN); ?></option>
+                    </select>
+                    <?php
+                }
+                ?>
+            </td>
+        </tr>
         <!-- Open Close Icon -->
         <tr>
             <th scope="row" colspan="4" style="background-color: #EAEAEA;">

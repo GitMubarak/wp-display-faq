@@ -151,6 +151,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Active title font color option added - Pro
 * Open close icon active color option added - Pro
 * Accordion Title font weight Option added - Pro
+* Accordion Title text transform Option added - Pro
 [//]: # fs_premium_only_end
 * Code optimized
 * Freemius integrated

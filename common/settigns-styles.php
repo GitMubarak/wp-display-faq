@@ -95,6 +95,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wfp_title_font_transform',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
 
     }
