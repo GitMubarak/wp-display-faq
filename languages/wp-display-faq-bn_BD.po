@@ -1,0 +1,483 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DisplayFaq\n"
+"POT-Creation-Date: 2023-05-02 04:39+0600\n"
+"PO-Revision-Date: 2023-05-01 22:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bengali (Bangladesh)\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ../admin\n"
+"X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.6.4; wp-6.2"
+
+#: cls-wfp-admin.php:45 cls-wfp-admin.php:46
+msgid "Settings"
+msgstr "সেটিংস"
+
+#: cls-wfp-admin.php:54 cls-wfp-admin.php:55 view/help.php:9
+msgid "How it works"
+msgstr "কিভাবে এটি কাজ করে"
+
+#: cls-wfp-admin.php:117 cls-wfp-admin.php:118 cls-wfp-admin.php:119
+msgid "WP FAQs"
+msgstr "ডাব্লু প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী"
+
+#: cls-wfp-admin.php:120
+msgid "Parent FAQ"
+msgstr "ঊর্ধ্বতন অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+#: cls-wfp-admin.php:121
+msgid "All FAQs"
+msgstr "সব প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী"
+
+#: cls-wfp-admin.php:122
+msgid "View FAQ"
+msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন দেখুন"
+
+#: cls-wfp-admin.php:123
+msgid "Add New FAQ"
+msgstr "নতুন অনবরত জিজ্ঞাসিত প্রশ্ন যোগ করুন"
+
+#: cls-wfp-admin.php:124
+msgid "Add New"
+msgstr "নতুন যুক্ত করুন"
+
+#: cls-wfp-admin.php:125
+msgid "Edit FAQ"
+msgstr "সম্পাদনা করুন অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+#: cls-wfp-admin.php:126
+msgid "Update FAQ"
+msgstr "আপডেট অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+#: cls-wfp-admin.php:127
+msgid "Search FAQ"
+msgstr "অনুসন্ধান অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+#: cls-wfp-admin.php:128
+msgid "Not Found"
+msgstr "না পাওয়া"
+
+#: cls-wfp-admin.php:129
+msgid "Not found in Trash"
+msgstr "না পাওয়া যায়, ট্র্যাশ"
+
+#: cls-wfp-admin.php:132
+msgid "wfp_faq"
+msgstr "wfp_faq"
+
+#: cls-wfp-admin.php:133
+msgid "Description For FAQ"
+msgstr "বিবরণ: জন্য অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+#: cls-wfp-admin.php:158 cls-wfp-admin.php:168
+msgid "FAQ Categories"
+msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:159 cls-wfp-admin.php:286
+msgid "FAQ Category"
+msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:160
+msgid "Search FAQ Categories"
+msgstr "অনুসন্ধান অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:161
+msgid "All FAQ Categories"
+msgstr "সব অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:162
+msgid "Parent FAQ Category"
+msgstr "ঊর্ধ্বতন অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:163
+msgid "Parent FAQ Category:"
+msgstr "ঊর্ধ্বতন অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ:"
+
+#: cls-wfp-admin.php:164
+msgid "Edit FAQ Category"
+msgstr "সম্পাদনা করুন অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:165
+msgid "Update FAQ Category"
+msgstr "আপডেট অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:166
+msgid "Add New FAQ Category"
+msgstr "যোগ নতুন অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ"
+
+#: cls-wfp-admin.php:167
+msgid "New FAQ Category Name"
+msgstr "নতুন অনবরত জিজ্ঞাসিত প্রশ্ন বিভাগ নাম"
+
+#: cls-wfp-admin.php:185
+msgid "FAQs Information:"
+msgstr "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী তথ্য:"
+
+#: cls-wfp-admin.php:204
+msgid "Status:"
+msgstr "অবস্থা:"
+
+#: cls-wfp-admin.php:208
+msgid "Active"
+msgstr "সক্রিয়"
+
+#: cls-wfp-admin.php:211
+msgid "Inactive"
+msgstr "নিষ্ক্রিয়"
+
+#: cls-wfp-admin.php:285 view/partial/settings-content.php:58
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: cls-wfp-admin.php:287
+msgid "Status"
+msgstr "অবস্থা"
+
+#: cls-wfp-admin.php:288 view/partial/settings-content.php:59
+msgid "Date"
+msgstr "আপলোড"
+
+#: view/general-settings.php:9
+msgid "General Settings"
+msgstr "সাধারণ সেটিংস"
+
+#: view/general-settings.php:22
+msgid "Content"
+msgstr "কন্টেন্ট"
+
+#: view/general-settings.php:25
+msgid "Styles"
+msgstr "শৈলী"
+
+#: view/partial/settings-content.php:17
+msgid "Title Font Family"
+msgstr "শিরোনাম ফন্ট পরিবার"
+
+#: view/partial/settings-content.php:25
+msgid "Hide Accordion Icon"
+msgstr "আড়াল অ্যাকর্ডিয়ন আইকন"
+
+#: view/partial/settings-content.php:27 view/partial/settings-content.php:37
+msgid "img/wfp-hide-accrodion-icon.webp"
+msgstr "img/wfp-আড়াল-accrodion-আইকন.webp"
+
+#: view/partial/settings-content.php:35
+msgid "Select Accordion Title Icon"
+msgstr "নির্বাচন অ্যাকর্ডিয়ন শিরোনাম আইকন"
+
+#: view/partial/settings-content.php:45 view/partial/settings-content.php:187
+#: view/partial/settings-content.php:242 view/partial/settings-content.php:256
+#: view/partial/settings-styles.php:44 view/partial/settings-styles.php:109
+#: view/partial/settings-styles.php:128 view/partial/settings-styles.php:160
+#: view/partial/settings-styles.php:183 view/partial/settings-styles.php:212
+#: view/partial/settings-styles.php:231
+msgid "Available In Premium Version"
+msgstr "উপলব্ধ প্রিমিয়াম সংস্করণ"
+
+#: view/partial/settings-content.php:53
+msgid "Title Order By"
+msgstr "শিরোনাম ক্রম দ্বারা"
+
+#: view/partial/settings-content.php:57 view/partial/settings-content.php:230
+msgid "Select One"
+msgstr "নির্বাচন এক"
+
+#: view/partial/settings-content.php:60
+msgid "Menu Order"
+msgstr "মেনু অর্ডার"
+
+#: view/partial/settings-content.php:64
+msgid "Order"
+msgstr "যাতে"
+
+#: view/partial/settings-content.php:68
+msgid "Ascending"
+msgstr "আরোহী"
+
+#: view/partial/settings-content.php:71
+msgid "Descending"
+msgstr "সাজানো"
+
+#: view/partial/settings-content.php:76
+msgid "Expand - Collapse Items"
+msgstr "প্রসারিত - সঙ্কুচিত আইটেম"
+
+#: view/partial/settings-content.php:80
+msgid "Open First"
+msgstr "খোলা প্রথম"
+
+#: view/partial/settings-content.php:83
+msgid "Open All"
+msgstr "এমন সব"
+
+#: view/partial/settings-content.php:86
+msgid "Close All"
+msgstr "সব বন্ধ"
+
+#: view/partial/settings-content.php:91
+msgid "Display Open Close Icon"
+msgstr "প্রদর্শন, খোলা বন্ধ আইকন"
+
+#: view/partial/settings-content.php:93 view/partial/settings-content.php:121
+msgid "img/wfp-open-close-icon.webp"
+msgstr "img/wfp-খোলা-বন্ধ-আইকন.webp"
+
+#: view/partial/settings-content.php:97 view/partial/settings-content.php:201
+msgid "Yes"
+msgstr "হ্যাঁ"
+
+#: view/partial/settings-content.php:100 view/partial/settings-content.php:204
+msgid "No"
+msgstr "কোন"
+
+#: view/partial/settings-content.php:105
+msgid "Open Close Icon Alignment"
+msgstr "খোলা বন্ধ আইকন প্রান্তিককরণ"
+
+#: view/partial/settings-content.php:107
+msgid "img/wfp-open-close-icon-alignment.webp"
+msgstr "img/wfp-খোলা-বন্ধ-আইকন প্রান্তিককরণ.webp"
+
+#: view/partial/settings-content.php:111 view/partial/settings-content.php:215
+msgid "Left"
+msgstr "বাম"
+
+#: view/partial/settings-content.php:114 view/partial/settings-content.php:221
+msgid "Right"
+msgstr "ডান"
+
+#: view/partial/settings-content.php:119
+msgid "Select Open Close Icon"
+msgstr "ওপেন নির্বাচন বন্ধ আইকন"
+
+#: view/partial/settings-content.php:195
+msgid "Display Space Between"
+msgstr "প্রদর্শনের স্থান মধ্যে"
+
+#: view/partial/settings-content.php:197
+msgid "img/wfp-accrodion-space.webp"
+msgstr "img/wfp-accrodion-স্থান.webp"
+
+#: view/partial/settings-content.php:209
+msgid "Content Alignment"
+msgstr "কন্টেন্ট প্রান্তিককরণ"
+
+#: view/partial/settings-content.php:211
+msgid "img/wfp-content-alignment.webp"
+msgstr "img/wfp-বিষয়বস্তু-প্রান্তিককরণ.webp"
+
+#: view/partial/settings-content.php:218
+msgid "Center"
+msgstr "কেন্দ্র"
+
+#: view/partial/settings-content.php:226
+msgid "Content Animation"
+msgstr "বিষয়বস্তু অ্যানিমেশন"
+
+#: view/partial/settings-content.php:231
+msgid "FadeIn"
+msgstr "FadeIn"
+
+#: view/partial/settings-content.php:232
+msgid "LineUp"
+msgstr "লাইন আপ"
+
+#: view/partial/settings-content.php:233
+msgid "FlipX"
+msgstr "FlipX"
+
+#: view/partial/settings-content.php:234
+msgid "FlipY"
+msgstr "FlipY"
+
+#: view/partial/settings-content.php:235
+msgid "PopOutIn"
+msgstr "PopOutIn"
+
+#: view/partial/settings-content.php:236
+msgid "FromTop"
+msgstr "FromTop"
+
+#: view/partial/settings-content.php:250
+msgid "Title HTML Tag"
+msgstr "শিরোনাম এইচটিএমএল ট্যাগ"
+
+#: view/partial/settings-content.php:263
+msgid "H1"
+msgstr "H1"
+
+#: view/partial/settings-content.php:264
+msgid "H2"
+msgstr "H2"
+
+#: view/partial/settings-content.php:265
+msgid "H3"
+msgstr "H3"
+
+#: view/partial/settings-content.php:266
+msgid "H4"
+msgstr "H4"
+
+#: view/partial/settings-content.php:267
+msgid "H5"
+msgstr "H5"
+
+#: view/partial/settings-content.php:268
+msgid "H6"
+msgstr "H6"
+
+#: view/partial/settings-content.php:269
+msgid "Span"
+msgstr "Span"
+
+#: view/partial/settings-content.php:270
+msgid "Div"
+msgstr "Div"
+
+#: view/partial/settings-content.php:279
+msgid "Shortcode"
+msgstr "সর্টকোড"
+
+#: view/partial/settings-content.php:283
+msgid "Copy this shortcode and apply it to any page to display FAQs."
+msgstr ""
+"এই কপি সর্টকোড এবং এটি প্রয়োগ করার কোনো পৃষ্ঠা প্রদর্শন করার জন্য প্রায়শই "
+"জিজ্ঞাসিত প্রশ্নাবলী."
+
+#: view/partial/settings-content.php:290 view/partial/settings-styles.php:279
+msgid "Save Settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+#: view/partial/settings-styles.php:17
+msgid "Accordion Item"
+msgstr "অ্যাকর্ডিয়ন আইটেম"
+
+#: view/partial/settings-styles.php:22 view/partial/settings-styles.php:65
+#: view/partial/settings-styles.php:268
+msgid "Background Color"
+msgstr "পটভূমির রঙ"
+
+#: view/partial/settings-styles.php:29 view/partial/settings-styles.php:72
+msgid "Border Color"
+msgstr "সীমানা রং"
+
+#: view/partial/settings-styles.php:38
+msgid "Active Background Color"
+msgstr "সক্রিয় পটভূমির রঙ"
+
+#: view/partial/settings-styles.php:60
+msgid "Accordion Item - Hover"
+msgstr "অ্যাকর্ডিয়ন আইটেম - উপর কার্সার রেখে দেখুন"
+
+#: view/partial/settings-styles.php:82
+msgid "Accordion Title"
+msgstr "অ্যাকর্ডিয়ন শিরোনাম"
+
+#: view/partial/settings-styles.php:87 view/partial/settings-styles.php:252
+msgid "Font Color"
+msgstr "ফন্ট রঙ"
+
+#: view/partial/settings-styles.php:94 view/partial/settings-styles.php:259
+msgid "Font Size"
+msgstr "ফন্টের আকার"
+
+#: view/partial/settings-styles.php:103
+msgid "Active Font Color"
+msgstr "সক্রিয় ফন্ট রঙ"
+
+#: view/partial/settings-styles.php:122
+msgid "Weight"
+msgstr "ওজন"
+
+#: view/partial/settings-styles.php:135 view/partial/settings-styles.php:167
+#: view/partial/settings-styles.php:190
+msgid "Normal"
+msgstr "স্বাভাবিক"
+
+#: view/partial/settings-styles.php:136
+msgid "100 (Thin)"
+msgstr "100 (পাতলা)"
+
+#: view/partial/settings-styles.php:137
+msgid "200 (Extra Light)"
+msgstr "200 (অতিরিক্ত হালকা)"
+
+#: view/partial/settings-styles.php:138
+msgid "300 (Light)"
+msgstr "300 (হালকা)"
+
+#: view/partial/settings-styles.php:139
+msgid "400 (Normal)"
+msgstr "400 (স্বাভাবিক)"
+
+#: view/partial/settings-styles.php:140
+msgid "500 (Medium)"
+msgstr "500 (মাঝারি)"
+
+#: view/partial/settings-styles.php:141
+msgid "600 (Semi Bold)"
+msgstr "600 (আধা গাঢ়)"
+
+#: view/partial/settings-styles.php:142
+msgid "700 (Bold)"
+msgstr "700 (গাঢ়)"
+
+#: view/partial/settings-styles.php:143
+msgid "800 (Extra Bold)"
+msgstr "800 (অতিরিক্ত গাঢ়)"
+
+#: view/partial/settings-styles.php:144
+msgid "900 (Black)"
+msgstr "900 (ব্ল্যাক)"
+
+#: view/partial/settings-styles.php:145
+msgid "Bold"
+msgstr "সাহসী"
+
+#: view/partial/settings-styles.php:154
+msgid "Transform"
+msgstr "রুপান্তর"
+
+#: view/partial/settings-styles.php:168
+msgid "Uppercase"
+msgstr "য়ের বড়হাতের অক্ষর ছোটহাতের"
+
+#: view/partial/settings-styles.php:169
+msgid "Lowercase"
+msgstr "ছোট হাতের অক্ষর ব্যবহার"
+
+#: view/partial/settings-styles.php:170
+msgid "Capitalize"
+msgstr "পুঁজিতে"
+
+#: view/partial/settings-styles.php:177
+msgid "Style"
+msgstr "শৈলী"
+
+#: view/partial/settings-styles.php:191
+msgid "Italic"
+msgstr "ইটালিক"
+
+#: view/partial/settings-styles.php:201
+msgid "Open Close Icon"
+msgstr "খোলা বন্ধ আইকন"
+
+#: view/partial/settings-styles.php:206
+msgid "Active Color"
+msgstr "সক্রিয় রঙ"
+
+#: view/partial/settings-styles.php:225
+msgid "Spacing"
+msgstr "ফাঁক"
+
+#: view/partial/settings-styles.php:247
+msgid "Accordion Content"
+msgstr "অ্যাকর্ডিয়ন কন্টেন্ট"
