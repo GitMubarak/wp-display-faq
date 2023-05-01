@@ -73,11 +73,17 @@ class WFP_Admin
 		wp_enqueue_style(
 			$this->wfp_assets_prefix . 'font-awesome', 
 			WFP_ASSETS .'css/fontawesome/css/all.min.css',
+			array(),
+			$this->wfp_version,
+			FALSE
 		);
 
 		wp_enqueue_style(
 			$this->wfp_assets_prefix . 'fontawesome-iconpicker', 
 			WFP_ASSETS .'css/fontawesome-iconpicker.min.css',
+			array(),
+			$this->wfp_version,
+			FALSE
 		);
 
 		wp_enqueue_style(
