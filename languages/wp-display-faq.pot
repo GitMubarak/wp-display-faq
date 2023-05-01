@@ -1,0 +1,480 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-05-02 04:39+0600\n"
+"PO-Revision-Date: 2021-12-27 04:06+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ../admin\n"
+"X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cls-wfp-admin.php:45 cls-wfp-admin.php:46
+msgid "Settings"
+msgstr ""
+
+#: cls-wfp-admin.php:54 cls-wfp-admin.php:55 view/help.php:9
+msgid "How it works"
+msgstr ""
+
+#: cls-wfp-admin.php:117 cls-wfp-admin.php:118 cls-wfp-admin.php:119
+msgid "WP FAQs"
+msgstr ""
+
+#: cls-wfp-admin.php:120
+msgid "Parent FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:121
+msgid "All FAQs"
+msgstr ""
+
+#: cls-wfp-admin.php:122
+msgid "View FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:123
+msgid "Add New FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:124
+msgid "Add New"
+msgstr ""
+
+#: cls-wfp-admin.php:125
+msgid "Edit FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:126
+msgid "Update FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:127
+msgid "Search FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:128
+msgid "Not Found"
+msgstr ""
+
+#: cls-wfp-admin.php:129
+msgid "Not found in Trash"
+msgstr ""
+
+#: cls-wfp-admin.php:132
+msgid "wfp_faq"
+msgstr ""
+
+#: cls-wfp-admin.php:133
+msgid "Description For FAQ"
+msgstr ""
+
+#: cls-wfp-admin.php:158 cls-wfp-admin.php:168
+msgid "FAQ Categories"
+msgstr ""
+
+#: cls-wfp-admin.php:159 cls-wfp-admin.php:286
+msgid "FAQ Category"
+msgstr ""
+
+#: cls-wfp-admin.php:160
+msgid "Search FAQ Categories"
+msgstr ""
+
+#: cls-wfp-admin.php:161
+msgid "All FAQ Categories"
+msgstr ""
+
+#: cls-wfp-admin.php:162
+msgid "Parent FAQ Category"
+msgstr ""
+
+#: cls-wfp-admin.php:163
+msgid "Parent FAQ Category:"
+msgstr ""
+
+#: cls-wfp-admin.php:164
+msgid "Edit FAQ Category"
+msgstr ""
+
+#: cls-wfp-admin.php:165
+msgid "Update FAQ Category"
+msgstr ""
+
+#: cls-wfp-admin.php:166
+msgid "Add New FAQ Category"
+msgstr ""
+
+#: cls-wfp-admin.php:167
+msgid "New FAQ Category Name"
+msgstr ""
+
+#: cls-wfp-admin.php:185
+msgid "FAQs Information:"
+msgstr ""
+
+#: cls-wfp-admin.php:204
+msgid "Status:"
+msgstr ""
+
+#: cls-wfp-admin.php:208
+msgid "Active"
+msgstr ""
+
+#: cls-wfp-admin.php:211
+msgid "Inactive"
+msgstr ""
+
+#: cls-wfp-admin.php:285 view/partial/settings-content.php:58
+msgid "Title"
+msgstr ""
+
+#: cls-wfp-admin.php:287
+msgid "Status"
+msgstr ""
+
+#: cls-wfp-admin.php:288 view/partial/settings-content.php:59
+msgid "Date"
+msgstr ""
+
+#: view/general-settings.php:9
+msgid "General Settings"
+msgstr ""
+
+#: view/general-settings.php:22
+msgid "Content"
+msgstr ""
+
+#: view/general-settings.php:25
+msgid "Styles"
+msgstr ""
+
+#: view/partial/settings-content.php:17
+msgid "Title Font Family"
+msgstr ""
+
+#: view/partial/settings-content.php:25
+msgid "Hide Accordion Icon"
+msgstr ""
+
+#: view/partial/settings-content.php:27 view/partial/settings-content.php:37
+msgid "img/wfp-hide-accrodion-icon.webp"
+msgstr ""
+
+#: view/partial/settings-content.php:35
+msgid "Select Accordion Title Icon"
+msgstr ""
+
+#: view/partial/settings-content.php:45 view/partial/settings-content.php:187
+#: view/partial/settings-content.php:242 view/partial/settings-content.php:256
+#: view/partial/settings-styles.php:44 view/partial/settings-styles.php:109
+#: view/partial/settings-styles.php:128 view/partial/settings-styles.php:160
+#: view/partial/settings-styles.php:183 view/partial/settings-styles.php:212
+#: view/partial/settings-styles.php:231
+msgid "Available In Premium Version"
+msgstr ""
+
+#: view/partial/settings-content.php:53
+msgid "Title Order By"
+msgstr ""
+
+#: view/partial/settings-content.php:57 view/partial/settings-content.php:230
+msgid "Select One"
+msgstr ""
+
+#: view/partial/settings-content.php:60
+msgid "Menu Order"
+msgstr ""
+
+#: view/partial/settings-content.php:64
+msgid "Order"
+msgstr ""
+
+#: view/partial/settings-content.php:68
+msgid "Ascending"
+msgstr ""
+
+#: view/partial/settings-content.php:71
+msgid "Descending"
+msgstr ""
+
+#: view/partial/settings-content.php:76
+msgid "Expand - Collapse Items"
+msgstr ""
+
+#: view/partial/settings-content.php:80
+msgid "Open First"
+msgstr ""
+
+#: view/partial/settings-content.php:83
+msgid "Open All"
+msgstr ""
+
+#: view/partial/settings-content.php:86
+msgid "Close All"
+msgstr ""
+
+#: view/partial/settings-content.php:91
+msgid "Display Open Close Icon"
+msgstr ""
+
+#: view/partial/settings-content.php:93 view/partial/settings-content.php:121
+msgid "img/wfp-open-close-icon.webp"
+msgstr ""
+
+#: view/partial/settings-content.php:97 view/partial/settings-content.php:201
+msgid "Yes"
+msgstr ""
+
+#: view/partial/settings-content.php:100 view/partial/settings-content.php:204
+msgid "No"
+msgstr ""
+
+#: view/partial/settings-content.php:105
+msgid "Open Close Icon Alignment"
+msgstr ""
+
+#: view/partial/settings-content.php:107
+msgid "img/wfp-open-close-icon-alignment.webp"
+msgstr ""
+
+#: view/partial/settings-content.php:111 view/partial/settings-content.php:215
+msgid "Left"
+msgstr ""
+
+#: view/partial/settings-content.php:114 view/partial/settings-content.php:221
+msgid "Right"
+msgstr ""
+
+#: view/partial/settings-content.php:119
+msgid "Select Open Close Icon"
+msgstr ""
+
+#: view/partial/settings-content.php:195
+msgid "Display Space Between"
+msgstr ""
+
+#: view/partial/settings-content.php:197
+msgid "img/wfp-accrodion-space.webp"
+msgstr ""
+
+#: view/partial/settings-content.php:209
+msgid "Content Alignment"
+msgstr ""
+
+#: view/partial/settings-content.php:211
+msgid "img/wfp-content-alignment.webp"
+msgstr ""
+
+#: view/partial/settings-content.php:218
+msgid "Center"
+msgstr ""
+
+#: view/partial/settings-content.php:226
+msgid "Content Animation"
+msgstr ""
+
+#: view/partial/settings-content.php:231
+msgid "FadeIn"
+msgstr ""
+
+#: view/partial/settings-content.php:232
+msgid "LineUp"
+msgstr ""
+
+#: view/partial/settings-content.php:233
+msgid "FlipX"
+msgstr ""
+
+#: view/partial/settings-content.php:234
+msgid "FlipY"
+msgstr ""
+
+#: view/partial/settings-content.php:235
+msgid "PopOutIn"
+msgstr ""
+
+#: view/partial/settings-content.php:236
+msgid "FromTop"
+msgstr ""
+
+#: view/partial/settings-content.php:250
+msgid "Title HTML Tag"
+msgstr ""
+
+#: view/partial/settings-content.php:263
+msgid "H1"
+msgstr ""
+
+#: view/partial/settings-content.php:264
+msgid "H2"
+msgstr ""
+
+#: view/partial/settings-content.php:265
+msgid "H3"
+msgstr ""
+
+#: view/partial/settings-content.php:266
+msgid "H4"
+msgstr ""
+
+#: view/partial/settings-content.php:267
+msgid "H5"
+msgstr ""
+
+#: view/partial/settings-content.php:268
+msgid "H6"
+msgstr ""
+
+#: view/partial/settings-content.php:269
+msgid "Span"
+msgstr ""
+
+#: view/partial/settings-content.php:270
+msgid "Div"
+msgstr ""
+
+#: view/partial/settings-content.php:279
+msgid "Shortcode"
+msgstr ""
+
+#: view/partial/settings-content.php:283
+msgid "Copy this shortcode and apply it to any page to display FAQs."
+msgstr ""
+
+#: view/partial/settings-content.php:290 view/partial/settings-styles.php:279
+msgid "Save Settings"
+msgstr ""
+
+#: view/partial/settings-styles.php:17
+msgid "Accordion Item"
+msgstr ""
+
+#: view/partial/settings-styles.php:22 view/partial/settings-styles.php:65
+#: view/partial/settings-styles.php:268
+msgid "Background Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:29 view/partial/settings-styles.php:72
+msgid "Border Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:38
+msgid "Active Background Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:60
+msgid "Accordion Item - Hover"
+msgstr ""
+
+#: view/partial/settings-styles.php:82
+msgid "Accordion Title"
+msgstr ""
+
+#: view/partial/settings-styles.php:87 view/partial/settings-styles.php:252
+msgid "Font Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:94 view/partial/settings-styles.php:259
+msgid "Font Size"
+msgstr ""
+
+#: view/partial/settings-styles.php:103
+msgid "Active Font Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:122
+msgid "Weight"
+msgstr ""
+
+#: view/partial/settings-styles.php:135 view/partial/settings-styles.php:167
+#: view/partial/settings-styles.php:190
+msgid "Normal"
+msgstr ""
+
+#: view/partial/settings-styles.php:136
+msgid "100 (Thin)"
+msgstr ""
+
+#: view/partial/settings-styles.php:137
+msgid "200 (Extra Light)"
+msgstr ""
+
+#: view/partial/settings-styles.php:138
+msgid "300 (Light)"
+msgstr ""
+
+#: view/partial/settings-styles.php:139
+msgid "400 (Normal)"
+msgstr ""
+
+#: view/partial/settings-styles.php:140
+msgid "500 (Medium)"
+msgstr ""
+
+#: view/partial/settings-styles.php:141
+msgid "600 (Semi Bold)"
+msgstr ""
+
+#: view/partial/settings-styles.php:142
+msgid "700 (Bold)"
+msgstr ""
+
+#: view/partial/settings-styles.php:143
+msgid "800 (Extra Bold)"
+msgstr ""
+
+#: view/partial/settings-styles.php:144
+msgid "900 (Black)"
+msgstr ""
+
+#: view/partial/settings-styles.php:145
+msgid "Bold"
+msgstr ""
+
+#: view/partial/settings-styles.php:154
+msgid "Transform"
+msgstr ""
+
+#: view/partial/settings-styles.php:168
+msgid "Uppercase"
+msgstr ""
+
+#: view/partial/settings-styles.php:169
+msgid "Lowercase"
+msgstr ""
+
+#: view/partial/settings-styles.php:170
+msgid "Capitalize"
+msgstr ""
+
+#: view/partial/settings-styles.php:177
+msgid "Style"
+msgstr ""
+
+#: view/partial/settings-styles.php:191
+msgid "Italic"
+msgstr ""
+
+#: view/partial/settings-styles.php:201
+msgid "Open Close Icon"
+msgstr ""
+
+#: view/partial/settings-styles.php:206
+msgid "Active Color"
+msgstr ""
+
+#: view/partial/settings-styles.php:225
+msgid "Spacing"
+msgstr ""
+
+#: view/partial/settings-styles.php:247
+msgid "Accordion Content"
+msgstr ""

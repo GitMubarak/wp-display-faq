@@ -22,9 +22,14 @@ class WFP_Master
 	function __construct() {
 
 		$this->wfp_version = WFP_VERSION;
+		add_action( 'plugins_loaded', array( $this, 'wfp_load_plugin_textdomain' ) );
 		$this->wfp_load_dependencies();
 		$this->wfp_trigger_admin_hooks();
 		$this->wfp_trigger_front_hooks();
+	}
+
+	function wfp_load_plugin_textdomain() {
+		load_plugin_textdomain( WFP_TXT_DOMAIN, FALSE, WFP_TXT_DOMAIN . '/languages/' );
 	}
 
 	private function wfp_load_dependencies() {
@@ -53,7 +58,6 @@ class WFP_Master
 
 		$wfp_front = new WFP_Front( $this->wfp_version() );
 		$this->wfp_loader->add_action('wp_enqueue_scripts', $wfp_front, WFP_PRFX . 'front_assets');
-		//$this->wfp_loader->add_action( 'wp_footer', $wfp_front, WFP_PRFX . 'display_content' );
 		$wfp_front->wfp_load_shortcode();
 	}
 
