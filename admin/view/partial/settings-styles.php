@@ -221,6 +221,25 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="wfp_title_font_size"><?php esc_html_e('Spacing', WFP_TXT_DOMAIN); ?></label>
+            </th>
+            <td>
+                <?php
+                if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <span><?php echo '<a href="' . wdf_fs()->get_upgrade_url() . '">' . __('Available In Premium Version', 'wp-display-faq') . '</a>'; ?></span>
+                    <?php
+                }
+
+                if ( wdf_fs()->is_plan__premium_only('pro') ) {
+                    ?>
+                    <input class="medium-textr" type="number" min="0" max="100" step="1" name="wfp_open_close_icon_spacing" id="wfp_open_close_icon_spacing" value="<?php esc_attr_e( $wfp_open_close_icon_spacing ); ?>">
+                    <code>px</code>
+                    <?php
+                }
+                ?>
+            </td>
         </tr>
         <!-- Description -->
         <tr>

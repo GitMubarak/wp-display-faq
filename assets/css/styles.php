@@ -47,6 +47,7 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
 }
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {
   float: <?php echo ( 'left' === $wfp_op_cl_item_alignment ) ? 'left' : 'right'; ?>;
+  margin-right: <?php esc_html_e( $wfp_open_close_icon_spacing ); ?>px;
 }
 .wfp-main-wrapper .wfp-content,
 .wfp-main-wrapper .wfp-content p {

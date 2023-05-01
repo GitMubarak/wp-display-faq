@@ -105,6 +105,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wfp_open_close_icon_spacing',
+                'type'      => 'number',
+                'default'   => 0,
+            ],
         ];
 
     }

@@ -153,6 +153,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Accordion Title font weight Option added - Pro
 * Accordion Title text transform Option added - Pro
 * Accordion Title font style Option added - Pro
+* Open close icon spacing option added - Pro
 [//]: # fs_premium_only_end
 * Code optimized
 * Freemius integrated
