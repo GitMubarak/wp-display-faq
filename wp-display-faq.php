@@ -3,12 +3,12 @@
  * Plugin Name:     DisplayFaq
  * Plugin URI:      http://wordpress.org/plugins/wp-display-faq/
  * Description:     Accordion FAQs Plugin for WordPress to display FAQs with Category in your website.
- * Version: 	    1.4.2
+ * Version: 	    1.4.3
  * Author:          HM Plugin
  * Author URI:      https://hmplugin.com
  * Requires at least:   5.2
  * Requires PHP:    7.2
- * Tested up to:    6.2
+ * Tested up to:    6.2.2
  * Text Domain:     wp-display-faq
  * Domain Path:     /languages/
  * License:		    GPL-2.0+
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         define('WFP_PRFX', 'wfp_');
         define('WFP_CLS_PRFX', 'cls-wfp-');
         define('WFP_TXT_DOMAIN', 'wp-display-faq');
-        define('WFP_VERSION', '1.4.2');
+        define('WFP_VERSION', '1.4.3');
 
         require_once WFP_PATH . '/lib/freemius-integrator.php';
         require_once WFP_PATH . 'inc/' . WFP_CLS_PRFX . 'master.php';

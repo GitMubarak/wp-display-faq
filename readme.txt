@@ -1,52 +1,56 @@
-=== Display FAQ - WordPress FAQ and Accordion Plugin ===
-Contributors: hmplugin, mhmrajib
+=== WordPress FAQ Accordion Plugin - Display FAQ ===
+Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: faqs, accordion, accordions, faq plugin, accordion plugin
+Tags: faqs, accordion, accordions, faq, accordion
 Requires at least: 5.2
-Tested up to: 6.2
-Stable tag: 1.4.2
+Tested up to: 6.2.2
+Stable tag: 1.4.3
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-FAQ and accordion plugin to display FAQs to any page on your website.
+Create and display responsive FAQs section in a webpage. You can add multiple FAQs section separated by category.
 
 == Description ==
 
-[Display FAQ](https://hmplugin.com/wordpress-plugins/wordpress-accordion-faq-plugin/) is a **WordPress FAQ and Accordion Plugin** which will display various FAQs in your page by using the shortcode: [wp_display_faq].
+[Display FAQ](https://displayfaqs.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your webpage by using the shortcode: [wp_display_faq].
 
-You can display multiple responsive accordion from various category and control the display number via shortcode.
+You can display multiple responsive accordion from various category and control the display limit via shortcode.
 
-[FAQ Demo](https://hmplugin.com/demo/display-faq-demo/)
+This is a simple, effective and powerful plugin to display responsive FAQ Accordion on any device.
 
-This is a simple, effective and powerful plugin to display FAQs on any device.
 
-**🌟 Plugin Features:**
+= ✅ Six Content Animations =
+
+WordPress FAQ Accordion Plugin offers six content animations that you can use to make your article more exiting.
+
+= ✅ Three Title Alignments =
+
+There are three title alignments option available with this FAQ plugin. This feature allows you to display your FAQs more flexible way. Also helps to present your FAQs for RTL.
+
+= ✅ 10 Open Close Icon Sets =
+
+We understand open close icons are one of the most important part of your FAQs presentation. So our FAQ Accordion plugin offers up to 10 open close icons sets so that you present your FAQs more convenient way.
+
+= ✅ Set FAQ Title Icon =
+
+You can set your FAQ title icons from various icons available in your admin settings page.
+
+
+**🌟 Other Features:**
 
 * Create and Display Unlimited FAQs
-* Display FAQs from a Category
-* 100% Responsive and mobile friendly
-* FAQ Status Active/Inactive
-* Control number of FAQs to be displayed via shortcode
-* FAQs sort by post order (Post Order Meta Box Inegrated)
-* FAQs title font color option
-* FAQs title font size option
-* FAQs title background color option
-* FAQs title border color option
-* Display multiple FAQs from various category in a single page/post
-* Font Awesome Free 6.1.1 integrated
-* Initial expand-collapse option : Open first, Open all, Close all
-* Show - hide FAQ title icon
-* FAQ title icon alignment - Left / Right
-* Show - Hide space between FAQs
-* Show - hide title icon
-* Title order by option - Title / Date / Menu Order
-* Item hover background color
-* Item hover border color
-* Description font color option
-* Description font size option
-* Description background color option
-* Content Alignment Option - Left / Center / Right
+* Display separate FAQ section from various category
+* 100% Responsive and mobile friendly to work beautifully on all kind of devices.
+* Set a HTML tag for the FAQ title. This is a very important feature for your site SEO. 
+* Active inactive a FAQ
+* Limit number of FAQs via shortcode
+* Manage order of your FAQ with Title, Date and Menu Order
+* Complete styling option to esily customize the look to match with your site's branding and design. 
+* FAQ plugins has the feature to display icon with the title. You can display or hide it with the admin setting. 
+* Set your initial FAQ content from three stages - Open First, Open All and Close All. 
+* Display or hide spaces between two of the FAQs. Make it compact or normal by default.
+* Option provided to set open close icon alignment. You can set open close icon to left or right position. 
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -65,8 +69,32 @@ This is a simple, effective and powerful plugin to display FAQs on any device.
 
 
 
+**🌟 Premium Features:**
+
+* Various accordion title icon option
+* 10 Open Close Icons
+* Content Animations
+* Active accordion background color option
+* Active title font color option
+* Open close icon active color option
+* Title font weight option
+* Title text transform option
+* Title font style option
+* Open close icon spacing option
+* Title HTML Tag h1, h2, div, span etc.
+
+
+[Get the Premium Version](https://displayfaqs.com/)
+
+
 **👨‍💻 Demo / Support/ Live Chat**
-[DisplayFaq: See Demo](https://hmplugin.com/demo/display-faq-demo/)
+[DisplayFaq: See Demo](https://displayfaqs.com/)
+
+
+**📋 Translation Ready:**
+
+* POT file included (/languages/)
+* Bengoli (Bangladesh)
 
 
 **👍 Feedback/Rating:**
@@ -133,14 +161,16 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 == Screenshots ==
 
-1. Showing FAQs left alignment
-2. Showing FAQs center alignment
-3. Showing FAQs right alignment
-4. FAQs General Settings Panel
-5. FAQs Styling Panel
+1. FAQ Content Alignment
+2. FAQ Content Animation
+3. FAQ Open Close Icon Change
+4. FAQ Title Icon Change
 
 
 == Changelog ==
+
+= 1.4.3 =
+* Freemius SDK update to 2.5.10
 
 = 1.4.2 =
 [//]: # fs_premium_only_begin
