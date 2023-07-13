@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-05-02 04:39+0600\n"
+"POT-Creation-Date: 2023-07-13 17:23+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ../admin\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -24,123 +24,123 @@ msgstr ""
 msgid "How it works"
 msgstr ""
 
-#: cls-wfp-admin.php:117 cls-wfp-admin.php:118 cls-wfp-admin.php:119
+#: cls-wfp-admin.php:123 cls-wfp-admin.php:124 cls-wfp-admin.php:125
 msgid "WP FAQs"
 msgstr ""
 
-#: cls-wfp-admin.php:120
+#: cls-wfp-admin.php:126
 msgid "Parent FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:121
+#: cls-wfp-admin.php:127
 msgid "All FAQs"
 msgstr ""
 
-#: cls-wfp-admin.php:122
+#: cls-wfp-admin.php:128
 msgid "View FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:123
+#: cls-wfp-admin.php:129
 msgid "Add New FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:124
+#: cls-wfp-admin.php:130
 msgid "Add New"
 msgstr ""
 
-#: cls-wfp-admin.php:125
+#: cls-wfp-admin.php:131
 msgid "Edit FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:126
+#: cls-wfp-admin.php:132
 msgid "Update FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:127
+#: cls-wfp-admin.php:133
 msgid "Search FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:128
+#: cls-wfp-admin.php:134
 msgid "Not Found"
 msgstr ""
 
-#: cls-wfp-admin.php:129
+#: cls-wfp-admin.php:135
 msgid "Not found in Trash"
 msgstr ""
 
-#: cls-wfp-admin.php:132
+#: cls-wfp-admin.php:138
 msgid "wfp_faq"
 msgstr ""
 
-#: cls-wfp-admin.php:133
+#: cls-wfp-admin.php:139
 msgid "Description For FAQ"
 msgstr ""
 
-#: cls-wfp-admin.php:158 cls-wfp-admin.php:168
+#: cls-wfp-admin.php:164 cls-wfp-admin.php:174
 msgid "FAQ Categories"
 msgstr ""
 
-#: cls-wfp-admin.php:159 cls-wfp-admin.php:286
+#: cls-wfp-admin.php:165 cls-wfp-admin.php:292
 msgid "FAQ Category"
 msgstr ""
 
-#: cls-wfp-admin.php:160
+#: cls-wfp-admin.php:166
 msgid "Search FAQ Categories"
 msgstr ""
 
-#: cls-wfp-admin.php:161
+#: cls-wfp-admin.php:167
 msgid "All FAQ Categories"
 msgstr ""
 
-#: cls-wfp-admin.php:162
+#: cls-wfp-admin.php:168
 msgid "Parent FAQ Category"
 msgstr ""
 
-#: cls-wfp-admin.php:163
+#: cls-wfp-admin.php:169
 msgid "Parent FAQ Category:"
 msgstr ""
 
-#: cls-wfp-admin.php:164
+#: cls-wfp-admin.php:170
 msgid "Edit FAQ Category"
 msgstr ""
 
-#: cls-wfp-admin.php:165
+#: cls-wfp-admin.php:171
 msgid "Update FAQ Category"
 msgstr ""
 
-#: cls-wfp-admin.php:166
+#: cls-wfp-admin.php:172
 msgid "Add New FAQ Category"
 msgstr ""
 
-#: cls-wfp-admin.php:167
+#: cls-wfp-admin.php:173
 msgid "New FAQ Category Name"
 msgstr ""
 
-#: cls-wfp-admin.php:185
+#: cls-wfp-admin.php:191
 msgid "FAQs Information:"
 msgstr ""
 
-#: cls-wfp-admin.php:204
+#: cls-wfp-admin.php:210
 msgid "Status:"
 msgstr ""
 
-#: cls-wfp-admin.php:208
+#: cls-wfp-admin.php:214
 msgid "Active"
 msgstr ""
 
-#: cls-wfp-admin.php:211
+#: cls-wfp-admin.php:217
 msgid "Inactive"
 msgstr ""
 
-#: cls-wfp-admin.php:285 view/partial/settings-content.php:58
+#: cls-wfp-admin.php:291 view/partial/settings-content.php:58
 msgid "Title"
 msgstr ""
 
-#: cls-wfp-admin.php:287
+#: cls-wfp-admin.php:293
 msgid "Status"
 msgstr ""
 
-#: cls-wfp-admin.php:288 view/partial/settings-content.php:59
+#: cls-wfp-admin.php:294 view/partial/settings-content.php:59
 msgid "Date"
 msgstr ""
 
