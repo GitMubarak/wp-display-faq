@@ -58,6 +58,7 @@ class WFP_Master
 
 		$wfp_front = new WFP_Front( $this->wfp_version() );
 		$this->wfp_loader->add_action('wp_enqueue_scripts', $wfp_front, WFP_PRFX . 'front_assets');
+		$this->wfp_loader->add_filter( 'woocommerce_product_tabs', $wfp_front, 'wfp_wc_add_product_tab', 9999 );
 		$wfp_front->wfp_load_shortcode();
 	}
 

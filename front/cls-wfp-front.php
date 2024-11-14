@@ -118,5 +118,19 @@ class WFP_Front
 		$output .= ob_get_clean();
 		return $output;
 	}
+
+	function wfp_wc_add_product_tab( $tabs ) {
+		$tabs['wfp-faqs'] = array(
+			'title' => __( 'FAQs', 'woocommerce' ), // TAB TITLE
+			'priority' => 100, // TAB SORTING (DESC 10, ADD INFO 20, REVIEWS 30)
+			'callback' => array( $this, 'wfp_wc_faq_product_tab_content'), // TAB CONTENT CALLBACK
+		 );
+		 return $tabs;
+	}
+
+	function wfp_wc_faq_product_tab_content() {
+		global $product;
+		echo 'Whatever content for ' . $product->get_name();
+	}
 }
 ?>

@@ -27,8 +27,6 @@ if ( ! function_exists( 'wdf_fs' ) ) {
                 'menu'                => array(
                     'slug'           => 'edit.php?post_type=wfp_faq',
                 ),
-                // Set the SDK to work in a sandbox mode (for development & testing).
-                // IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.
                 'secret_key'          => 'sk_9@$%i%1mn6~rAZ5[e(A0lRf[&yGZj',
             ) );
         }
