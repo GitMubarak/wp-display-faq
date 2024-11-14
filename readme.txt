@@ -173,7 +173,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 [//]: # fs_premium_only_begin
 * Accordion Title Icon Option added - Pro
 [//]: # fs_premium_only_end
-* Freemius SDK update to 2.5.10
+* Freemius SDK update to 2.9.0
 
 = 1.4.3 =
 * Freemius SDK update to 2.5.10
