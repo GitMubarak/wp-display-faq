@@ -31,6 +31,7 @@ include WFP_PATH . 'assets/css/styles.php';
 // Shortcoded Options
 $wfpCategory = isset( $wfpAttr['category'] ) ? $wfpAttr['category'] : '';
 $wfpDisplay  = isset( $wfpAttr['display'] ) ? $wfpAttr['display'] : '';
+$product_id  = isset( $wfpAttr['product_id'] ) ? $wfpAttr['product_id'] : '';
 
 $wfp_arr = array(
   'post_type'   => 'wfp_faq',
@@ -57,12 +58,21 @@ if ( $wfpCategory ) {
       'terms'     => $wfpCategory
     )
   );
-  
 }
 
 // If display params found in shortcode
 if ( $wfpDisplay ) {
   $wfp_arr['posts_per_page'] = $wfpDisplay;
+}
+
+// If Porduct ID params found in shortcode
+if ( $product_id ) {
+
+  $wfp_arr['meta_query'][] = [
+    'key'     => 'wfp_wc_product_id',
+    'value'   => $product_id,
+    'compare' => '='
+  ];
 }
 
 $WfpData = new WP_Query( $wfp_arr );

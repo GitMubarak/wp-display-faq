@@ -197,28 +197,10 @@ class WFP_Admin
 	}
 
 	function wfp_metabox_content() {
-		
-		global $post;
 
 		wp_nonce_field( basename(__FILE__), 'wfp_fields' );
 
-		$wfp_status	= get_post_meta( $post->ID, 'wfp_status', true );
-		?>
-		<table class="form-table">
-			<tr class="wfp_status">
-				<th scope="row">
-					<label for="wfp_status"><?php _e('Status:', WFP_TXT_DOMAIN); ?></label>
-				</th>
-				<td>
-					<input type="radio" name="wfp_status" class="wfp_status" id="wfp_status_active" value="active" <?php echo ( 'inactive' !== esc_attr( $wfp_status ) ) ? 'checked' : ''; ?> >
-					<label for="wfp_status_active"><span></span><?php _e( 'Active', WFP_TXT_DOMAIN ); ?></label>
-					&nbsp;&nbsp;
-					<input type="radio" name="wfp_status" class="wfp_status" id="wfp_status_inactive" value="inactive" <?php echo ( 'inactive' === esc_attr( $wfp_status ) ) ? 'checked' : ''; ?> >
-					<label for="wfp_status_inactive"><span></span><?php _e( 'Inactive', WFP_TXT_DOMAIN ); ?></label>
-				</td>
-			</tr>
-		</table>
-		<?php
+		require_once WFP_PATH . 'admin/view/partial/faq-meta-fields.php';
 	}
 
 	/**
@@ -235,8 +217,10 @@ class WFP_Admin
 		if( ! isset( $_POST['wfp_status'] ) || ! wp_verify_nonce( $_POST['wfp_fields'], basename(__FILE__) ) ) {
 			return $post_id;
 		}
-
-		$wfp_meta['wfp_status']	= ( sanitize_text_field( $_POST['wfp_status'] ) != '' ) ? sanitize_text_field( $_POST['wfp_status'] ) : '';
+		
+		$wfp_meta['wfp_faq_for']		= isset( $_POST['wfp_faq_for'] ) ? sanitize_text_field( $_POST['wfp_faq_for'] ) : '';
+		$wfp_meta['wfp_wc_product_id']	= isset( $_POST['wfp_wc_product_id'] ) ? sanitize_text_field( $_POST['wfp_wc_product_id'] ) : '';
+		$wfp_meta['wfp_status']			= isset( $_POST['wfp_status'] ) ? sanitize_text_field( $_POST['wfp_status'] ) : '';
 
 		foreach( $wfp_meta as $key => $value ) {
 			if ('revision' === $post->post_type) {

@@ -129,8 +129,11 @@ class WFP_Front
 	}
 
 	function wfp_wc_faq_product_tab_content() {
+		
 		global $product;
-		echo 'Whatever content for ' . $product->get_name();
+		
+		//echo 'Whatever content for ' . $product->get_id() . $product->get_name();
+		echo do_shortcode('[wp_display_faq product_id="' . $product->get_id() . '"]');
 	}
 }
 ?>
