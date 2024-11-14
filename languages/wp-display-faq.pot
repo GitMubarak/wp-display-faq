@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-07-13 17:23+0600\n"
+"POT-Creation-Date: 2024-11-15 02:44+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ../admin\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "FAQ Categories"
 msgstr ""
 
-#: cls-wfp-admin.php:165 cls-wfp-admin.php:292
+#: cls-wfp-admin.php:165 cls-wfp-admin.php:276
 msgid "FAQ Category"
 msgstr ""
 
@@ -120,27 +120,15 @@ msgstr ""
 msgid "FAQs Information:"
 msgstr ""
 
-#: cls-wfp-admin.php:210
-msgid "Status:"
-msgstr ""
-
-#: cls-wfp-admin.php:214
-msgid "Active"
-msgstr ""
-
-#: cls-wfp-admin.php:217
-msgid "Inactive"
-msgstr ""
-
-#: cls-wfp-admin.php:291 view/partial/settings-content.php:58
+#: cls-wfp-admin.php:275 view/partial/settings-content.php:58
 msgid "Title"
 msgstr ""
 
-#: cls-wfp-admin.php:293
+#: cls-wfp-admin.php:277 view/partial/faq-meta-fields.php:74
 msgid "Status"
 msgstr ""
 
-#: cls-wfp-admin.php:294 view/partial/settings-content.php:59
+#: cls-wfp-admin.php:278 view/partial/settings-content.php:59
 msgid "Date"
 msgstr ""
 
@@ -154,6 +142,34 @@ msgstr ""
 
 #: view/general-settings.php:25
 msgid "Styles"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:15
+msgid "FAQ For"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:19
+msgid "General"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:22
+msgid "WooCommerce"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:27
+msgid "Select WC Product"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:55
+msgid "Select a Product"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:78
+msgid "Active"
+msgstr ""
+
+#: view/partial/faq-meta-fields.php:81
+msgid "Inactive"
 msgstr ""
 
 #: view/partial/settings-content.php:17
