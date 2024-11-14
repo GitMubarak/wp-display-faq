@@ -60,19 +60,23 @@ if ( $wfpCategory ) {
   );
 }
 
-// If display params found in shortcode
-if ( $wfpDisplay ) {
-  $wfp_arr['posts_per_page'] = $wfpDisplay;
-}
-
 // If Porduct ID params found in shortcode
 if ( $product_id ) {
+
+  if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+    $wfpDisplay = 5;
+  }
 
   $wfp_arr['meta_query'][] = [
     'key'     => 'wfp_wc_product_id',
     'value'   => $product_id,
     'compare' => '='
   ];
+}
+
+// If display params found in shortcode
+if ( $wfpDisplay ) {
+  $wfp_arr['posts_per_page'] = $wfpDisplay;
 }
 
 $WfpData = new WP_Query( $wfp_arr );

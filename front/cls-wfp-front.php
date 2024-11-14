@@ -132,7 +132,6 @@ class WFP_Front
 		
 		global $product;
 		
-		//echo 'Whatever content for ' . $product->get_id() . $product->get_name();
 		echo do_shortcode('[wp_display_faq product_id="' . $product->get_id() . '"]');
 	}
 }
