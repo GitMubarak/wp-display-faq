@@ -1,7 +1,7 @@
-=== WordPress FAQ Accordion Plugin - Display FAQ ===
+=== Display FAQ - Responsive Accordion and Product FAQ For WooCommerce ===
 Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: faqs, accordion, accordions, faq, accordion
+Tags: faqs, accordion, accordions, faq, Product FAQ
 Requires at least: 5.4
 Tested up to: 6.7
 Stable tag: 1.4.4
@@ -9,16 +9,47 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Create and display responsive FAQs section in a webpage. You can add multiple FAQs section separated by category.
+Create and display responsive FAQs section in a webpage. You can add frequently asked questions on WooCommerce single product page.
 
 == Description ==
 
-[Display FAQ](https://displayfaqs.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your webpage by using the shortcode: [wp_display_faq].
+[Display FAQ](https://displayfaqs.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your WordPress website.
 
-You can display multiple responsive accordion from various category and control the display limit via shortcode.
+You can create FAQ posts, assign them to various categories and display FAQs in any page or post.
+
+You can grouped the FAQs using FAQ categories and dsiplay them using shortcode.
+
+You can also control the display limit using shortcode option.
+
+This plugin can be use as a general WordPress Accordion Plugin or It can be used as a Product FAQ for WooCommerce.
 
 This is a simple, effective and powerful plugin to display responsive FAQ Accordion on any device.
 
+
+**🌟 Key Features:**
+
+* Create and Display Unlimited FAQs for Post and Page
+* Display separate FAQ section from various category
+* 100% Responsive and mobile friendly to work beautifully on all kind of devices
+* Set a HTML tag for the FAQ title. This is a very important feature for your site SEO
+* Active inactive a FAQ
+* Limit number of FAQs via shortcode
+* Manage order of your FAQ with Title, Date and Menu Order
+* Complete styling option to esily customize the look to match with your site's branding and design 
+* FAQ plugins has the feature to display icon with the title. You can display or hide it with the admin setting
+* Set your initial FAQ content from three stages - Open First, Open All and Close All
+* Display or hide spaces between two of the FAQs. Make it compact or normal by default
+* Option provided to set open close icon alignment. You can set open close icon to left or right position
+* WooCommerce Product Accordions
+
+
+= ✅ WooCommerce Product FAQs and Accordions =
+
+Product FAQ for WooCommerce helps you to add frequently asked questions on a single product page. It makes it easy to answer your customer’s common questions on the product pages.
+
+= ✅ Dedicated FAQ page to display FAQs in bulk =
+
+Easily add a large number of questions and answers to create a dedicated FAQ page in the backend and display them on any page or post with a shortcode.
 
 = ✅ Six Content Animations =
 
@@ -35,22 +66,6 @@ We understand open close icons are one of the most important part of your FAQs p
 = ✅ Set FAQ Title Icon =
 
 You can set your FAQ title icons from various icons available in your admin settings page.
-
-
-**🌟 Other Features:**
-
-* Create and Display Unlimited FAQs
-* Display separate FAQ section from various category
-* 100% Responsive and mobile friendly to work beautifully on all kind of devices.
-* Set a HTML tag for the FAQ title. This is a very important feature for your site SEO. 
-* Active inactive a FAQ
-* Limit number of FAQs via shortcode
-* Manage order of your FAQ with Title, Date and Menu Order
-* Complete styling option to esily customize the look to match with your site's branding and design. 
-* FAQ plugins has the feature to display icon with the title. You can display or hide it with the admin setting. 
-* Set your initial FAQ content from three stages - Open First, Open All and Close All. 
-* Display or hide spaces between two of the FAQs. Make it compact or normal by default.
-* Option provided to set open close icon alignment. You can set open close icon to left or right position. 
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -142,9 +157,17 @@ Install DisplayFaq as a regular WordPress plugin. Here are different ways to ins
 
 == Frequently Asked Questions ==
 
-= I have installed the plugin. What next? =
+= How to display FAQs in any post or page =
 
-Please go to Admin -> WP FAQs menu and Add your FAQs. Copy the Shorcode [wp_display_faq] and use it in any page.
+Please go to WordPress Admin -> WP FAQs -> Add New FAQ and add your FAQs. 
+Copy the Shorcode [wp_display_faq] and use it in any page or post.
+
+= How to display FAQs to Woocommerce product page =
+
+Please go to WordPress Admin -> WP FAQs -> Add New FAQ and add your FAQs.
+Now from the FAQs Information section select FAQ for -> WooCommerce.
+After that Select the WooCommerce Product fromt the "Select WC Product" dropdown.
+Now you should see the FAQs in that Product FAQs tab section.
 
 = How Can I Display FAQs From a Category? =
 
@@ -152,7 +175,7 @@ Go to “FAQ Categories” and add your Category first.
 
 Now create a FAQ item and assign that item to a FAQ Categories available at right side panel.
 
-Now you need to insert the shortcode <b>[wp_display_faq category="Category Name"]</b> at any page through TinyMCE editor.
+Now you need to use the shortcode <b>[wp_display_faq category="Category Name"]</b> to display the FAQs of that Category.
 
 = How Can I Display FAQs With Certain Numbers? =
 
@@ -161,10 +184,14 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 == Screenshots ==
 
-1. FAQ Content Alignment
-2. FAQ Content Animation
-3. FAQ Open Close Icon Change
-4. FAQ Title Icon Change
+1. FAQ Accordion and Toggle – Add them in any post or page
+2. Woocommerce Integration – Display FAQs to Woocommerce products
+3. FAQ General Settings Page
+4. FAQ Style Settings Page
+5. FAQ Content Alignment
+6. FAQ Content Animation
+7. FAQ Open Close Icon Change
+8. FAQ Title Icon Change
 
 
 == Changelog ==
