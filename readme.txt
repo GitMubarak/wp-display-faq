@@ -3,8 +3,8 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, accordions, faq, Product FAQ
 Requires at least: 5.4
-Tested up to: 6.7
-Stable tag: 1.4.4
+Tested up to: 6.7.1
+Stable tag: 1.4.5
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -195,6 +195,9 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 
 == Changelog ==
+
+= 1.4.5 =
+* 
 
 = 1.4.4 =
 [//]: # fs_premium_only_begin
