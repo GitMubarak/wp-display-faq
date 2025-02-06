@@ -9,20 +9,23 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="inside centered">
             <ul>
                 <li>&#10003; Priority / Chat Support</li>
-                <li>&#10003; Accordion Title Icon Option</li>
+                <li>&#10003; Change Accordion Title Icon</li>
                 <li>&#10003; 10 Open Close Icon Sets</li>
-                <li>&#10003; Content Animation</li>
-                <li>&#10003; Title HTML Tag h1, h2, div, span etc.</li>
-                <li>&#10003; More Styling Options</li>
+                <li>&#10003; FAQ Content Animation</li>
+                <li>&#10003; FAQ Title HTML Tag h1, h2, div, span etc.</li>
+                <li>&#10003; FAQ Active Background Color</li>
+                <li>&#10003; FAQ Ttile Styling</li>
+                <li>&#10003; Open-Close Icon Active Color</li>
+                <li>&#10003; Open-CLose Icon Spacing</li>
             </ul>
-            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/wordpress-plugins/wordpress-accordion-faq-plugin/" target="_blank" class="button button-primary wfp-button">More Info</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://displayfaqs.com/" target="_blank" class="button button-primary wfp-button">Buy Now</a></p>
         </div>
     </div>
     <div class="postbox">
         <h3 class="hndle"><span>Support / Bug / Customization</span></h3>
         <div class="inside centered">
             <p>Please feel free to let us know if you have any bugs to report. Your report / suggestion can make the plugin awesome!</p>
-            <p style="margin-bottom: 1px! important;"><a href="https://hmplugin.com/contact/" target="_blank" class="button button-primary wfp-button">Get Support</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://displayfaqs.com/" target="_blank" class="button button-primary wfp-button">Get Support</a></p>
         </div>
     </div>
     <div class="postbox">

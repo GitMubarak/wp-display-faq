@@ -198,6 +198,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 = 1.4.5 =
 * Updated Freemius SDK to the latest version
+* Admin sidebar updated
 
 = 1.4.4 =
 [//]: # fs_premium_only_begin
