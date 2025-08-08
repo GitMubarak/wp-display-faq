@@ -44,6 +44,10 @@
         max-height: max-content!important;
     }
     
+    .wfp-main-wrapper .wfp-collapsible.active .wfp_open_cl_icon {
+        animation: spin 1s linear;
+    }
+    
     .wfp-content p,
     .wfp-content ul {
         padding: 10px;
@@ -168,3 +172,23 @@
         100% {}
     }
     /* Content Anomation Ended */
+    
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+            /* Starting point of the rotation */
+        }
+        100% {
+            transform: rotate(360deg);
+            /* Ending point of the rotation (one full turn) */
+        }
+    }
