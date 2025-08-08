@@ -198,11 +198,13 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 = 1.4.6 =
 [//]: # fs_premium_only_begin
-* Display - Pro
+* Shortcode option content_animation added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK updated to 2.12.1
 * Language file loading process changed
 * Rotation animation applied to open close icon
+* CSS fixed
+* Code optimized
 
 = 1.4.5 =
 * Updated Freemius SDK to the latest version

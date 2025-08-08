@@ -33,6 +33,11 @@ $wfpCategory = isset( $wfpAttr['category'] ) ? $wfpAttr['category'] : '';
 $wfpDisplay  = isset( $wfpAttr['display'] ) ? $wfpAttr['display'] : '';
 $product_id  = isset( $wfpAttr['product_id'] ) ? $wfpAttr['product_id'] : '';
 
+if ( wdf_fs()->is_plan__premium_only('pro') ) {
+  $content_animation = isset( $wfpAttr['content_animation'] ) ? $wfpAttr['content_animation'] : $wdf_content_animation;
+}
+
+// Main Query
 $wfp_arr = array(
   'post_type'   => 'wfp_faq',
   'post_status' => 'publish',
@@ -121,7 +126,7 @@ if ( $WfpData->have_posts() ) {
         echo '</' . esc_attr( $wfp_title_html_tag ) . '>';
         ?>
       </button>
-      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $wdf_content_animation ); ?>">
+      <div class="wfp-content <?php echo ( ( 1 === $dfC ) && ( 'first' === $wfp_expand_collapse_item ) ) ? 'active-first' : null; ?>" <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'style="max-height: max-content!important;"' : null; ?> data-anim-type="<?php esc_attr_e( $content_animation ); ?>">
         <?php the_content(); ?>
       </div>
       <?php

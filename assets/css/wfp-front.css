@@ -36,7 +36,7 @@
         background-color: #FFFFFF;
         border-style: solid;
         border-color: #EAEAEA;
-        border-width: 0px 1px;
+        border-width: 0 1px 1px 1px;
     }
     
     .wfp-content.active-first {

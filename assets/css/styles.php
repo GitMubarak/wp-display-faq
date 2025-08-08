@@ -50,11 +50,15 @@ foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
   margin-right: <?php esc_html_e( $wfp_open_close_icon_spacing ); ?>px;
 }
 .wfp-main-wrapper .wfp-content,
-.wfp-main-wrapper .wfp-content p {
+.wfp-main-wrapper .wfp-content p,
+.wfp-main-wrapper .wfp-content p span {
   color: <?php esc_html_e( $wfp_desc_font_color ); ?>;
   font-size: <?php esc_html_e( $wfp_desc_font_size ); ?>px;
   line-height: <?php esc_html_e( $wfp_desc_font_size + 10 ); ?>px;
   background-color: <?php esc_html_e( $wfp_desc_bg_color ); ?>;
   text-align: <?php esc_html_e( $wfp_item_alignment ); ?>;
+}
+.wfp-main-wrapper .wfp-content {
+  border-color: <?php esc_html_e( $wfp_title_border_color ); ?>;
 }
 </style>
