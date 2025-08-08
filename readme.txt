@@ -201,6 +201,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Display - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK updated to 2.9.0
+* Language file loading process changed
 
 = 1.4.5 =
 * Updated Freemius SDK to the latest version

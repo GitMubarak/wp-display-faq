@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             switch ( $column ) {
 
                 case 'status':
-                    echo ( 'active' !== get_post_meta( $post_id , 'wfp_status' , true ) ) ? '<b style="color:red;">' . __('Inactive', WFP_TXT_DOMAIN) . '</b>' : '<b style="color:green;">' . __('Active', WFP_TXT_DOMAIN) . '</b>';
+                    echo ( 'active' !== get_post_meta( $post_id , 'wfp_status' , true ) ) ? '<b style="color:red;">' . __('Inactive', 'wp-display-faq') . '</b>' : '<b style="color:green;">' . __('Active', 'wp-display-faq') . '</b>';
                     break;
 
             }
@@ -65,6 +65,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         add_filter( 'manage_edit-wfp_faq_sortable_columns', 'wfp_list_table_sorting' );
 
         register_deactivation_hook( __FILE__, array( $wfp, WFP_PRFX . 'unregister_settings' ) );
-    
+        
+        function wfp_load_plugin_textdomain() {
+            load_plugin_textdomain( 'wp-display-faq', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+        }
+        add_action( 'plugins_loaded', 'wfp_load_plugin_textdomain' );
     }
 }

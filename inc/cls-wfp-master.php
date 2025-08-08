@@ -22,14 +22,9 @@ class WFP_Master
 	function __construct() {
 
 		$this->wfp_version = WFP_VERSION;
-		add_action( 'plugins_loaded', array( $this, 'wfp_load_plugin_textdomain' ) );
 		$this->wfp_load_dependencies();
 		$this->wfp_trigger_admin_hooks();
 		$this->wfp_trigger_front_hooks();
-	}
-
-	function wfp_load_plugin_textdomain() {
-		load_plugin_textdomain( WFP_TXT_DOMAIN, FALSE, WFP_TXT_DOMAIN . '/languages/' );
 	}
 
 	private function wfp_load_dependencies() {
