@@ -3,9 +3,9 @@ Contributors: hmplugin, mhmrajib, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: faqs, accordion, accordions, faq, Product FAQ
 Requires at least: 5.4
-Tested up to: 6.7.1
-Stable tag: 1.4.5
-Requires PHP: 7.2
+Tested up to: 6.8.2
+Stable tag: 1.4.6
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -195,6 +195,12 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 
 
 == Changelog ==
+
+= 1.4.6 =
+[//]: # fs_premium_only_begin
+* Display - Pro
+[//]: # fs_premium_only_end
+* Freemius SDK updated to 2.9.0
 
 = 1.4.5 =
 * Updated Freemius SDK to the latest version
