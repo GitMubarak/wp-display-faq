@@ -200,7 +200,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 [//]: # fs_premium_only_begin
 * Display - Pro
 [//]: # fs_premium_only_end
-* Freemius SDK updated to 2.9.0
+* Freemius SDK updated to 2.12.1
 * Language file loading process changed
 
 = 1.4.5 =

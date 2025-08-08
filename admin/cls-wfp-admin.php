@@ -42,8 +42,8 @@ class WFP_Admin
 
 		add_submenu_page(
 			$wfp_cpt_menu,
-			__('Settings', WFP_TXT_DOMAIN),
-			__('Settings', WFP_TXT_DOMAIN),
+			__('Settings', 'wp-display-faq'),
+			__('Settings', 'wp-display-faq'),
 			'manage_options',
 			'wfp-general-settings',
 			array($this, WFP_PRFX . 'general_settings')
@@ -51,8 +51,8 @@ class WFP_Admin
 
 		add_submenu_page(
 			$wfp_cpt_menu,
-			__('How it works', WFP_TXT_DOMAIN),
-			__('How it works', WFP_TXT_DOMAIN),
+			__('How it works', 'wp-display-faq'),
+			__('How it works', 'wp-display-faq'),
 			'manage_options',
 			'wfp-help-usage',
 			array($this, 'wfp_help_usage_settings')
@@ -120,23 +120,23 @@ class WFP_Admin
 	function wfp_custom_post_type() {
 
 		$labels = array(
-							'name'                => __('WP FAQs'),
-							'singular_name'       => __('WP FAQs'),
-							'menu_name'           => __('WP FAQs'),
-							'parent_item_colon'   => __('Parent FAQ'),
-							'all_items'           => __('All FAQs'),
-							'view_item'           => __('View FAQ'),
-							'add_new_item'        => __('Add New FAQ'),
-							'add_new'             => __('Add New'),
-							'edit_item'           => __('Edit FAQ'),
-							'update_item'         => __('Update FAQ'),
-							'search_items'        => __('Search FAQ'),
-							'not_found'           => __('Not Found'),
-							'not_found_in_trash'  => __('Not found in Trash')
+							'name'                => __('Display FAQs', 'wp-display-faq'),
+							'singular_name'       => __('Display FAQs', 'wp-display-faq'),
+							'menu_name'           => __('Display FAQs', 'wp-display-faq'),
+							'parent_item_colon'   => __('Parent FAQ', 'wp-display-faq'),
+							'all_items'           => __('All FAQs', 'wp-display-faq'),
+							'view_item'           => __('View FAQ', 'wp-display-faq'),
+							'add_new_item'        => __('Add New FAQ', 'wp-display-faq'),
+							'add_new'             => __('Add New', 'wp-display-faq'),
+							'edit_item'           => __('Edit FAQ', 'wp-display-faq'),
+							'update_item'         => __('Update FAQ', 'wp-display-faq'),
+							'search_items'        => __('Search FAQ', 'wp-display-faq'),
+							'not_found'           => __('Not Found', 'wp-display-faq'),
+							'not_found_in_trash'  => __('Not found in Trash', 'wp-display-faq')
 						);
 		$args = array(
 						'label'               => __('wfp_faq'),
-						'description'         => __('Description For FAQ'),
+						'description'         => __('Description For FAQ', 'wp-display-faq'),
 						'labels'              => $labels,
 						'supports'            => array('title', 'editor', 'thumbnail', 'page-attributes'),
 						'public'              => true,
