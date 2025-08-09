@@ -199,6 +199,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 = 1.4.6 =
 [//]: # fs_premium_only_begin
 * Shortcode option content_animation added - Pro
+* Content animation issue fixed for multiple Faqs - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK updated to 2.12.1
 * Language file loading process changed

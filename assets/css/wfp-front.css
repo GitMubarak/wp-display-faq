@@ -57,7 +57,7 @@
     /* FadeIn */
     
     .wfp-content.FadeIn {
-        animation: fadeIn 5s;
+        animation: fadeIn 3s;
     }
     
     @keyframes fadeIn {

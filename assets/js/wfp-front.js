@@ -10,7 +10,8 @@
 
         wfpColl[wfpCount].addEventListener("click", function() {
 
-            var dataAnimType = $('.wfp-content').attr("data-anim-type");
+            //var dataAnimType = $('.wfp-content').attr("data-anim-type");
+            var dataAnimType = $(this).next().attr("data-anim-type");
             $('.wfp-content').removeClass(dataAnimType);
 
             $(this).next().removeClass('active-first');
