@@ -152,7 +152,7 @@ class WFP_Admin
 						//'taxonomies' 	      => array('post_tag'),
 						'publicly_queryable'  => true,
 						'capability_type'     => 'page',
-						'menu_icon'           => 'dashicons-feedback'
+						'menu_icon'           => 'dashicons-testimonial'
 					);
 
 		register_post_type('wfp_faq', $args);
