@@ -3,86 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $post;
-$wfpActiveClass= '';
+include 'header.php';
 
-// Content Settings
-foreach ( $wfpContentSettings as $option_name => $option_value ) {
-  if ( isset( $wfpContentSettings[$option_name] ) ) {
-    ${"" . $option_name}  = $option_value;
-  }
-}
-
-if ( wdf_fs()->is_plan__premium_only('pro') ) {
-  $wdf_accordion_icon = $wfp_title_icon;
-  $wdf_open_close_icon = $wfp_open_close_icon;
-  $wdf_content_animation = $wfp_content_animation;
-}
-
-if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
-  $wdf_accordion_icon = 'fa-solid fa-laptop';
-  $wdf_open_close_icon = 'plus';
-  $wdf_content_animation = '';
-}
-
-// Loading Styles
-include WFP_PATH . 'assets/css/styles.php';
-
-// Shortcoded Options
-$wfpCategory = isset( $wfpAttr['category'] ) ? $wfpAttr['category'] : '';
-$wfpDisplay  = isset( $wfpAttr['display'] ) ? $wfpAttr['display'] : '';
-$product_id  = isset( $wfpAttr['product_id'] ) ? $wfpAttr['product_id'] : '';
-
-if ( wdf_fs()->is_plan__premium_only('pro') ) {
-  $content_animation = isset( $wfpAttr['content_animation'] ) ? $wfpAttr['content_animation'] : $wdf_content_animation;
-}
-
-// Main Query
-$wfp_arr = array(
-  'post_type'   => 'wfp_faq',
-  'post_status' => 'publish',
-  'orderby'     => $wfp_title_order_by,
-  'order'       => $wfp_title_order,
-  'meta_query'  => array(
-    'relation' => 'and',
-    array(
-      'key' => 'wfp_status',
-      'value' => 'active',
-      'compare' => '='
-    ),
-  ),
-);
-
-// If Categor params found in shortcode
-if ( $wfpCategory ) {
-
-  $wfp_arr['tax_query'] = array(
-    array(
-      'taxonomy'  => 'wfp_faq_category',
-      'field'     => 'name',
-      'terms'     => $wfpCategory
-    )
-  );
-}
-
-// If Porduct ID params found in shortcode
-if ( $product_id ) {
-
-  if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
-    $wfpDisplay = 5;
-  }
-
-  $wfp_arr['meta_query'][] = [
-    'key'     => 'wfp_wc_product_id',
-    'value'   => $product_id,
-    'compare' => '='
-  ];
-}
-
-// If display params found in shortcode
-if ( $wfpDisplay ) {
-  $wfp_arr['posts_per_page'] = $wfpDisplay;
-}
+include 'query.php';
 
 $WfpData = new WP_Query( $wfp_arr );
 
