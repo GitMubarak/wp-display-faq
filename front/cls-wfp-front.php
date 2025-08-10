@@ -10,13 +10,12 @@ class WFP_Front
 {
 	use Wfp_Core, Wfp_Settings_Content, Wfp_Settings_Styles;
 
-	private $wfp_version;
+	private $wfp_version, $wfp_assets_prefix;
 
 	function __construct( $version ) {
 
 		$this->wfp_version = $version;
 		$this->wfp_assets_prefix = substr(WFP_PRFX, 0, -1) . '-';
-		
 	}
 	
 	function wfp_front_assets() {
