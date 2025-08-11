@@ -47,59 +47,6 @@ class WFP_Front
 			$this->wfp_version,
 			TRUE
 		);
-
-		$wfp_content_settings  = get_option('wfp_content_settings');
-		$wdf_open_close_icon_first	= isset( $wfp_content_settings['wfp_open_close_icon'] ) ? $wfp_content_settings['wfp_open_close_icon'] : 'plus';
-
-		switch ( $wdf_open_close_icon_first ) {
-			case 'check':
-				$wdf_open_close_icon_second = 'times';
-				break;
-			case 'caret-square-down':
-				$wdf_open_close_icon_second = 'caret-square-up';
-				break;
-			case 'level-down':
-				$wdf_open_close_icon_second = 'level-up';
-				break;
-			case 'caret-down':
-				$wdf_open_close_icon_second = 'caret-up';
-				break;
-			case 'arrow-down':
-				$wdf_open_close_icon_second = 'arrow-up';
-				break;
-			case 'angle-double-down':
-				$wdf_open_close_icon_second = 'angle-double-up';
-				break;
-				case 'angle-down':
-					$wdf_open_close_icon_second = 'angle-up';
-					break;
-					case 'chevron-down':
-						$wdf_open_close_icon_second = 'chevron-up';
-						break;
-						case 'arrow-circle-down':
-							$wdf_open_close_icon_second = 'arrow-circle-up';
-							break;
-			default:
-				$wdf_open_close_icon_second = 'minus';
-				break;
-		}
-
-		if ( wdf_fs()->is_plan__premium_only('pro') ) {
-			$wdf_first = $wdf_open_close_icon_first;
-			$wdf_second = $wdf_open_close_icon_second;
-		}
-		  
-		if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
-			$wdf_first = 'plus';
-			$wdf_second = 'minus';
-		}
-
-		$wdfScriptArr = array(
-			'first'		=> $wdf_first,
-			'second'	=> $wdf_second,
-		);
-
-		wp_localize_script( 'wfp-front-script', 'wdfAdminScriptObj', $wdfScriptArr );
 	}
 
 	function wfp_load_shortcode() {
@@ -132,6 +79,44 @@ class WFP_Front
 		global $product;
 		
 		echo do_shortcode('[wp_display_faq product_id="' . $product->get_id() . '"]');
+	}
+
+	function wfp_get_open_close_close_icon( $open_icon ) {
+
+		switch ( $open_icon ) {
+			case 'check':
+				$close_icon = 'times';
+				break;
+			case 'caret-square-down':
+				$close_icon = 'caret-square-up';
+				break;
+			case 'level-down':
+				$close_icon = 'level-up';
+				break;
+			case 'caret-down':
+				$close_icon = 'caret-up';
+				break;
+			case 'arrow-down':
+				$close_icon = 'arrow-up';
+				break;
+			case 'angle-double-down':
+				$close_icon = 'angle-double-up';
+				break;
+			case 'angle-down':
+				$close_icon = 'angle-up';
+				break;
+			case 'chevron-down':
+				$close_icon = 'chevron-up';
+				break;
+			case 'arrow-circle-down':
+				$close_icon = 'arrow-circle-up';
+				break;
+			default:
+				$close_icon = 'minus';
+				break;
+		}
+
+		return $close_icon;
 	}
 }
 ?>

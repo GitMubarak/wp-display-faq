@@ -13,7 +13,7 @@ Create and display responsive FAQs section in a webpage. You can add frequently 
 
 == Description ==
 
-[Display FAQ](https://displayfaqs.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your WordPress website.
+[Display FAQ](https://displayfaq.hmplugin.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your WordPress website.
 
 You can create FAQ posts, assign them to various categories and display FAQs in any page or post.
 
@@ -99,11 +99,11 @@ You can set your FAQ title icons from various icons available in your admin sett
 * Title HTML Tag h1, h2, div, span etc.
 
 
-[Get the Premium Version](https://displayfaqs.com/)
+[Get the Premium Version](https://displayfaq.hmplugin.com/)
 
 
 **👨‍💻 Demo / Support/ Live Chat**
-[DisplayFaq: See Demo](https://displayfaqs.com/)
+[DisplayFaq: See Demo](https://displayfaq.hmplugin.com/)
 
 
 **📋 Translation Ready:**
@@ -200,6 +200,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 [//]: # fs_premium_only_begin
 * Shortcode option content_animation added - Pro
 * Content animation issue fixed for multiple Faqs - Pro
+* Open close icon shortcode option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK updated to 2.12.1
 * Language file loading process changed

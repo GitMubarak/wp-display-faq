@@ -10,8 +10,10 @@
 
         wfpColl[wfpCount].addEventListener("click", function() {
 
-            //var dataAnimType = $('.wfp-content').attr("data-anim-type");
             var dataAnimType = $(this).next().attr("data-anim-type");
+            var dataOpenIcon = $(this).children(".wfp_open_cl_icon:first").attr("data-open-icon");
+            var dataCloseIcon = $(this).children(".wfp_open_cl_icon:first").attr("data-close-icon");
+
             $('.wfp-content').removeClass(dataAnimType);
 
             $(this).next().removeClass('active-first');
@@ -19,10 +21,10 @@
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
-                $(this).find(".wfp_open_cl_icon").removeClass('fa-' + wdfAdminScriptObj.second).addClass('fa-' + wdfAdminScriptObj.first);
+                $(this).children(".wfp_open_cl_icon:first").removeClass('fa-' + dataCloseIcon).addClass('fa-' + dataOpenIcon);
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
-                $(this).find(".wfp_open_cl_icon").removeClass('fa-' + wdfAdminScriptObj.first).addClass('fa-' + wdfAdminScriptObj.second);
+                $(this).children(".wfp_open_cl_icon:first").removeClass('fa-' + dataOpenIcon).addClass('fa-' + dataCloseIcon);
                 $(this).next().addClass(dataAnimType);
             }
         });

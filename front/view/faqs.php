@@ -22,7 +22,7 @@ if ( $WfpData->have_posts() ) {
         <?php
         if ( 'yes' === $wfp_display_open_close_icon ) {
           ?>
-          <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $wdf_open_close_icon ); ?>"></span>
+          <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $open_close_icon ); ?>" data-open-icon="<?php esc_attr_e( $open_close_icon ); ?>" data-close-icon="<?php esc_attr_e( $close_icon ); ?>"></span>
           <?php
         }
 

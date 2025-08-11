@@ -18,14 +18,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Open-Close Icon Active Color</li>
                 <li>&#10003; Open-CLose Icon Spacing</li>
             </ul>
-            <p style="margin-bottom: 1px! important;"><a href="https://displayfaqs.com/" target="_blank" class="button button-primary wfp-button">Buy Now</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://displayfaq.hmplugin.com/" target="_blank" class="button button-primary wfp-button">Buy Now</a></p>
         </div>
     </div>
     <div class="postbox">
         <h3 class="hndle"><span>Support / Bug / Customization</span></h3>
         <div class="inside centered">
             <p>Please feel free to let us know if you have any bugs to report. Your report / suggestion can make the plugin awesome!</p>
-            <p style="margin-bottom: 1px! important;"><a href="https://displayfaqs.com/" target="_blank" class="button button-primary wfp-button">Get Support</a></p>
+            <p style="margin-bottom: 1px! important;"><a href="https://displayfaq.hmplugin.com/" target="_blank" class="button button-primary wfp-button">Get Support</a></p>
         </div>
     </div>
     <div class="postbox">

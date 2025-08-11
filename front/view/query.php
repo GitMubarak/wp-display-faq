@@ -9,8 +9,12 @@ $wfpDisplay  = isset( $wfpAttr['display'] ) ? $wfpAttr['display'] : '';
 $product_id  = isset( $wfpAttr['product_id'] ) ? $wfpAttr['product_id'] : '';
 
 if ( wdf_fs()->is_plan__premium_only('pro') ) {
-    $content_animation = isset( $wfpAttr['content_animation'] ) ? $wfpAttr['content_animation'] : $wdf_content_animation;
+
+    $content_animation  = isset( $wfpAttr['content_animation'] ) ? $wfpAttr['content_animation'] : $wdf_content_animation;
+    $open_close_icon    = isset( $wfpAttr['open_close_icon'] ) ? $wfpAttr['open_close_icon'] : $open_close_icon;
 }
+
+$close_icon = $this->wfp_get_open_close_close_icon( $open_close_icon );
 
 // Main Query
 $wfp_arr = array(
