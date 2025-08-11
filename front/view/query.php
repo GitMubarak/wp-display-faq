@@ -12,6 +12,7 @@ if ( wdf_fs()->is_plan__premium_only('pro') ) {
 
     $content_animation  = isset( $wfpAttr['content_animation'] ) ? $wfpAttr['content_animation'] : $wdf_content_animation;
     $open_close_icon    = isset( $wfpAttr['open_close_icon'] ) ? $wfpAttr['open_close_icon'] : $open_close_icon;
+    $wdf_accordion_icon  = isset( $wfpAttr['title_icon'] ) ? $wfpAttr['title_icon'] : $wdf_accordion_icon;
 }
 
 $close_icon = $this->wfp_get_open_close_close_icon( $open_close_icon );
@@ -62,3 +63,6 @@ if ( $product_id ) {
 if ( $wfpDisplay ) {
     $wfp_arr['posts_per_page'] = $wfpDisplay;
 }
+
+// Loading Styles
+include WFP_PATH . 'assets/css/styles.php';

@@ -24,6 +24,3 @@ if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
   $open_close_icon        = 'plus';
   $wdf_content_animation  = '';
 }
-
-// Loading Styles
-include WFP_PATH . 'assets/css/styles.php';
