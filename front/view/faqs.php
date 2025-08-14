@@ -19,11 +19,12 @@ if ( $WfpData->have_posts() ) {
       $WfpData->the_post();
       ?>
       <button class="wfp-collapsible <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'active' : null; ?>" 
-        style="background-color: <?php esc_attr_e( $wfp_title_bg_color ); ?>;">
+        style="background-color: <?php esc_attr_e( $wfp_title_bg_color ); ?>; color: <?php esc_attr_e( $wfp_title_font_color ); ?>;">
         <?php
         if ( 'yes' === $wfp_display_open_close_icon ) {
           ?>
-          <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $open_close_icon ); ?>" data-open-icon="<?php esc_attr_e( $open_close_icon ); ?>" data-close-icon="<?php esc_attr_e( $close_icon ); ?>"></span>
+          <span class="wfp_open_cl_icon fa fa-<?php esc_attr_e( $open_close_icon ); ?>" data-open-icon="<?php esc_attr_e( $open_close_icon ); ?>" data-close-icon="<?php esc_attr_e( $close_icon ); ?>"
+            style="color: <?php esc_attr_e( $wfp_title_font_color ); ?>;"></span>
           <?php
         }
 

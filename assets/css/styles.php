@@ -21,7 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 .wfp-main-wrapper .wfp-collapsible .wfp_title_class,
 .wfp-main-wrapper .wfp-collapsible .wfp_open_cl_icon {
-  color: <?php esc_html_e( $wfp_title_font_color ); ?>;
   font-size: <?php esc_html_e( $wfp_title_font_size ); ?>px;
   line-height: <?php esc_html_e( $wfp_title_font_size + 10 ); ?>px;
   <?php echo ( '' !== $wfp_item_font_family ) ? 'font-family:' . esc_attr( $wfp_item_font_family ) : ''; ?>;

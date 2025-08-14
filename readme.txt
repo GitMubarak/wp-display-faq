@@ -203,6 +203,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 * Open close icon shortcode option added - Pro
 * Title icon shortcode option added - Pro
 * Title background color shortcode option added - Pro
+* Title color shortcode option added - Pro
 [//]: # fs_premium_only_end
 * Freemius SDK updated to 2.12.1
 * Language file loading process changed

@@ -14,6 +14,7 @@ if ( wdf_fs()->is_plan__premium_only('pro') ) {
     $open_close_icon    = isset( $wfpAttr['open_close_icon'] ) ? $wfpAttr['open_close_icon'] : $open_close_icon;
     $wdf_accordion_icon = isset( $wfpAttr['title_icon'] ) ? $wfpAttr['title_icon'] : $wdf_accordion_icon;
     $wfp_title_bg_color = isset( $wfpAttr['title_bg_color'] ) ? $wfpAttr['title_bg_color'] : $wfp_title_bg_color;
+    $wfp_title_font_color = isset( $wfpAttr['title_color'] ) ? $wfpAttr['title_color'] : $wfp_title_font_color;
 }
 
 $close_icon = $this->wfp_get_open_close_close_icon( $open_close_icon );
