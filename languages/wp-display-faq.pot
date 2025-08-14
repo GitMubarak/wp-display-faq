@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-02-06 14:29+0600\n"
+"POT-Creation-Date: 2025-08-14 12:36+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ../admin\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -25,7 +25,7 @@ msgid "How it works"
 msgstr ""
 
 #: cls-wfp-admin.php:123 cls-wfp-admin.php:124 cls-wfp-admin.php:125
-msgid "WP FAQs"
+msgid "Display FAQs"
 msgstr ""
 
 #: cls-wfp-admin.php:126
