@@ -109,7 +109,9 @@ You can set your FAQ title icons from various icons available in your admin sett
 **📋 Translation Ready:**
 
 * POT file included (/languages/)
+* English (United States) (Default)
 * Bengoli (Bangladesh)
+* Italian
 
 
 **👍 Feedback/Rating:**
