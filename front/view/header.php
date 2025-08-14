@@ -13,6 +13,13 @@ foreach ( $wfpContentSettings as $option_name => $option_value ) {
   }
 }
 
+// Styles Settings
+foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
+    if ( isset( $wfpStylesSettings[$ss_name] ) ) {
+      ${"" . $ss_name}  = $ss_value;
+    }
+}
+
 if ( wdf_fs()->is_plan__premium_only('pro') ) {
   $wdf_accordion_icon     = $wfp_title_icon;
   $open_close_icon        = $wfp_open_close_icon;

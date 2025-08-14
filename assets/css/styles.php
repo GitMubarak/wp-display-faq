@@ -2,17 +2,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
-// Styles Settings
-foreach ( $wfpStylesSettings as $ss_name => $ss_value ) {
-    if ( isset( $wfpStylesSettings[$ss_name] ) ) {
-      ${"" . $ss_name}  = $ss_value;
-    }
-}
 ?>
 <style type="text/css">
 .wfp-main-wrapper .wfp-collapsible {
-  background-color: <?php esc_html_e( $wfp_title_bg_color ); ?>;
   border-color: <?php esc_html_e( $wfp_title_border_color ); ?>;
   margin-top: <?php echo ( 'yes' === $wfp_item_margin ) ? 5 : 0; ?>px;
   border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?>;

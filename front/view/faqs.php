@@ -18,7 +18,8 @@ if ( $WfpData->have_posts() ) {
 
       $WfpData->the_post();
       ?>
-      <button class="wfp-collapsible <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'active' : null; ?>">
+      <button class="wfp-collapsible <?php echo ( 'all' === $wfp_expand_collapse_item ) ? 'active' : null; ?>" 
+        style="background-color: <?php esc_attr_e( $wfp_title_bg_color ); ?>;">
         <?php
         if ( 'yes' === $wfp_display_open_close_icon ) {
           ?>
