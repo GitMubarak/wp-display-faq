@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 .wfp-main-wrapper .wfp-collapsible:hover,
 .wfp-main-wrapper .wfp-collapsible.active:hover {
-  background-color: <?php esc_html_e( $wfp_title_bg_color_hover ); ?>;
+  background-color: <?php esc_html_e( $wfp_title_bg_color_hover ); ?> !important;
   border-color: <?php esc_html_e( $wfp_title_border_color_hover ); ?>;
 }
 .wfp-main-wrapper .wfp-collapsible.active {
