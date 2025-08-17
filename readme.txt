@@ -112,6 +112,7 @@ You can set your FAQ title icons from various icons available in your admin sett
 * English (United States) (Default)
 * Bengoli (Bangladesh)
 * Italian
+* Russian
 
 
 **👍 Feedback/Rating:**
