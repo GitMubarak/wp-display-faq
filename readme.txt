@@ -113,6 +113,7 @@ You can set your FAQ title icons from various icons available in your admin sett
 * Bengoli (Bangladesh)
 * Italian
 * Russian
+* Spanish (Spain)
 
 
 **👍 Feedback/Rating:**
