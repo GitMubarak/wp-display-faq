@@ -1,0 +1,499 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DisplayFaq\n"
+"POT-Creation-Date: 2025-08-14 12:36+0600\n"
+"PO-Revision-Date: 2025-08-17 09:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ../admin\n"
+"X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-7.4.19"
+
+#: cls-wfp-admin.php:45 cls-wfp-admin.php:46
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: cls-wfp-admin.php:54 cls-wfp-admin.php:55 view/help.php:9
+msgid "How it works"
+msgstr "Wie es funktioniert"
+
+#: cls-wfp-admin.php:123 cls-wfp-admin.php:124 cls-wfp-admin.php:125
+msgid "Display FAQs"
+msgstr "Anzeige FAQs"
+
+#: cls-wfp-admin.php:126
+msgid "Parent FAQ"
+msgstr "Parent FAQ"
+
+#: cls-wfp-admin.php:127
+msgid "All FAQs"
+msgstr "Alle FAQs"
+
+#: cls-wfp-admin.php:128
+msgid "View FAQ"
+msgstr "View FAQ"
+
+#: cls-wfp-admin.php:129
+msgid "Add New FAQ"
+msgstr "Fügen Sie Neue FAQ"
+
+#: cls-wfp-admin.php:130
+msgid "Add New"
+msgstr "Add New"
+
+#: cls-wfp-admin.php:131
+msgid "Edit FAQ"
+msgstr "Edit FAQ"
+
+#: cls-wfp-admin.php:132
+msgid "Update FAQ"
+msgstr "Update-FAQ"
+
+#: cls-wfp-admin.php:133
+msgid "Search FAQ"
+msgstr "Suche nach FAQ"
+
+#: cls-wfp-admin.php:134
+msgid "Not Found"
+msgstr "Nicht Gefunden"
+
+#: cls-wfp-admin.php:135
+msgid "Not found in Trash"
+msgstr "Nicht im Mülleimer gefunden"
+
+#: cls-wfp-admin.php:138
+msgid "wfp_faq"
+msgstr "wfp_faq"
+
+#: cls-wfp-admin.php:139
+msgid "Description For FAQ"
+msgstr "Beschreibung FAQ"
+
+#: cls-wfp-admin.php:164 cls-wfp-admin.php:174
+msgid "FAQ Categories"
+msgstr "FAQ Kategorien"
+
+#: cls-wfp-admin.php:165 cls-wfp-admin.php:276
+msgid "FAQ Category"
+msgstr "FAQ Kategorie"
+
+#: cls-wfp-admin.php:166
+msgid "Search FAQ Categories"
+msgstr "Suche Kategorien FAQ"
+
+#: cls-wfp-admin.php:167
+msgid "All FAQ Categories"
+msgstr "Alle Kategorien FAQ"
+
+#: cls-wfp-admin.php:168
+msgid "Parent FAQ Category"
+msgstr "Übergeordnete Kategorie FAQ"
+
+#: cls-wfp-admin.php:169
+msgid "Parent FAQ Category:"
+msgstr "Eltern-FAQ-Kategorie:"
+
+#: cls-wfp-admin.php:170
+msgid "Edit FAQ Category"
+msgstr "Edit FAQ Kategorie"
+
+#: cls-wfp-admin.php:171
+msgid "Update FAQ Category"
+msgstr "Update-FAQ-Kategorie"
+
+#: cls-wfp-admin.php:172
+msgid "Add New FAQ Category"
+msgstr "Fügen Sie Neue FAQ-Kategorie"
+
+#: cls-wfp-admin.php:173
+msgid "New FAQ Category Name"
+msgstr "Neue FAQ Category Name"
+
+#: cls-wfp-admin.php:191
+msgid "FAQs Information:"
+msgstr "FAQ Informationen:"
+
+#: cls-wfp-admin.php:275 view/partial/settings-content.php:58
+msgid "Title"
+msgstr "Titel"
+
+#: cls-wfp-admin.php:277 view/partial/faq-meta-fields.php:74
+msgid "Status"
+msgstr "Status"
+
+#: cls-wfp-admin.php:278 view/partial/settings-content.php:59
+msgid "Date"
+msgstr "Datum"
+
+#: view/general-settings.php:9
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: view/general-settings.php:22
+msgid "Content"
+msgstr "Inhalt"
+
+#: view/general-settings.php:25
+msgid "Styles"
+msgstr "Styles"
+
+#: view/partial/faq-meta-fields.php:15
+msgid "FAQ For"
+msgstr "FAQ"
+
+#: view/partial/faq-meta-fields.php:19
+msgid "General"
+msgstr "Allgemeine"
+
+#: view/partial/faq-meta-fields.php:22
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: view/partial/faq-meta-fields.php:27
+msgid "Select WC Product"
+msgstr "Wählen Sie Produkt-WC"
+
+#: view/partial/faq-meta-fields.php:55
+msgid "Select a Product"
+msgstr "Wählen Sie ein Produkt"
+
+#: view/partial/faq-meta-fields.php:78
+msgid "Active"
+msgstr "Active"
+
+#: view/partial/faq-meta-fields.php:81
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: view/partial/settings-content.php:17
+msgid "Title Font Family"
+msgstr "Titel-Schriftart Familie"
+
+#: view/partial/settings-content.php:25
+msgid "Hide Accordion Icon"
+msgstr "Ausblenden Akkordeon-Symbol"
+
+#: view/partial/settings-content.php:27 view/partial/settings-content.php:37
+msgid "img/wfp-hide-accrodion-icon.webp"
+msgstr "img/wfp-hide-accrodion-Symbol.webp"
+
+#: view/partial/settings-content.php:35
+msgid "Select Accordion Title Icon"
+msgstr "Wählen Sie Akkordeon-Titel-Symbol"
+
+#: view/partial/settings-content.php:45 view/partial/settings-content.php:187
+#: view/partial/settings-content.php:242 view/partial/settings-content.php:256
+#: view/partial/settings-styles.php:44 view/partial/settings-styles.php:109
+#: view/partial/settings-styles.php:128 view/partial/settings-styles.php:160
+#: view/partial/settings-styles.php:183 view/partial/settings-styles.php:212
+#: view/partial/settings-styles.php:231
+msgid "Available In Premium Version"
+msgstr "Erhältlich In Premium-Version"
+
+#: view/partial/settings-content.php:53
+msgid "Title Order By"
+msgstr "Title Order By"
+
+#: view/partial/settings-content.php:57 view/partial/settings-content.php:230
+msgid "Select One"
+msgstr "Wählen Sie Eine"
+
+#: view/partial/settings-content.php:60
+msgid "Menu Order"
+msgstr "Menü-Reihenfolge"
+
+#: view/partial/settings-content.php:64
+msgid "Order"
+msgstr "Bestellung"
+
+#: view/partial/settings-content.php:68
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: view/partial/settings-content.php:71
+msgid "Descending"
+msgstr "Absteigend"
+
+#: view/partial/settings-content.php:76
+msgid "Expand - Collapse Items"
+msgstr "Erweitern - Zuklappen"
+
+#: view/partial/settings-content.php:80
+msgid "Open First"
+msgstr "Öffnen Sie Zuerst"
+
+#: view/partial/settings-content.php:83
+msgid "Open All"
+msgstr "Öffnen Sie Alle"
+
+#: view/partial/settings-content.php:86
+msgid "Close All"
+msgstr "Schließen Sie Alle"
+
+#: view/partial/settings-content.php:91
+msgid "Display Open Close Icon"
+msgstr "Display Open Close Icon"
+
+#: view/partial/settings-content.php:93 view/partial/settings-content.php:121
+msgid "img/wfp-open-close-icon.webp"
+msgstr "img/wfp-öffnen-schließen-Symbol klicken.webp"
+
+#: view/partial/settings-content.php:97 view/partial/settings-content.php:201
+msgid "Yes"
+msgstr "Ja"
+
+#: view/partial/settings-content.php:100 view/partial/settings-content.php:204
+msgid "No"
+msgstr "Keine"
+
+#: view/partial/settings-content.php:105
+msgid "Open Close Icon Alignment"
+msgstr "Öffnen Schließen-Symbol Ausrichtung"
+
+#: view/partial/settings-content.php:107
+msgid "img/wfp-open-close-icon-alignment.webp"
+msgstr "img/wfp-öffnen-schließen-Symbol-Ausrichtung.webp"
+
+#: view/partial/settings-content.php:111 view/partial/settings-content.php:215
+msgid "Left"
+msgstr "Links"
+
+#: view/partial/settings-content.php:114 view/partial/settings-content.php:221
+msgid "Right"
+msgstr "Rechts"
+
+#: view/partial/settings-content.php:119
+msgid "Select Open Close Icon"
+msgstr "Wählen Sie Öffnen Schließen-Symbol"
+
+#: view/partial/settings-content.php:195
+msgid "Display Space Between"
+msgstr "Display Raum Zwischen"
+
+#: view/partial/settings-content.php:197
+msgid "img/wfp-accrodion-space.webp"
+msgstr "img/wfp-accrodion-Raum.webp"
+
+#: view/partial/settings-content.php:209
+msgid "Content Alignment"
+msgstr "Inhalt Ausrichtung"
+
+#: view/partial/settings-content.php:211
+msgid "img/wfp-content-alignment.webp"
+msgstr "img/wfp-content-Ausrichtung.webp"
+
+#: view/partial/settings-content.php:218
+msgid "Center"
+msgstr "Center"
+
+#: view/partial/settings-content.php:226
+msgid "Content Animation"
+msgstr "Inhalt Animation"
+
+#: view/partial/settings-content.php:231
+msgid "FadeIn"
+msgstr "FadeIn"
+
+#: view/partial/settings-content.php:232
+msgid "LineUp"
+msgstr "LineUp"
+
+#: view/partial/settings-content.php:233
+msgid "FlipX"
+msgstr "FlipX"
+
+#: view/partial/settings-content.php:234
+msgid "FlipY"
+msgstr "FlipY"
+
+#: view/partial/settings-content.php:235
+msgid "PopOutIn"
+msgstr "PopOutIn"
+
+#: view/partial/settings-content.php:236
+msgid "FromTop"
+msgstr "FromTop"
+
+#: view/partial/settings-content.php:250
+msgid "Title HTML Tag"
+msgstr "Title Tag HTML"
+
+#: view/partial/settings-content.php:263
+msgid "H1"
+msgstr "H1"
+
+#: view/partial/settings-content.php:264
+msgid "H2"
+msgstr "H2"
+
+#: view/partial/settings-content.php:265
+msgid "H3"
+msgstr "H3"
+
+#: view/partial/settings-content.php:266
+msgid "H4"
+msgstr "H4"
+
+#: view/partial/settings-content.php:267
+msgid "H5"
+msgstr "H5"
+
+#: view/partial/settings-content.php:268
+msgid "H6"
+msgstr "H6"
+
+#: view/partial/settings-content.php:269
+msgid "Span"
+msgstr "Spannweite"
+
+#: view/partial/settings-content.php:270
+msgid "Div"
+msgstr "Div"
+
+#: view/partial/settings-content.php:279
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: view/partial/settings-content.php:283
+msgid "Copy this shortcode and apply it to any page to display FAQs."
+msgstr ""
+"Kopiere diesen shortcode und wenden Sie Sie auf einer beliebigen Seite "
+"angezeigt FAQs."
+
+#: view/partial/settings-content.php:290 view/partial/settings-styles.php:279
+msgid "Save Settings"
+msgstr "Einstellungen Speichern"
+
+#: view/partial/settings-styles.php:17
+msgid "Accordion Item"
+msgstr "Akkordeon-Element"
+
+#: view/partial/settings-styles.php:22 view/partial/settings-styles.php:65
+#: view/partial/settings-styles.php:268
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: view/partial/settings-styles.php:29 view/partial/settings-styles.php:72
+msgid "Border Color"
+msgstr "Rahmenfarbe"
+
+#: view/partial/settings-styles.php:38
+msgid "Active Background Color"
+msgstr "Aktive Hintergrundfarbe"
+
+#: view/partial/settings-styles.php:60
+msgid "Accordion Item - Hover"
+msgstr "Akkordeon-Element - Hover"
+
+#: view/partial/settings-styles.php:82
+msgid "Accordion Title"
+msgstr "Akkordeon-Titel"
+
+#: view/partial/settings-styles.php:87 view/partial/settings-styles.php:252
+msgid "Font Color"
+msgstr "Font Color"
+
+#: view/partial/settings-styles.php:94 view/partial/settings-styles.php:259
+msgid "Font Size"
+msgstr "Font Size"
+
+#: view/partial/settings-styles.php:103
+msgid "Active Font Color"
+msgstr "Aktive Font Color"
+
+#: view/partial/settings-styles.php:122
+msgid "Weight"
+msgstr "Gewicht"
+
+#: view/partial/settings-styles.php:135 view/partial/settings-styles.php:167
+#: view/partial/settings-styles.php:190
+msgid "Normal"
+msgstr "Normal"
+
+#: view/partial/settings-styles.php:136
+msgid "100 (Thin)"
+msgstr "100 (Dünn)"
+
+#: view/partial/settings-styles.php:137
+msgid "200 (Extra Light)"
+msgstr "200 (Extra Light)"
+
+#: view/partial/settings-styles.php:138
+msgid "300 (Light)"
+msgstr "300 (Licht)"
+
+#: view/partial/settings-styles.php:139
+msgid "400 (Normal)"
+msgstr "400 (Normal)"
+
+#: view/partial/settings-styles.php:140
+msgid "500 (Medium)"
+msgstr "500 (Mittel)"
+
+#: view/partial/settings-styles.php:141
+msgid "600 (Semi Bold)"
+msgstr "600 (Semi Bold)"
+
+#: view/partial/settings-styles.php:142
+msgid "700 (Bold)"
+msgstr "700 (Fett)"
+
+#: view/partial/settings-styles.php:143
+msgid "800 (Extra Bold)"
+msgstr "800 (Extra Bold)"
+
+#: view/partial/settings-styles.php:144
+msgid "900 (Black)"
+msgstr "900 (Schwarz)"
+
+#: view/partial/settings-styles.php:145
+msgid "Bold"
+msgstr "Fett"
+
+#: view/partial/settings-styles.php:154
+msgid "Transform"
+msgstr "Verwandeln"
+
+#: view/partial/settings-styles.php:168
+msgid "Uppercase"
+msgstr "Großbuchstaben"
+
+#: view/partial/settings-styles.php:169
+msgid "Lowercase"
+msgstr "Kleinbuchstaben"
+
+#: view/partial/settings-styles.php:170
+msgid "Capitalize"
+msgstr "Kapital"
+
+#: view/partial/settings-styles.php:177
+msgid "Style"
+msgstr "Stil"
+
+#: view/partial/settings-styles.php:191
+msgid "Italic"
+msgstr "Kursiv"
+
+#: view/partial/settings-styles.php:201
+msgid "Open Close Icon"
+msgstr "Öffnen Schließen-Symbol"
+
+#: view/partial/settings-styles.php:206
+msgid "Active Color"
+msgstr "Aktive Farbe"
+
+#: view/partial/settings-styles.php:225
+msgid "Spacing"
+msgstr "Abstand"
+
+#: view/partial/settings-styles.php:247
+msgid "Accordion Content"
+msgstr "Akkordeon Inhalt"
