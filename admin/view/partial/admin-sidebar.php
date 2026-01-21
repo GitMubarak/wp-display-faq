@@ -18,7 +18,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <li>&#10003; Open-Close Icon Active Color</li>
                 <li>&#10003; Open-CLose Icon Spacing</li>
             </ul>
-            <p style="margin-bottom: 1px! important;"><a href="https://displayfaq.hmplugin.com/" target="_blank" class="button button-primary wfp-button">Buy Now</a></p>
+            <?php
+            if ( ! wdf_fs()->is_plan__premium_only('pro') ) {
+                ?>
+                <p style="margin-bottom: 1px! important;"><a href="https://displayfaq.hmplugin.com/" target="_blank" class="button button-primary wfp-button">Buy Now</a></p>
+                <?php
+            }
+            ?>
         </div>
     </div>
     <div class="postbox">

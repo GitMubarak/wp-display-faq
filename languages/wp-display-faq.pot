@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-08-14 12:36+0600\n"
+"POT-Creation-Date: 2026-01-21 20:13+0600\n"
 "PO-Revision-Date: 2021-12-27 04:06+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../admin\n"
 "X-Poedit-KeywordsList: _e;esc_htm;esc_attr;esc_html_e;esc_html_;__(;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -190,10 +190,10 @@ msgstr ""
 
 #: view/partial/settings-content.php:45 view/partial/settings-content.php:187
 #: view/partial/settings-content.php:242 view/partial/settings-content.php:256
-#: view/partial/settings-styles.php:44 view/partial/settings-styles.php:109
-#: view/partial/settings-styles.php:128 view/partial/settings-styles.php:160
-#: view/partial/settings-styles.php:183 view/partial/settings-styles.php:212
-#: view/partial/settings-styles.php:231
+#: view/partial/settings-styles.php:44 view/partial/settings-styles.php:116
+#: view/partial/settings-styles.php:135 view/partial/settings-styles.php:167
+#: view/partial/settings-styles.php:190 view/partial/settings-styles.php:219
+#: view/partial/settings-styles.php:238
 msgid "Available In Premium Version"
 msgstr ""
 
@@ -365,7 +365,7 @@ msgstr ""
 msgid "Copy this shortcode and apply it to any page to display FAQs."
 msgstr ""
 
-#: view/partial/settings-content.php:290 view/partial/settings-styles.php:279
+#: view/partial/settings-content.php:290 view/partial/settings-styles.php:286
 msgid "Save Settings"
 msgstr ""
 
@@ -373,12 +373,12 @@ msgstr ""
 msgid "Accordion Item"
 msgstr ""
 
-#: view/partial/settings-styles.php:22 view/partial/settings-styles.php:65
-#: view/partial/settings-styles.php:268
+#: view/partial/settings-styles.php:22 view/partial/settings-styles.php:72
+#: view/partial/settings-styles.php:275
 msgid "Background Color"
 msgstr ""
 
-#: view/partial/settings-styles.php:29 view/partial/settings-styles.php:72
+#: view/partial/settings-styles.php:29 view/partial/settings-styles.php:79
 msgid "Border Color"
 msgstr ""
 
@@ -386,111 +386,115 @@ msgstr ""
 msgid "Active Background Color"
 msgstr ""
 
-#: view/partial/settings-styles.php:60
+#: view/partial/settings-styles.php:57
+msgid "Border Radius"
+msgstr ""
+
+#: view/partial/settings-styles.php:67
 msgid "Accordion Item - Hover"
 msgstr ""
 
-#: view/partial/settings-styles.php:82
+#: view/partial/settings-styles.php:89
 msgid "Accordion Title"
 msgstr ""
 
-#: view/partial/settings-styles.php:87 view/partial/settings-styles.php:252
+#: view/partial/settings-styles.php:94 view/partial/settings-styles.php:259
 msgid "Font Color"
 msgstr ""
 
-#: view/partial/settings-styles.php:94 view/partial/settings-styles.php:259
+#: view/partial/settings-styles.php:101 view/partial/settings-styles.php:266
 msgid "Font Size"
 msgstr ""
 
-#: view/partial/settings-styles.php:103
+#: view/partial/settings-styles.php:110
 msgid "Active Font Color"
 msgstr ""
 
-#: view/partial/settings-styles.php:122
+#: view/partial/settings-styles.php:129
 msgid "Weight"
 msgstr ""
 
-#: view/partial/settings-styles.php:135 view/partial/settings-styles.php:167
-#: view/partial/settings-styles.php:190
+#: view/partial/settings-styles.php:142 view/partial/settings-styles.php:174
+#: view/partial/settings-styles.php:197
 msgid "Normal"
 msgstr ""
 
-#: view/partial/settings-styles.php:136
+#: view/partial/settings-styles.php:143
 msgid "100 (Thin)"
 msgstr ""
 
-#: view/partial/settings-styles.php:137
+#: view/partial/settings-styles.php:144
 msgid "200 (Extra Light)"
 msgstr ""
 
-#: view/partial/settings-styles.php:138
+#: view/partial/settings-styles.php:145
 msgid "300 (Light)"
 msgstr ""
 
-#: view/partial/settings-styles.php:139
+#: view/partial/settings-styles.php:146
 msgid "400 (Normal)"
 msgstr ""
 
-#: view/partial/settings-styles.php:140
+#: view/partial/settings-styles.php:147
 msgid "500 (Medium)"
 msgstr ""
 
-#: view/partial/settings-styles.php:141
+#: view/partial/settings-styles.php:148
 msgid "600 (Semi Bold)"
 msgstr ""
 
-#: view/partial/settings-styles.php:142
+#: view/partial/settings-styles.php:149
 msgid "700 (Bold)"
 msgstr ""
 
-#: view/partial/settings-styles.php:143
+#: view/partial/settings-styles.php:150
 msgid "800 (Extra Bold)"
 msgstr ""
 
-#: view/partial/settings-styles.php:144
+#: view/partial/settings-styles.php:151
 msgid "900 (Black)"
 msgstr ""
 
-#: view/partial/settings-styles.php:145
+#: view/partial/settings-styles.php:152
 msgid "Bold"
 msgstr ""
 
-#: view/partial/settings-styles.php:154
+#: view/partial/settings-styles.php:161
 msgid "Transform"
 msgstr ""
 
-#: view/partial/settings-styles.php:168
+#: view/partial/settings-styles.php:175
 msgid "Uppercase"
 msgstr ""
 
-#: view/partial/settings-styles.php:169
+#: view/partial/settings-styles.php:176
 msgid "Lowercase"
 msgstr ""
 
-#: view/partial/settings-styles.php:170
+#: view/partial/settings-styles.php:177
 msgid "Capitalize"
 msgstr ""
 
-#: view/partial/settings-styles.php:177
+#: view/partial/settings-styles.php:184
 msgid "Style"
 msgstr ""
 
-#: view/partial/settings-styles.php:191
+#: view/partial/settings-styles.php:198
 msgid "Italic"
 msgstr ""
 
-#: view/partial/settings-styles.php:201
+#: view/partial/settings-styles.php:208
 msgid "Open Close Icon"
 msgstr ""
 
-#: view/partial/settings-styles.php:206
+#: view/partial/settings-styles.php:213
 msgid "Active Color"
 msgstr ""
 
-#: view/partial/settings-styles.php:225
+#: view/partial/settings-styles.php:232
 msgid "Spacing"
 msgstr ""
 
-#: view/partial/settings-styles.php:247
+#: view/partial/settings-styles.php:254
 msgid "Accordion Content"
 msgstr ""
