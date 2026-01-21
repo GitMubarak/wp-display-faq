@@ -9,11 +9,11 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Create and display responsive FAQs section in a webpage. You can add frequently asked questions on WooCommerce single product page.
+Create and display responsive Accordions, FAQs in a webpage. Also create Product FAQ for WooCommerce and display them in a single product page.
 
 == Description ==
 
-[Display FAQ](https://displayfaq.hmplugin.com/) is a **WordPress FAQ Accordion Plugin** which will display various FAQs in your WordPress website.
+[Display FAQ](https://displayfaq.hmplugin.com/) is a **WordPress FAQ Accordion Plugin** which will display various responsive Accordions, FAQs in your WordPress website.
 
 You can create FAQ posts, assign them to various categories and display FAQs in any page or post.
 
@@ -21,7 +21,7 @@ You can grouped the FAQs using FAQ categories and dsiplay them using shortcode.
 
 You can also control the display limit using shortcode option.
 
-This plugin can be use as a general WordPress Accordion Plugin or It can be used as a Product FAQ for WooCommerce.
+You can also create Product FAQ for WooCommerce and display them in a single product page.
 
 This is a simple, effective and powerful plugin to display responsive FAQ Accordion on any device.
 
