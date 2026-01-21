@@ -203,7 +203,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 == Changelog ==
 
 = 1.4.7 =
-* Freemius SDK updated to 2.12.1
+* Freemius SDK updated to 2.13.0
 
 = 1.4.6 =
 [//]: # fs_premium_only_begin
