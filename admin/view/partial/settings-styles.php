@@ -53,6 +53,13 @@ foreach ( $wfpStylesSettings as $option_name => $option_value ) {
                 }
                 ?>
             </td>
+            <th scope="row">
+                <label for="wfp_title_border_radius"><?php esc_html_e('Border Radius', 'wp-display-faq'); ?></label>
+            </th>
+            <td>
+                <input class="medium-textr" type="number" min="0" max="100" step="1" name="wfp_title_border_radius" id="wfp_title_border_radius" value="<?php esc_attr_e( $wfp_title_border_radius ); ?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- Item: Hover -->
         <tr>

@@ -203,6 +203,7 @@ You need to apply that shortcode <b>[wp_display_faq display=5]</b> to display on
 == Changelog ==
 
 = 1.4.7 =
+* Title border radius option added
 * Freemius SDK updated to 2.13.0
 * Code optimized
 * CSS fixed

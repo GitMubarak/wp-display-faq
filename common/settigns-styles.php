@@ -110,6 +110,11 @@ trait Wfp_Settings_Styles
                 'type'      => 'number',
                 'default'   => 0,
             ],
+            [
+                'name'      => 'wfp_title_border_radius',
+                'type'      => 'number',
+                'default'   => 0,
+            ],
         ];
 
     }

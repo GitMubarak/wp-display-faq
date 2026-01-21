@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   border-bottom: <?php echo ( 'yes' === $wfp_item_margin ) ? 1 : 0; ?>px solid <?php esc_html_e( $wfp_title_border_color ); ?>;
   transition: all 0.5s linear;
   text-align: <?php esc_html_e( $wfp_item_alignment ); ?>;
+  border-radius: <?php esc_html_e( $wfp_title_border_radius ); ?>px;
 }
 .wfp-main-wrapper .wfp-collapsible:hover,
 .wfp-main-wrapper .wfp-collapsible.active:hover {
